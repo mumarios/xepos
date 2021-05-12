@@ -15,7 +15,7 @@ class MasterViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var paymentsBtn: UIButton!
     @IBOutlet weak var spendingBtn: UIButton!
-    @IBOutlet weak var homeBtn: UIButton!
+    @IBOutlet weak var homeBtn: UIButton! 
     @IBOutlet weak var cardBtn: UIButton!
     @IBOutlet weak var transactionBtn: UIButton!
     
@@ -26,7 +26,7 @@ class MasterViewController: UIViewController {
         
         guard let dashboard = self.storyboard?.instantiateViewController(identifier: "DashboardViewController") as? DashboardViewController else {return}
         contentView.addSubview(dashboard.view)
-        dashboard.didMove(toParent: self)
+        dashboard.didMove(toParent: self) 
         // Do any additional setup after loading the view.
     }
     
