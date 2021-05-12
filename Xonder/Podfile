@@ -12,4 +12,5 @@ target 'Xonder' do
     pod 'PKHUD', '~> 5.0'
     pod 'JGProgressHUD'
     pod 'SVPinView', '~> 1.0'
+    pod "DrawerView"
 end

@@ -104,7 +104,15 @@ extension UIView{
       
     }
 }
-
+extension UIView {
+    func addTopShadow(shadowColor : UIColor, shadowOpacity : Float,shadowRadius : Float,offset:CGSize){
+        self.layer.shadowColor = shadowColor.cgColor
+        selflayer.shadowOffset = offset
+        self.layer.shadowOpacity = shadowOpacity
+        self.layer.shadowRadius = shadowRadius
+        self.clipsToBounds = false
+    }
+}
 
 extension UIImage {
 
