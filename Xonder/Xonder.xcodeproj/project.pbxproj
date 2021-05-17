@@ -8,18 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
-		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
-		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
-		3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B209264BCCD500E9A994 /* ShadowView.swift */; };
-		3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */; };
-		3B63B214264BCFD100E9A994 /* HouschkaPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B211264BCF7200E9A994 /* HouschkaPro-Medium.ttf */; };
-		3B63B215264BCFD100E9A994 /* HouschkaPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20F264BCF5D00E9A994 /* HouschkaPro-ExtraBold.ttf */; };
-		3B63B216264BCFD100E9A994 /* HouschkaPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B210264BCF6800E9A994 /* HouschkaPro-Light.ttf */; };
-		3B63B217264BCFD100E9A994 /* HouschkaPro-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20E264BCF4F00E9A994 /* HouschkaPro-DemiBold.ttf */; };
-		3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */; };
-		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
-		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
-		704F32132648C13A0027397B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704F32122648C13A0027397B /* Signup.storyboard */; };
+		3BB9DF842652421500393BDC /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB9DF832652421500393BDC /* Dashboard.storyboard */; };
+		3BB9DF8C2652423400393BDC /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB9DF872652423400393BDC /* TransactionViewController.swift */; };
+		3BB9DF8D2652423400393BDC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB9DF892652423400393BDC /* DashboardViewController.swift */; };
+		3BB9DF8E2652423400393BDC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB9DF8B2652423400393BDC /* MasterViewController.swift */; };
+		3BB9DF912652425900393BDC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB9DF902652425900393BDC /* ShadowView.swift */; };
 		704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32152648C18D0027397B /* OtpScreenViewController.swift */; };
 		704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32252648C9030027397B /* GetStartedScreenViewController.swift */; };
 		704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F322B2648C9CA0027397B /* LoginScreenViewController.swift */; };
@@ -34,6 +27,10 @@
 		7060360A26432A560062039F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360826432A560062039F /* Main.storyboard */; };
 		7060360C26432A5B0062039F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7060360B26432A5B0062039F /* Assets.xcassets */; };
 		7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360D26432A5B0062039F /* LaunchScreen.storyboard */; };
+		70FDF60A264BA39E00707EAB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FDF609264BA39E00707EAB /* Signup.storyboard */; };
+		70FDF60F264E8BC200707EAB /* SignupBusinessSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */; };
+		70FDF612264E8BCA00707EAB /* SignupOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */; };
+		70FDF615264E8BDC00707EAB /* SignupMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */; };
 		C83FB7252643388E00A87093 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB7242643388E00A87093 /* Constants.swift */; };
 		C83FB72826433B5500A87093 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB72726433B5500A87093 /* UserModel.swift */; };
 		C83FB72B26433BF300A87093 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB72A26433BF300A87093 /* Provider.swift */; };
@@ -50,19 +47,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
-		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		3B63B209264BCCD500E9A994 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Bold.ttf"; sourceTree = "<group>"; };
-		3B63B20E264BCF4F00E9A994 /* HouschkaPro-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-DemiBold.ttf"; sourceTree = "<group>"; };
-		3B63B20F264BCF5D00E9A994 /* HouschkaPro-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-ExtraBold.ttf"; sourceTree = "<group>"; };
-		3B63B210264BCF6800E9A994 /* HouschkaPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Light.ttf"; sourceTree = "<group>"; };
-		3B63B211264BCF7200E9A994 /* HouschkaPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Medium.ttf"; sourceTree = "<group>"; };
-		3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Thin.ttf"; sourceTree = "<group>"; };
-		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3BB9DF832652421500393BDC /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3BB9DF872652423400393BDC /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		3BB9DF892652423400393BDC /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3BB9DF8B2652423400393BDC /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3BB9DF902652425900393BDC /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		5B66287BAB70301295639823 /* Pods-Xonder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xonder.debug.xcconfig"; path = "Target Support Files/Pods-Xonder/Pods-Xonder.debug.xcconfig"; sourceTree = "<group>"; };
-		704F32122648C13A0027397B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		704F32152648C18D0027397B /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
 		704F32252648C9030027397B /* GetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedScreenViewController.swift; sourceTree = "<group>"; };
 		704F322B2648C9CA0027397B /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +69,10 @@
 		7060360B26432A5B0062039F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7060360E26432A5B0062039F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7060361026432A5B0062039F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FDF609264BA39E00707EAB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupBusinessSelectionViewController.swift; sourceTree = "<group>"; };
+		70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
+		70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupMobileViewController.swift; sourceTree = "<group>"; };
 		C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xonder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83FB7242643388E00A87093 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C83FB72726433B5500A87093 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -117,55 +111,42 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		3B008D73264A6ACD00BE9E13 /* Dashboard */ = {
+		3BB9DF822652421500393BDC /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */,
+				3BB9DF832652421500393BDC /* Dashboard.storyboard */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		3B63B204264AC37100E9A994 /* MasterViewController */ = {
+		3BB9DF862652423400393BDC /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
-				3B63B205264AC38600E9A994 /* MasterViewController.swift */,
+				3BB9DF872652423400393BDC /* TransactionViewController.swift */,
 			);
-			path = MasterViewController;
+			path = Transaction;
 			sourceTree = "<group>";
 		};
-		3B63B20C264BCF2700E9A994 /* Fonts */ = {
+		3BB9DF882652423400393BDC /* Dashboarrd */ = {
 			isa = PBXGroup;
 			children = (
-				3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */,
-				3B63B211264BCF7200E9A994 /* HouschkaPro-Medium.ttf */,
-				3B63B20F264BCF5D00E9A994 /* HouschkaPro-ExtraBold.ttf */,
-				3B63B210264BCF6800E9A994 /* HouschkaPro-Light.ttf */,
-				3B63B20E264BCF4F00E9A994 /* HouschkaPro-DemiBold.ttf */,
-				3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		3B91AB15264BFAEE00B0C0EF /* Dashboarrd */ = {
-			isa = PBXGroup;
-			children = (
-				3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */,
+				3BB9DF892652423400393BDC /* DashboardViewController.swift */,
 			);
 			path = Dashboarrd;
 			sourceTree = "<group>";
 		};
-		3B91AB22264BFF2A00B0C0EF /* Transaction */ = {
+		3BB9DF8A2652423400393BDC /* MasterViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */,
+				3BB9DF8B2652423400393BDC /* MasterViewController.swift */,
 			);
-			path = Transaction;
+			path = MasterViewController;
 			sourceTree = "<group>";
 		};
 		704F32112648C0E10027397B /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				704F32122648C13A0027397B /* Signup.storyboard */,
+				70FDF609264BA39E00707EAB /* Signup.storyboard */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -183,6 +164,9 @@
 		704F32332648D5710027397B /* SignUp Screen VC */ = {
 			isa = PBXGroup;
 			children = (
+				70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */,
+				70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */,
+				70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */,
 				704F32352648D5B10027397B /* CountryListTableViewCell.swift */,
 				704F32342648D5B10027397B /* CountryListViewController.swift */,
 			);
@@ -216,7 +200,7 @@
 		704FCAF2264521EF0025F546 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				3B63B209264BCCD500E9A994 /* ShadowView.swift */,
+				3BB9DF902652425900393BDC /* ShadowView.swift */,
 				704FCAFD264522820025F546 /* UIView.swift */,
 			);
 			path = UIView;
@@ -243,14 +227,12 @@
 		7060360126432A560062039F /* Xonder */ = {
 			isa = PBXGroup;
 			children = (
-				3B63B20C264BCF2700E9A994 /* Fonts */,
 				706E3BE0264518A000486D02 /* Helper */,
 				706E3BDF2645185A00486D02 /* Extensions */,
 				706E3BDE2645183600486D02 /* Model */,
 				706E3BDD264517EB00486D02 /* Http */,
 				706E3BDA2645178C00486D02 /* Storyboards */,
 				706E3BD92645178000486D02 /* Controllers */,
-				706E3BD72645176200486D02 /* Network */,
 				7060360226432A560062039F /* AppDelegate.swift */,
 				7060360B26432A5B0062039F /* Assets.xcassets */,
 				7060361026432A5B0062039F /* Info.plist */,
@@ -258,19 +240,12 @@
 			path = Xonder;
 			sourceTree = "<group>";
 		};
-		706E3BD72645176200486D02 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		706E3BD92645178000486D02 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3B91AB22264BFF2A00B0C0EF /* Transaction */,
-				3B91AB15264BFAEE00B0C0EF /* Dashboarrd */,
-				3B63B204264AC37100E9A994 /* MasterViewController */,
+				3BB9DF882652423400393BDC /* Dashboarrd */,
+				3BB9DF8A2652423400393BDC /* MasterViewController */,
+				3BB9DF862652423400393BDC /* Transaction */,
 				704F32332648D5710027397B /* SignUp Screen VC */,
 				704F32182648C1960027397B /* Login Screen VC */,
 				7060360626432A560062039F /* ViewController.swift */,
@@ -281,7 +256,7 @@
 		706E3BDA2645178C00486D02 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				3B008D73264A6ACD00BE9E13 /* Dashboard */,
+				3BB9DF822652421500393BDC /* Dashboard */,
 				704F32112648C0E10027397B /* Signup */,
 				704FCAE726451C1D0025F546 /* Login */,
 				7060360826432A560062039F /* Main.storyboard */,
@@ -349,8 +324,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
+				F5E79EFCFAD80CFA3E6D902C /* [CP] Build Pods Frameworks */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
-				FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -402,18 +377,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */,
-				3B63B214264BCFD100E9A994 /* HouschkaPro-Medium.ttf in Resources */,
-				3B63B215264BCFD100E9A994 /* HouschkaPro-ExtraBold.ttf in Resources */,
-				3B63B216264BCFD100E9A994 /* HouschkaPro-Light.ttf in Resources */,
-				3B63B217264BCFD100E9A994 /* HouschkaPro-DemiBold.ttf in Resources */,
-				3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */,
 				704FCAEE26451CD80025F546 /* Login.storyboard in Resources */,
+				3BB9DF842652421500393BDC /* Dashboard.storyboard in Resources */,
 				7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */,
 				7060360C26432A5B0062039F /* Assets.xcassets in Resources */,
-				704F32132648C13A0027397B /* Signup.storyboard in Resources */,
+				70FDF60A264BA39E00707EAB /* Signup.storyboard in Resources */,
 				7060360A26432A560062039F /* Main.storyboard in Resources */,
-				3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +428,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */ = {
+		F5E79EFCFAD80CFA3E6D902C /* [CP] Build Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,31 +454,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
-				3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */,
 				704FCAF72645224E0025F546 /* UIButton.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
+				3BB9DF8C2652423400393BDC /* TransactionViewController.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
+				70FDF60F264E8BC200707EAB /* SignupBusinessSelectionViewController.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
-				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
+				3BB9DF8E2652423400393BDC /* MasterViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,
 				C83FB73126433D0B00A87093 /* Extension+UserDefault.swift in Sources */,
-				3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */,
 				C8727083264340E0005EFDEA /* Extension+Result.swift in Sources */,
 				C89B5B18264336F300263F14 /* Services.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
-				3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */,
+				3BB9DF8D2652423400393BDC /* DashboardViewController.swift in Sources */,
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
 				C83FB74026433ED500A87093 /* APIService.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
+				70FDF615264E8BDC00707EAB /* SignupMobileViewController.swift in Sources */,
+				3BB9DF912652425900393BDC /* ShadowView.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
+				70FDF612264E8BCA00707EAB /* SignupOTPViewController.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
