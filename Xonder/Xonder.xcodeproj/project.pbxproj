@@ -10,6 +10,7 @@
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
 		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
+		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
 		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
 		3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B209264BCCD500E9A994 /* ShadowView.swift */; };
 		3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */; };
@@ -20,6 +21,8 @@
 		3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */; };
 		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
 		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
+		3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2400C26554DE600C0DF03 /* Transaction.storyboard */; };
+		3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */; };
 		3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */; };
 		3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */; };
 		3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */; };
@@ -57,6 +60,7 @@
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
 		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		3B63B209264BCCD500E9A994 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 		3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Thin.ttf"; sourceTree = "<group>"; };
 		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3BC2400C26554DE600C0DF03 /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
+		3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTransactionViewController.swift; sourceTree = "<group>"; };
 		3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
 		3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerTableViewCell.swift; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				3B91AB22264BFF2A00B0C0EF /* Transaction */,
 				3BFD804726528B8900ABE8E3 /* TransactionTableViewCell */,
 				3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */,
+				3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */,
 			);
 			path = Dashboarrd;
 			sourceTree = "<group>";
@@ -179,6 +186,22 @@
 			isa = PBXGroup;
 			children = (
 				3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BC2400B26554DD300C0DF03 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2400C26554DE600C0DF03 /* Transaction.storyboard */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BC2400E265550B000C0DF03 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -300,6 +323,7 @@
 		706E3BD92645178000486D02 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3BC2400E265550B000C0DF03 /* Transaction */,
 				3B91AB15264BFAEE00B0C0EF /* Dashboarrd */,
 				3B63B204264AC37100E9A994 /* MasterViewController */,
 				704F32332648D5710027397B /* SignUp Screen VC */,
@@ -312,6 +336,7 @@
 		706E3BDA2645178C00486D02 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3BC2400B26554DD300C0DF03 /* Transaction */,
 				3B008D73264A6ACD00BE9E13 /* Dashboard */,
 				704F32112648C0E10027397B /* Signup */,
 				704FCAE726451C1D0025F546 /* Login */,
@@ -445,6 +470,7 @@
 				704F32132648C13A0027397B /* Signup.storyboard in Resources */,
 				7060360A26432A560062039F /* Main.storyboard in Resources */,
 				3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */,
+				3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +561,8 @@
 				C8727083264340E0005EFDEA /* Extension+Result.swift in Sources */,
 				C89B5B18264336F300263F14 /* Services.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
+				3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */,
+				3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */,
 				3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */,
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
@@ -694,15 +722,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX6PB2M93C;
+				DEVELOPMENT_TEAM = 6QQQF6X4SC;
 				INFOPLIST_FILE = Xonder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniyal.Xonder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xepos.XonderMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -714,15 +744,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX6PB2M93C;
+				DEVELOPMENT_TEAM = 6QQQF6X4SC;
 				INFOPLIST_FILE = Xonder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniyal.Xonder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xepos.XonderMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

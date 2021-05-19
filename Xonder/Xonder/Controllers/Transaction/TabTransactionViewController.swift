@@ -1,26 +1,30 @@
 //
-//  TransactionViewController.swift
+//  TabTransactionViewController.swift
 //  Xonder
 //
-//  Created by Muhammad Umar on 12/05/2021.
+//  Created by Muhammad Umar on 19/05/2021.
 //
 
 import UIKit
 
-class TransactionViewController: UIViewController {
-    
-    @IBOutlet weak var handleArea: UIView!
-    @IBOutlet weak var tableView: UITableView!
+class TabTransactionViewController: UIViewController {
+
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var colView: UICollectionView!
+    @IBOutlet weak var tblView: UITableView!
     override func viewDidLoad() {
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = UITableView.automaticDimension
+        super.viewDidLoad()
+        tblView.rowHeight = UITableView.automaticDimension
+        tblView.estimatedRowHeight = UITableView.automaticDimension
+        topView.roundCorners([.topLeft, .topRight], radius: 12)
+        // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    @IBAction func homeAct(_ sender: Any) {
         
+        self.navigationController?.popViewController(animated: false)
     }
-
-
+    
     /*
     // MARK: - Navigation
 
@@ -33,7 +37,7 @@ class TransactionViewController: UIViewController {
 
 }
 
-extension TransactionViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
+extension  TabTransactionViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -42,6 +46,4 @@ extension TransactionViewController: UITableViewDelegate, UITableViewDataSource,
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell", for: indexPath) as! TransactionTableViewCell
         return cell
     }
-    
- 
 }

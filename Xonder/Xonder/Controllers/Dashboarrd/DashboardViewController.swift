@@ -14,15 +14,18 @@ class DashboardViewController: UIViewController {
         case collapsed
     }
     
+    @IBOutlet weak var personalBtn: UIButton!
     @IBOutlet weak var pageCtrl: UIPageControl!
     @IBOutlet weak var colView: UICollectionView!
     @IBOutlet weak var shadowView: ShadowView!
     @IBOutlet weak var tabBarView: UIView!
     var cardViewController: TransactionViewController!
     var visualEffectView: UIVisualEffectView!
-    
+    var   SVC = DashboardSelectionViewController()
     var cardHeight: CGFloat!
     let cardHandleAreaHeight: CGFloat = 150
+    
+    var lbl = "Personal"
     
     var cardVisible = false
     var nextState:CardState {
@@ -38,13 +41,51 @@ class DashboardViewController: UIViewController {
         setupCard()
     }
     
+    func showSelectionVC(){
+        SVC =  UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(identifier: "DashboardSelectionViewController")  as! DashboardSelectionViewController
+       SVC.modalPresentationStyle = .fullScreen
+       SVC.parentVC = self
+        SVC.modalPresentationStyle = .overCurrentContext
+        SVC.modalTransitionStyle = .crossDissolve
+       self.present(SVC, animated: true, completion: nil)
+    }
+    @IBAction func personalAct(_ sender: Any) {
+         SVC =  UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(identifier: "DashboardSelectionViewController")  as! DashboardSelectionViewController
+   
+        SVC.parentVC = self
+        self.present(SVC, animated: true, completion: nil)
+        
+        
+        
+    }
+    
+    @IBAction func showTransactions(_ sender: Any) {
+        let vc = UIStoryboard(name: "Transaction", bundle: nil).instantiateViewController(identifier:"TabTransactionViewController")  as! TabTransactionViewController
+        self.navigationController?.pushViewController(vc, animated: false)
+        
+    }
+    func setBusiness(){
+        lbl = "Business"
+        self.colView.reloadData()
+        self.personalBtn.setTitle("Business", for: .normal)
+        
+    }
+    
+    func setPersonal(){
+        lbl = "Personal"
+        self.colView.reloadData()
+        self.personalBtn.setTitle("Personal", for: .normal)
+        
+    }
+    
     @IBAction func settingAction(_ sender: Any) {
+        
     }
     func setupCard(){
         cardHeight = self.view.frame.height - 64
         visualEffectView  = UIVisualEffectView()
         visualEffectView.frame = self.view.frame
-        self.view.addSubview(visualEffectView)
+        
         
         let vc =  UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(identifier: "TransactionViewController")  as! TransactionViewController
         cardViewController = vc
@@ -61,11 +102,13 @@ class DashboardViewController: UIViewController {
         self.view.bringSubviewToFront(tabBarView)
         
     }
+
     
    @objc func handleCardPan(recognizer: UIPanGestureRecognizer){
     
     switch recognizer.state {
     case .began :
+        
         startInteractiveTransition(state: nextState, duration: 0.9)
     case .changed :
         let translation = recognizer.translation(in: self.cardViewController.handleArea)
@@ -110,8 +153,10 @@ class DashboardViewController: UIViewController {
             let blurAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1){
                 switch state  {
                 case .expanded:
+                  //  self.view.addSubview(self.visualEffectView)
                     self.visualEffectView.effect  = UIBlurEffect(style: .dark)
                 case .collapsed:
+                  //  self.visualEffectView.removeFromSuperview()
                     self.visualEffectView.effect = nil
                 }
             }
@@ -160,13 +205,14 @@ extension  DashboardViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardCollectionViewCell", for: indexPath) as! DashboardCollectionViewCell
-        
-        pageCtrl.currentPage  = indexPath.item
+        cell.vc = self
+        pageCtrl.currentPage  = indexPath.item +  1
+        cell.setLabel(lbl: lbl)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: colView.frame.width - 20, height: colView.frame.height)
+        return CGSize(width: colView.frame.width - 20 , height: colView.frame.height)
         }
     
 }

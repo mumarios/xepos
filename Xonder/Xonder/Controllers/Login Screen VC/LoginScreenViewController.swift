@@ -34,7 +34,11 @@ class LoginScreenViewController: UIViewController {
             alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
                 self.dismiss(animated: true)
             }))
-            performSegue(withIdentifier: "toOtpScreen", sender: self)
+            
+            let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+        //    performSegue(withIdentifier: "toOtpScreen", sender: self)
             return
         }
 

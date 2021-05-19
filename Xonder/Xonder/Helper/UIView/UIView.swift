@@ -112,12 +112,17 @@ extension UIView {
         self.layer.shadowRadius = CGFloat(shadowRadius)
         self.clipsToBounds = false
     }
-    func roundCorners(corners: UIRectCorner, radius: CGFloat, rect: CGRect) {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
-    }
+  
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+            let maskPath = UIBezierPath(
+                roundedRect: bounds,
+                byRoundingCorners: corners,
+                cornerRadii: CGSize(width: radius, height: radius))
+
+            let shape = CAShapeLayer()
+            shape.path = maskPath.cgPath
+            layer.mask = shape
+        }
 }
 
 extension UIImage {
