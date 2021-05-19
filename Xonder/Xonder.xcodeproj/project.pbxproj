@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
+		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
 		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
 		3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B209264BCCD500E9A994 /* ShadowView.swift */; };
 		3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */; };
@@ -19,6 +20,10 @@
 		3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */; };
 		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
 		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
+		3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */; };
+		3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */; };
+		3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */; };
+		3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */; };
 		704F32132648C13A0027397B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704F32122648C13A0027397B /* Signup.storyboard */; };
 		704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32152648C18D0027397B /* OtpScreenViewController.swift */; };
 		704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32252648C9030027397B /* GetStartedScreenViewController.swift */; };
@@ -51,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		3B63B209264BCCD500E9A994 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -61,6 +67,10 @@
 		3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Thin.ttf"; sourceTree = "<group>"; };
 		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerTableViewCell.swift; sourceTree = "<group>"; };
+		3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		5B66287BAB70301295639823 /* Pods-Xonder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xonder.debug.xcconfig"; path = "Target Support Files/Pods-Xonder/Pods-Xonder.debug.xcconfig"; sourceTree = "<group>"; };
 		704F32122648C13A0027397B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		704F32152648C18D0027397B /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +135,14 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		3B5D33B52654C8C7002F0BA3 /* DashboardCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */,
+			);
+			path = DashboardCell;
+			sourceTree = "<group>";
+		};
 		3B63B204264AC37100E9A994 /* MasterViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +167,9 @@
 		3B91AB15264BFAEE00B0C0EF /* Dashboarrd */ = {
 			isa = PBXGroup;
 			children = (
+				3B5D33B52654C8C7002F0BA3 /* DashboardCell */,
+				3B91AB22264BFF2A00B0C0EF /* Transaction */,
+				3BFD804726528B8900ABE8E3 /* TransactionTableViewCell */,
 				3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */,
 			);
 			path = Dashboarrd;
@@ -160,6 +181,17 @@
 				3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */,
 			);
 			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BFD804726528B8900ABE8E3 /* TransactionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */,
+				3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */,
+				3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */,
+				3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */,
+			);
+			path = TransactionTableViewCell;
 			sourceTree = "<group>";
 		};
 		704F32112648C0E10027397B /* Signup */ = {
@@ -268,7 +300,6 @@
 		706E3BD92645178000486D02 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3B91AB22264BFF2A00B0C0EF /* Transaction */,
 				3B91AB15264BFAEE00B0C0EF /* Dashboarrd */,
 				3B63B204264AC37100E9A994 /* MasterViewController */,
 				704F32332648D5710027397B /* SignUp Screen VC */,
@@ -484,6 +515,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */,
+				3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */,
+				3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */,
 				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
 				3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */,
 				704FCAF72645224E0025F546 /* UIButton.swift in Sources */,
@@ -492,6 +526,7 @@
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
+				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,
@@ -511,6 +546,7 @@
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
+				3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

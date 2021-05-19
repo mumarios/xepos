@@ -40,7 +40,13 @@ class LoginScreenViewController: UIViewController {
 
     }
     
-    
+    @IBAction func btnSignupPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        
+    }
+
     
     /*
     // MARK: - Navigation

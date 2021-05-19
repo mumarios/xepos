@@ -10,31 +10,31 @@ import UIKit
 
 class ShadowView: UIView {
 	/// The corner radius of the `ShadowView`, inspectable in Interface Builder
-	@IBInspectable var cornerRadius: CGFloat = 5.0 {
+    @IBInspectable override var cornerRadius: CGFloat  {
 		didSet {
 			self.updateProperties()
 		}
 	}
 	/// The shadow color of the `ShadowView`, inspectable in Interface Builder
-	@IBInspectable var shadowColor: UIColor = UIColor.black {
+    @IBInspectable override var shadowColor: UIColor  {
 		didSet {
 			self.updateProperties()
 		}
 	}
 	/// The shadow offset of the `ShadowView`, inspectable in Interface Builder
-	@IBInspectable var shadowOffset: CGSize = CGSize(width: 0.0, height: 2) {
+    @IBInspectable override var shadowOffset: CGSize  {
 		didSet {
 			self.updateProperties()
 		}
 	}
 	/// The shadow radius of the `ShadowView`, inspectable in Interface Builder
-	@IBInspectable var shadowRadius: CGFloat = 4.0 {
+    @IBInspectable override var shadowRadius: CGFloat {
 		didSet {
 			self.updateProperties()
 		}
 	}
 	/// The shadow opacity of the `ShadowView`, inspectable in Interface Builder
-	@IBInspectable var shadowOpacity: Float = 0.5 {
+    @IBInspectable override var shadowOpacity: Float  {
 		didSet {
 			self.updateProperties()
 		}

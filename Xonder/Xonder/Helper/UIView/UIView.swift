@@ -107,10 +107,16 @@ extension UIView{
 extension UIView {
     func addTopShadow(shadowColor : UIColor, shadowOpacity : Float,shadowRadius : Float,offset:CGSize){
         self.layer.shadowColor = shadowColor.cgColor
-        selflayer.shadowOffset = offset
+        self.layer.shadowOffset = offset
         self.layer.shadowOpacity = shadowOpacity
-        self.layer.shadowRadius = shadowRadius
+        self.layer.shadowRadius = CGFloat(shadowRadius)
         self.clipsToBounds = false
+    }
+    func roundCorners(corners: UIRectCorner, radius: CGFloat, rect: CGRect) {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
     }
 }
 

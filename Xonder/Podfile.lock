@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (4.9.1)
-  - DrawerView (1.3.3)
   - IQKeyboardManagerSwift (6.5.6)
   - JGProgressHUD (2.2)
   - Moya (13.0.1):
@@ -13,7 +12,6 @@ PODS:
   - SVPinView (1.0.11)
 
 DEPENDENCIES:
-  - DrawerView
   - IQKeyboardManagerSwift
   - JGProgressHUD
   - Moya (~> 13.0)
@@ -23,7 +21,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - DrawerView
     - IQKeyboardManagerSwift
     - JGProgressHUD
     - Moya
@@ -33,7 +30,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  DrawerView: 41c5e5d6593d86335ee2cf9b18d738835593dbc1
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
@@ -41,6 +37,6 @@ SPEC CHECKSUMS:
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
 
-PODFILE CHECKSUM: df944649209291e6e203d5a78971224dee2f760d
+PODFILE CHECKSUM: bf12e391c3cfc51773ff744766dc7325706f05d3
 
 COCOAPODS: 1.10.1
