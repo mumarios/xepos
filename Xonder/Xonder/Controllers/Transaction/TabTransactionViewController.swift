@@ -46,4 +46,9 @@ extension  TabTransactionViewController: UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell", for: indexPath) as! TransactionTableViewCell
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Transaction", bundle: nil).instantiateViewController(identifier: "TransactionDetailViewController") as! TransactionDetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

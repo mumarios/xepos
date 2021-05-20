@@ -43,5 +43,9 @@ extension TransactionViewController: UITableViewDelegate, UITableViewDataSource,
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Transaction", bundle: nil).instantiateViewController(identifier: "TransactionDetailViewController") as! TransactionDetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
  
 }

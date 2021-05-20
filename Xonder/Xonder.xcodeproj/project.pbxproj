@@ -21,6 +21,7 @@
 		3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */; };
 		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
 		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
+		3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */; };
 		3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2400C26554DE600C0DF03 /* Transaction.storyboard */; };
 		3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */; };
 		3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Thin.ttf"; sourceTree = "<group>"; };
 		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
 		3BC2400C26554DE600C0DF03 /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTransactionViewController.swift; sourceTree = "<group>"; };
 		3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */,
+				3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
 				C83FB74026433ED500A87093 /* APIService.swift in Sources */,
+				3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
