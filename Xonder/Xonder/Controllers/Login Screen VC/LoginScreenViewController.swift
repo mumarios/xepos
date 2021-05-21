@@ -44,13 +44,19 @@ class LoginScreenViewController: UIViewController {
 
     }
     
-    @IBAction func btnSignupPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
-        
-    }
+//    @IBAction func btnSignupPressed(_ sender: Any) {
+//        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//            let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
+//        
+//    }
 
+    @IBAction func signupBtnPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupGetStartedScreenViewController") as! SignupGetStartedScreenViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+
+    }
     
     /*
     // MARK: - Navigation

