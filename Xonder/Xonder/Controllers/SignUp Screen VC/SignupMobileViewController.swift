@@ -31,6 +31,9 @@ class SignupMobileViewController: UIViewController {
     }
     
     @IBAction func continueAction(_ sender: Any) {
+       
+        performSegue(withIdentifier: "toSignupVerifyScreen", sender: self)
+
 //        if mobileField.text!.isEmpty{
 //            let alertPopup = UIAlertController(title: "Empty Field", message: "Please Check Fields", preferredStyle: .alert)
 //            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
