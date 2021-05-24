@@ -13,11 +13,13 @@ class GetStartedScreenViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func getStartedBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "toLoginScreen", sender: self)
 
+        
     }
     
     /*

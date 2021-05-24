@@ -15,7 +15,10 @@ class SelectSubcategoryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func continueBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toDigitCodeVC", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

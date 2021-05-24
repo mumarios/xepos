@@ -24,9 +24,10 @@ class SignupBusinessSelectionViewController: UIViewController {
     }
     
     @IBAction func companyAction(_ sender: Any) {
+    
         
-        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignupMobileViewController") as? SignupMobileViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
+//        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignupMobileViewController") as? SignupMobileViewController
+//        self.navigationController?.pushViewController(vc!, animated: true)
 
 //        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignupMobileViewController") as? SignupMobileViewController
 //        vc?.modalPresentationStyle = .fullScreen

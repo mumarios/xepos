@@ -22,6 +22,13 @@ class YourCustomersScreenViewController: UIViewController,UITableViewDelegate,UI
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func continueBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toProductVC", sender: self)
+
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -31,7 +38,7 @@ class YourCustomersScreenViewController: UIViewController,UITableViewDelegate,UI
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return 50
     }
 
 

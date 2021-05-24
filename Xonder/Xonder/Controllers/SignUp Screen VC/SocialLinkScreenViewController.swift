@@ -15,7 +15,10 @@ class SocialLinkScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func continueBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toSelectCustomerVC", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

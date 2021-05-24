@@ -16,6 +16,9 @@ class SelectCategoryViewController: UIViewController {
     }
     
 
+    @IBAction func continueBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toSelectSubcategoryVC", sender: self)
+    }
     /*
     // MARK: - Navigation
 

@@ -15,7 +15,10 @@ class SelectPaymentPerMonthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func continueBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toMoneySendPerMonthVC", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

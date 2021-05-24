@@ -6,16 +6,41 @@
 //
 
 import UIKit
+import SVPinView
 
 class PasswordScreenViewController: UIViewController {
 
+    @IBOutlet weak var pinCodeView: SVPinView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        pinCodeView.pinLength = 4
+        pinCodeView.secureCharacter = "\u{25CF}"
+        pinCodeView.interSpace = 4
+        pinCodeView.textColor = UIColor.black
+        pinCodeView.shouldSecureText = true
+        pinCodeView.style = .box
+
+        pinCodeView.borderLineColor = UIColor.black
+        pinCodeView.activeBorderLineColor = UIColor.lightGray
+        pinCodeView.borderLineThickness = 1
+        pinCodeView.activeBorderLineThickness = 3
+
+        pinCodeView.font = UIFont.systemFont(ofSize: 15)
+        pinCodeView.keyboardType = .phonePad
+        pinCodeView.keyboardAppearance = .default
+        pinCodeView.pinInputAccessoryView = UIView()
+    //    pinCodeView.placeholder = "******"
+        pinCodeView.becomeFirstResponderAtIndex = 0
+        
     }
     
-
+    @IBAction func createBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toHomeAddressVC", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

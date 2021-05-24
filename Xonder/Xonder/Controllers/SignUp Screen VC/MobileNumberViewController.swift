@@ -15,7 +15,10 @@ class MobileNumberViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func continueBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toEmailVc", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

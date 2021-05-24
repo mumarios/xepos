@@ -1,13 +1,13 @@
 //
-//  SignupGetStartedScreenViewController.swift
+//  SignupBussinessSelectViewController.swift
 //  Xonder
 //
-//  Created by Daniyal Waseem on 5/21/21.
+//  Created by Daniyal Waseem on 5/24/21.
 //
 
 import UIKit
 
-class SignupGetStartedScreenViewController: UIViewController {
+class SignupBussinessSelectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,16 +15,17 @@ class SignupGetStartedScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func createBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toSignupMobileScreen", sender: self)
+    @IBAction func companyBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toCountryPicker", sender: self)
     }
     
-    @IBAction func signInBtnDidPressed(_ sender: Any) {
-        
+    @IBAction func freelanceBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toCountryPicker", sender: self)
+    }
+    @IBAction func noBusinessBtnDidPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toCountryPicker", sender: self)
     }
     
-
     /*
     // MARK: - Navigation
 
