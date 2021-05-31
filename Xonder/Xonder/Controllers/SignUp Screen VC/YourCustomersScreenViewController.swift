@@ -35,6 +35,7 @@ class YourCustomersScreenViewController: UIViewController,UITableViewDelegate,UI
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? YourCustomerScreenTableViewCell
+
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
