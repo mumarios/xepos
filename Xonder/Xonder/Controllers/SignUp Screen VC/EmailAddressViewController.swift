@@ -9,11 +9,32 @@ import UIKit
 
 class EmailAddressViewController: UIViewController {
 
+    @IBOutlet weak var emailTxtField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
+    
+    func emailValidation(email:String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let trimmedString = email.trimmingCharacters(in: .whitespaces)
+        let validateEmail = NSPredicate(format: "self Matches %@", emailRegex)
+        let isValidateEmail = validateEmail.evaluate(with: trimmedString)
+        return isValidateEmail
+    }
+
+    @IBAction func continueBtnPressed(_ sender: Any) {
+        if emailValidation(email: emailTxtField.text!) == false {
+            let alertPopup = UIAlertController(title: "Invalid Email Address", message: "", preferredStyle: .alert)
+            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+                self.dismiss(animated: true)
+            }))
+        }
+    }
+    
     
 
     /*

