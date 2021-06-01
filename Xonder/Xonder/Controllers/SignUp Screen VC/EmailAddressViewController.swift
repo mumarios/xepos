@@ -32,7 +32,13 @@ class EmailAddressViewController: UIViewController {
             alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
                 self.dismiss(animated: true)
             }))
+        } else {
+           
         }
+        
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
     }
     
     

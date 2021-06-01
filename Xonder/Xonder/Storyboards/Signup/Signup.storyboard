@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jzv-Fp-Meq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jzv-Fp-Meq">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -356,7 +356,7 @@
                                             <constraint firstAttribute="height" constant="20" id="ofb-Bf-RGe"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+92" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-9E-3kH">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+44" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-9E-3kH">
                                         <rect key="frame" x="50" y="5" width="45" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Fhv-UM-TkV"/>
@@ -719,7 +719,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="jMy-h1-Dty" customClass="YourCustomerScreenTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="260" height="40"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="260" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jMy-h1-Dty" id="Wa1-9h-Ocf">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
@@ -846,7 +846,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="Z2v-Zi-Pca" customClass="YourCustomerScreenTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="260" height="40"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="260" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z2v-Zi-Pca" id="e7b-GR-r56">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
@@ -973,7 +973,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="Yvm-Fo-rP1" customClass="YourCustomerScreenTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="260" height="40"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="260" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yvm-Fo-rP1" id="jw3-YU-V1a">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
@@ -2751,7 +2751,7 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-G8-DE2">
-                                <rect key="frame" x="16" y="271.5" width="288" height="56"/>
+                                <rect key="frame" x="16" y="271.5" width="288" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -2918,15 +2918,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="P2Q-Sz-dgX">
-                                <rect key="frame" x="10" y="30" width="300" height="56"/>
+                                <rect key="frame" x="10" y="30" width="300" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-cy-Cai">
-                                <rect key="frame" x="32" y="114" width="256" height="444"/>
+                                <rect key="frame" x="32" y="109" width="256" height="449"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="UwC-3v-rDC" customClass="CountryListTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="256" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="256" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UwC-3v-rDC" id="rEE-5s-Z4y">
                                             <rect key="frame" x="0.0" y="0.0" width="256" height="43.5"/>
@@ -3435,7 +3435,7 @@
         <segue reference="cvL-S4-nrJ"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Flags" width="38" height="18"/>
+        <image name="Flags" width="219" height="230"/>
         <image name="SignupStartScreenImg" width="310" height="235"/>
         <image name="briefcase" width="25" height="22"/>
         <image name="forwardArrow" width="14" height="12"/>
