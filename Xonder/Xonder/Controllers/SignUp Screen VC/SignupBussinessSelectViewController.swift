@@ -19,6 +19,8 @@ class SignupBussinessSelectViewController: UIViewController {
         performSegue(withIdentifier: "toCountryPicker", sender: self)
     }
     
+    @IBAction func backActon(_ sender: Any) {
+    }
     @IBAction func freelanceBtnDidPressed(_ sender: Any) {
         performSegue(withIdentifier: "toCountryPicker", sender: self)
     }

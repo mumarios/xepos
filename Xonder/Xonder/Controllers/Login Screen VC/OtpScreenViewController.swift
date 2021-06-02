@@ -12,9 +12,10 @@ class OtpScreenViewController: UIViewController {
     
     @IBOutlet weak var pinCodeView: SVPinView!
     
+    @IBOutlet weak var loginBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.loginBtn.isEnabled = false
         pinCodeView.pinLength = 4
         pinCodeView.secureCharacter = "\u{25CF}"
         pinCodeView.interSpace = 4
@@ -34,13 +35,34 @@ class OtpScreenViewController: UIViewController {
     //    pinCodeView.placeholder = "******"
         pinCodeView.becomeFirstResponderAtIndex = 0
 
-
+        pinCodeView.didFinishCallback = { [weak self] pin in
+            self?.loginBtn.isEnabled = ((self?.isValid(Pin: pin)) != nil)
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func isValid(Pin:  String) -> Bool{
+        if Pin == "1111"{
+            return true
+        }
+        return  false
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
 //        performSegue(withIdentifier: "", sender: self)
+         
+  
+      
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
 
+    }
+    
+    
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*

@@ -12,11 +12,14 @@ import SVPinView
 class SignupVerifyNumberViewController: UIViewController {
     
     
+    @IBOutlet weak var verifyBtn: UIButton!
+    @IBOutlet weak var hintField: UILabel!
     @IBOutlet weak var pinCodeView: SVPinView!
-    
+    var mobileNumber  =  String()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.verifyBtn.isEnabled = false
+        self.hintField.text = "Please enter the 4 digit code sent to +44\(mobileNumber) through SMS"
         pinCodeView.pinLength = 4
         pinCodeView.secureCharacter = "\u{25CF}"
         pinCodeView.interSpace = 4
@@ -35,16 +38,33 @@ class SignupVerifyNumberViewController: UIViewController {
         pinCodeView.pinInputAccessoryView = UIView()
     //    pinCodeView.placeholder = "******"
         pinCodeView.becomeFirstResponderAtIndex = 0
-
+        pinCodeView.didFinishCallback = { [weak self] pin in
+            self?.verifyBtn.isEnabled = ((self?.isValid(Pin: pin)) != nil)
+        }
 
         // Do any additional setup after loading the view.
     }
     
+    func isValid(Pin:  String) -> Bool{
+        if Pin == "1111"{
+            return true
+        }
+        return  false
+    }
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toSignupBussinesTypeScreen", sender: self)
+//        performSegue(withIdentifier: "toSignupBussinesTypeScreen", sender: self)
+        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupBussinessSelectViewController") as! SignupBussinessSelectViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        
 
     }
 
+    @IBAction func resendCodeAction(_ sender: Any) {
+    }
+    @IBAction func backAction(_ sender: Any) {
+    }
     
 
     /*

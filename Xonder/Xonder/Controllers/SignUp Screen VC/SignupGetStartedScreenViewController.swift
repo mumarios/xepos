@@ -17,10 +17,16 @@ class SignupGetStartedScreenViewController: UIViewController {
     
     
     @IBAction func createBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toSignupMobileScreen", sender: self)
+        
+        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupAddMobileViewController") as! SignupAddMobileViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        
+        //performSegue(withIdentifier: "toSignupMobileScreen", sender: self)
     }
     
     @IBAction func signInBtnDidPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
         
     }
     

@@ -15,11 +15,13 @@ class LoginScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
     func emailValidation(email:String) -> Bool {
+        if passwordTxtField.text?.count == 0{
+        return false
+        }
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let trimmedString = email.trimmingCharacters(in: .whitespaces)
         let validateEmail = NSPredicate(format: "self Matches %@", emailRegex)
@@ -34,13 +36,16 @@ class LoginScreenViewController: UIViewController {
             alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
                 self.dismiss(animated: true)
             }))
-            
-            let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-                let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
-                self.navigationController?.pushViewController(destinationVC, animated: true)
-        //    performSegue(withIdentifier: "toOtpScreen", sender: self)
+            self.present(alertPopup, animated: true, completion: nil)
             return
+      
+        //    performSegue(withIdentifier: "toOtpScreen", sender: self)
+            
         }
+        
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "OtpScreenViewController") as! OtpScreenViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
 
     }
     

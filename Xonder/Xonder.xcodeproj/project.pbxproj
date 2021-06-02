@@ -23,6 +23,7 @@
 		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
 		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
 		3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */; };
+		3BB771BC266771A700566337 /* BusinessFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB771BB266771A700566337 /* BusinessFinderViewController.swift */; };
 		3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2400C26554DE600C0DF03 /* Transaction.storyboard */; };
 		3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */; };
 		3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */; };
@@ -99,6 +100,7 @@
 		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		3BB771BB266771A700566337 /* BusinessFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessFinderViewController.swift; sourceTree = "<group>"; };
 		3BC2400C26554DE600C0DF03 /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTransactionViewController.swift; sourceTree = "<group>"; };
 		3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				707583282657E9590055DF8A /* CreatePasswordViewController.swift */,
 				707868E6265B8111008EF9B8 /* AddAddressManuallyViewController.swift */,
 				707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */,
+				3BB771BB266771A700566337 /* BusinessFinderViewController.swift */,
 			);
 			path = "SignUp Screen VC";
 			sourceTree = "<group>";
@@ -687,6 +690,7 @@
 				707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */,
 				707868E4265B80E4008EF9B8 /* SelectHomeAddressViewController.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
+				3BB771BC266771A700566337 /* BusinessFinderViewController.swift in Sources */,
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
 				707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,

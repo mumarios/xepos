@@ -9,6 +9,7 @@ import UIKit
 
 class SignupAddMobileViewController: UIViewController {
 
+    @IBOutlet weak var numberField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +18,26 @@ class SignupAddMobileViewController: UIViewController {
     
 
     @IBAction func continueBtnDidPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toSignupVerifyScreen", sender: self)
+        
+        if numberField.text!.count < 9 {
+            let alertPopup = UIAlertController(title: "Invalid Mobile Number", message: "", preferredStyle: .alert)
+            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+                self.dismiss(animated: true)
+            }))
+            self.present(alertPopup, animated: true, completion: nil)
+            return
+        }
+        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
+        destinationVC.mobileNumber = self.numberField.text ?? ""
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        
+        
+//        performSegue(withIdentifier: "toSignupVerifyScreen", sender: self)
+    }
+    @IBAction func backAction(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation
