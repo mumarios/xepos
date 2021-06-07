@@ -13,10 +13,14 @@ class SoleTraderPersonalInfoViewController: UIViewController {
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var titleField: UITextField!
+    
+    let datePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        createDatePicker()
     }
     
 
@@ -68,6 +72,34 @@ class SoleTraderPersonalInfoViewController: UIViewController {
     }
     @IBAction func backAct(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func createDatePicker() {
+        
+        let toolbar  = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        toolbar.setItems([doneBtn], animated: true)
+        
+        dobField.inputAccessoryView = toolbar
+        datePicker.datePickerMode = .date
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+        dobField.inputView = datePicker
+        
+    }
+    
+    @objc func donePressed() {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        
+        dobField.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
     }
     
 }
