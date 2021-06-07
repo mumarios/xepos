@@ -33,6 +33,26 @@ class APIService{
 
     }
     
+    class func searchCompanies(name: String, completion:@escaping([CompanyModel]?,String?)->Void){
+        Provider.services.request(.searchCompanies(obj: name)) { (result) in
+            do{
+                let earnings: [CompanyModel] = try result.decoded(keypath: "data")
+                completion(earnings,nil)
+            }catch {
+                if (error.localizedDescription == "Response status code was unacceptable: 401.") {
+                    if UIApplication.topViewController() != nil{
+                        
+                    }
+
+                }
+                else {
+                    completion(nil,error.localizedDescription)
+                }
+            }
+        }
+       
+    }
+    
     class func login(userObj:[String:Any],
                       completion:@escaping (APIResult<String>)->Void){
         

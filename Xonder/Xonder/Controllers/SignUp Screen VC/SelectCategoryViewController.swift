@@ -32,7 +32,11 @@ class SelectCategoryViewController: UIViewController {
     
 
     @IBAction func continueBtnDidPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toSelectSubcategoryVC", sender: self)
+        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "AddAddressManuallyViewController") as! AddAddressManuallyViewController
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        
+        //performSegue(withIdentifier: "toSelectSubcategoryVC", sender: self)
     }
     
     

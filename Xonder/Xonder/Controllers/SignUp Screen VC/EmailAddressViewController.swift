@@ -32,12 +32,12 @@ class EmailAddressViewController: UIViewController {
             alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
                 self.dismiss(animated: true)
             }))
-        } else {
-           
+            self.navigationController?.present(alertPopup, animated: true, completion: nil)
+            return
         }
-        
-        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+        SoleTraderBusiness.shared.personalEmail = emailTxtField.text
+        let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderPersonalInfoConfirmationViewController") as! SoleTraderPersonalInfoConfirmationViewController
             self.navigationController?.pushViewController(destinationVC, animated: true)
     }
     

@@ -15,7 +15,7 @@ enum Services {
     case signup(obj:[String:Any])
     case getCountries
     case login(obj:[String:Any])
-    case searchCompanies(obj: [String: Any])
+    case searchCompanies(obj: String)
 }
 
 extension Services:TargetType,AccessTokenAuthorizable{
@@ -32,13 +32,13 @@ extension Services:TargetType,AccessTokenAuthorizable{
     var path: String {
         switch self {
         case .signup:
-            return "/signup"
+            return "signup"
         case .getCountries:
             return "get-all-countries"
         case .login:
             return "sanctum/token"
-        case .searchCompanies:
-            return "filters/search-companies"
+        case .searchCompanies(let obj):
+            return "filters/search-companies?q=\(obj)"
 
         }
     }
@@ -66,8 +66,8 @@ extension Services:TargetType,AccessTokenAuthorizable{
         case .getCountries:
             return .requestPlain
             
-        case .searchCompanies(let obj):
-            return .requestParameters(parameters: obj, encoding: JSONEncoding.default)
+        case .searchCompanies:
+            return .requestPlain
     }
     }
     

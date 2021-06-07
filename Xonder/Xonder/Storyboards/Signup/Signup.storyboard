@@ -435,7 +435,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EzB-hS-EoH">
                                         <rect key="frame" x="10" y="5" width="140" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="one-time-code"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1224,7 +1224,7 @@
         <!--Password Screen View Controller-->
         <scene sceneID="EtV-Ll-OLi">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="2xV-5g-MCW" customClass="PasswordScreenViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PasswordScreenViewController" modalPresentationStyle="fullScreen" id="2xV-5g-MCW" customClass="PasswordScreenViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2L2-W4-vdN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1235,7 +1235,7 @@
                                     <constraint firstAttribute="width" constant="40" id="tsp-S6-tyx"/>
                                     <constraint firstAttribute="height" constant="40" id="xNM-JZ-rZf"/>
                                 </constraints>
-                                <state key="normal" image="ic_arrow_back_white"/>
+                                <state key="normal" image="backBtn"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBlack" translatesAutoresizingMaskIntoConstraints="NO" id="hWj-rL-fgG">
                                 <rect key="frame" x="42.5" y="60" width="235" height="50"/>
@@ -1348,7 +1348,7 @@
         <!--Email Address View Controller-->
         <scene sceneID="Mrt-Ol-g5D">
             <objects>
-                <viewController storyboardIdentifier="EmailAddressVC" modalPresentationStyle="fullScreen" id="wfB-7C-AAu" customClass="EmailAddressViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailAddressViewController" modalPresentationStyle="fullScreen" id="wfB-7C-AAu" customClass="EmailAddressViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afU-ss-YaF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1509,7 +1509,7 @@
         <!--Create Password View Controller-->
         <scene sceneID="Hfr-R8-fnj">
             <objects>
-                <viewController storyboardIdentifier="CreatePasswordVC" modalPresentationStyle="fullScreen" id="DDp-eH-dgV" customClass="CreatePasswordViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePasswordViewController" modalPresentationStyle="fullScreen" id="DDp-eH-dgV" customClass="CreatePasswordViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uSb-gH-0Un">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1539,10 +1539,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="test@test.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyZ-C5-Td5">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyZ-C5-Td5">
                                         <rect key="frame" x="5" y="30.5" width="260" height="28.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="DDp-eH-dgV" id="od6-qN-9RU"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-ae-5cS">
                                         <rect key="frame" x="5" y="69" width="260" height="1"/>
@@ -1611,6 +1614,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6nw-pU-Q9f"/>
                     <connections>
+                        <outlet property="passwordTxtField" destination="pyZ-C5-Td5" id="VxP-Lj-iCw"/>
                         <segue destination="5cn-bo-6ub" kind="show" identifier="toAddMobileNumberVC" id="2nE-Ml-OPN"/>
                     </connections>
                 </viewController>
@@ -2197,7 +2201,7 @@
         <!--Select Category View Controller-->
         <scene sceneID="c7z-qD-nnj">
             <objects>
-                <viewController storyboardIdentifier="SelectCategoryVC" modalPresentationStyle="fullScreen" id="yOR-M8-lvN" customClass="SelectCategoryViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectCategoryViewController" modalPresentationStyle="fullScreen" id="yOR-M8-lvN" customClass="SelectCategoryViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7pu-0T-guY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2758,7 +2762,7 @@
         <!--Add Address Manually View Controller-->
         <scene sceneID="gef-00-vd6">
             <objects>
-                <viewController storyboardIdentifier="AddAddressManuallyVC" modalPresentationStyle="fullScreen" id="HAQ-Mc-FLb" customClass="AddAddressManuallyViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddAddressManuallyViewController" modalPresentationStyle="fullScreen" id="HAQ-Mc-FLb" customClass="AddAddressManuallyViewController" customModule="Xonder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZvX-Kf-vfv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2772,6 +2776,10 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-G8-DE2">
+                                <rect key="frame" x="16" y="271.5" width="288" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Manually" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3p-Ra-prD">
                                 <rect key="frame" x="27" y="201" width="273" height="20.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2801,23 +2809,45 @@
                                     <action selector="continueBtnDidPressed:" destination="HAQ-Mc-FLb" eventType="touchUpInside" id="uvN-8m-3wU"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-G8-DE2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B52-s7-aHt">
                                 <rect key="frame" x="16" y="271.5" width="288" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                                <connections>
+                                    <outlet property="delegate" destination="HAQ-Mc-FLb" id="lQO-ie-0Ff"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSz-vm-b0r">
+                                <rect key="frame" x="10" y="10" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9lJ-v5-LOv"/>
+                                    <constraint firstAttribute="height" constant="60" id="fUC-Oy-5DO"/>
+                                </constraints>
+                                <state key="normal" image="backBtn"/>
+                                <connections>
+                                    <action selector="backAct:" destination="HAQ-Mc-FLb" eventType="touchUpInside" id="cRp-hm-zix"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H68-1W-zpq"/>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="H68-1W-zpq" firstAttribute="trailing" secondItem="Xsv-Ty-rNt" secondAttribute="trailing" constant="20" id="1fY-fX-b5H"/>
+                            <constraint firstItem="dSz-vm-b0r" firstAttribute="leading" secondItem="H68-1W-zpq" secondAttribute="leading" constant="10" id="1iD-8r-9NT"/>
                             <constraint firstItem="JGe-G8-DE2" firstAttribute="width" secondItem="ZvX-Kf-vfv" secondAttribute="width" multiplier="0.9" id="C0q-qT-DOB"/>
                             <constraint firstItem="8aJ-l0-OTu" firstAttribute="centerX" secondItem="H68-1W-zpq" secondAttribute="centerX" id="F35-tz-Unc"/>
                             <constraint firstItem="8aJ-l0-OTu" firstAttribute="top" secondItem="H68-1W-zpq" secondAttribute="top" constant="80" id="KDC-tq-vLo"/>
+                            <constraint firstItem="B52-s7-aHt" firstAttribute="height" secondItem="JGe-G8-DE2" secondAttribute="height" id="LMl-lL-02M"/>
                             <constraint firstItem="H68-1W-zpq" firstAttribute="bottom" secondItem="pwV-Lr-5uM" secondAttribute="bottom" constant="21" id="PVo-Uf-fin"/>
                             <constraint firstItem="8aJ-l0-OTu" firstAttribute="width" secondItem="ZvX-Kf-vfv" secondAttribute="width" multiplier="0.64" id="SxT-ik-qKx"/>
                             <constraint firstItem="pwV-Lr-5uM" firstAttribute="width" secondItem="ZvX-Kf-vfv" secondAttribute="width" multiplier="0.7" id="YQ3-7H-2lq"/>
+                            <constraint firstItem="B52-s7-aHt" firstAttribute="centerY" secondItem="JGe-G8-DE2" secondAttribute="centerY" id="aRh-mh-dxO"/>
                             <constraint firstItem="W3p-Ra-prD" firstAttribute="top" secondItem="Xsv-Ty-rNt" secondAttribute="bottom" constant="10" id="bDR-Ug-qRb"/>
                             <constraint firstItem="Xsv-Ty-rNt" firstAttribute="leading" secondItem="H68-1W-zpq" secondAttribute="leading" constant="27" id="buO-fT-mu6"/>
+                            <constraint firstItem="B52-s7-aHt" firstAttribute="centerX" secondItem="JGe-G8-DE2" secondAttribute="centerX" id="dOD-k7-9rk"/>
+                            <constraint firstItem="B52-s7-aHt" firstAttribute="width" secondItem="JGe-G8-DE2" secondAttribute="width" id="irP-uS-lOa"/>
+                            <constraint firstItem="dSz-vm-b0r" firstAttribute="top" secondItem="H68-1W-zpq" secondAttribute="top" constant="10" id="jJM-5D-L8j"/>
                             <constraint firstItem="W3p-Ra-prD" firstAttribute="trailing" secondItem="Xsv-Ty-rNt" secondAttribute="trailing" id="lEW-9L-fwS"/>
                             <constraint firstItem="JGe-G8-DE2" firstAttribute="centerX" secondItem="H68-1W-zpq" secondAttribute="centerX" id="pcc-W5-Bai"/>
                             <constraint firstItem="Xsv-Ty-rNt" firstAttribute="top" secondItem="8aJ-l0-OTu" secondAttribute="bottom" constant="30" id="poa-Fc-r3p"/>
@@ -2828,6 +2858,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Bl9-qe-Nsz"/>
                     <connections>
+                        <outlet property="addressField" destination="B52-s7-aHt" id="Rou-pg-ejr"/>
                         <segue destination="DDp-eH-dgV" kind="show" identifier="toCreatePassManuallyVC" id="7Oi-Mg-2jy"/>
                     </connections>
                 </viewController>
@@ -3272,13 +3303,13 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-3g-lQr">
-                                                <rect key="frame" x="30" y="273.5" width="260" height="189"/>
+                                                <rect key="frame" x="30" y="273.5" width="260" height="202"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ2-M7-WKF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="63"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="67.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="company" translatesAutoresizingMaskIntoConstraints="NO" id="1FK-UG-mWZ">
-                                                                <rect key="frame" x="5" y="24" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="26.5" width="15" height="15"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company No: 512345432" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGn-7A-oSN">
                                                                 <rect key="frame" x="40" y="5" width="205" height="16"/>
@@ -3298,10 +3329,10 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-rS-VgP">
-                                                        <rect key="frame" x="0.0" y="63" width="260" height="63"/>
+                                                        <rect key="frame" x="0.0" y="67.5" width="260" height="67"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="JeL-Pd-6Xz">
-                                                                <rect key="frame" x="5" y="24" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="26" width="15" height="15"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorporated on 4 February 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA8-Mf-diC">
                                                                 <rect key="frame" x="40" y="5" width="205" height="16"/>
@@ -3321,17 +3352,17 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvV-YQ-f1G">
-                                                        <rect key="frame" x="0.0" y="126" width="260" height="63"/>
+                                                        <rect key="frame" x="0.0" y="134.5" width="260" height="67.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-Oy-SWN">
-                                                                <rect key="frame" x="5" y="24" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="26.5" width="15" height="15"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="15" id="suq-ye-3Pg"/>
                                                                     <constraint firstAttribute="width" constant="15" id="xfF-Yc-YE5"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxg-JK-MA0">
-                                                                <rect key="frame" x="40" y="5" width="205" height="53"/>
+                                                                <rect key="frame" x="40" y="5" width="205" height="57.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -3350,13 +3381,13 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gs-NB-Baq">
-                                                <rect key="frame" x="30" y="482.5" width="67.5" height="22"/>
+                                                <rect key="frame" x="30" y="495.5" width="67.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="HouschkaPro-Bold" family="Houschka Pro" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-cz-x1R">
-                                                <rect key="frame" x="30" y="524.5" width="260" height="100"/>
+                                                <rect key="frame" x="30" y="537.5" width="260" height="100"/>
                                                 <subviews>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-yc-cfF">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="100"/>
@@ -3407,19 +3438,19 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aT-Ki-H3q">
-                                                <rect key="frame" x="10" y="634.5" width="300" height="54.5"/>
+                                                <rect key="frame" x="10" y="647.5" width="300" height="41.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-Nu-i6k">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-Nu-i6k">
                                                         <rect key="frame" x="10" y="5" width="18" height="18"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I certify that I am a Person of Significant Control of the company listed above (the “Company”)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmj-BX-fbp">
-                                                        <rect key="frame" x="38" y="5" width="252" height="39.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I certify that I am a Person of Significant Control of the company listed above (the “Company”)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmj-BX-fbp">
+                                                        <rect key="frame" x="38" y="5" width="252" height="26.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6Z-zM-CC8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="54.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="41.5"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
