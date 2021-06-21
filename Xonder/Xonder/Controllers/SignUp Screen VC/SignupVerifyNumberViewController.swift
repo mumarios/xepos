@@ -45,6 +45,10 @@ class SignupVerifyNumberViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func verifyOtpProcess() {
+        
+    }
+    
     func isValid(Pin:  String) -> Bool{
         if Pin == "1111"{
             return true

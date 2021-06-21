@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginScreenViewController: UIViewController {
     
@@ -13,12 +14,21 @@ class LoginScreenViewController: UIViewController {
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
     
+    var userModel = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 //        emailTxtField.delegate = self
 //        passwordTxtField.delegate = self
     }
+    
+    func loginProcess() {
+        APIService.login(userObj:["email":self.emailTxtField.text!,"password":passwordTxtField.text!]) { (success) in
+            
+        }
+        }
+    
     
     func emailValidation(email:String) -> Bool {
         if passwordTxtField.text?.count == 0{

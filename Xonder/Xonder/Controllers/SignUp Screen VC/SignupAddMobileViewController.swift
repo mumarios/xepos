@@ -16,7 +16,13 @@ class SignupAddMobileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    func sendOtpProcess() {
+        APIService.sendOtp(userObj: ["contactPhone":self.numberField.text!]){
+            (success) in
+            
+        }
+    }
+    
     @IBAction func continueBtnDidPressed(_ sender: Any) {
         
         if numberField.text!.count < 9 {

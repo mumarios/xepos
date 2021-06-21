@@ -61,11 +61,7 @@ class APIService{
             switch result{
             case .success(let _):
                 do{
-                    var token:String = try result.decoded(keypath: "token")
-//                User.shared.token = try result.decoded(keypath: "token")
-                    
-//                    UserDefaults.standard.encode(for: User.shared, using: Constants.UserDefaultKeys.user)
-                    
+                    var token:String = try result.decoded(keypath: "token")                    
                     completion(.success(token))
                 }catch _{
                     print("Decode error")
@@ -77,6 +73,42 @@ class APIService{
             }
         }
 
+    }
+    
+    class func sendOtp(userObj:[String:Any],completion:@escaping (APIResult<String>)->Void ) {
+        Provider.services.request(.sendOtp(obj: userObj)) { (result) in
+            switch result{
+            case .success(let _):
+                do{
+                    var sendOtp:String = try result.decoded(keypath: "")
+                    completion(.success(sendOtp))
+                }catch _{
+                    print("Decode error")
+                }
+                break
+            case .failure(let err):
+                print(err.localizedDescription)
+            break
+            }
+        }
+    }
+    
+    class func verifOtp(userObj:[String:Any],completion:@escaping (APIResult<String>)->Void ) {
+        Provider.services.request(.sendOtp(obj: userObj)) { (result) in
+            switch result{
+            case .success(let _):
+                do{
+                    var verifyOtp:String = try result.decoded(keypath: "")
+                    completion(.success(verifyOtp))
+                }catch _{
+                    print("Decode error")
+                }
+                break
+            case .failure(let err):
+                print(err.localizedDescription)
+            break
+            }
+        }
     }
     
     class func getCountries(completion:@escaping([CountryModel]?,String?)->Void) {

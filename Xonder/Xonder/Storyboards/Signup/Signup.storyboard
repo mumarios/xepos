@@ -3296,25 +3296,25 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 <rect key="frame" x="42.5" y="60" width="235" height="52"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crq-Ed-kHd">
-                                                <rect key="frame" x="30" y="162" width="151.5" height="26"/>
+                                                <rect key="frame" x="30" y="162" width="154" height="22"/>
                                                 <fontDescription key="fontDescription" name="HouschkaPro-Bold" family="Houschka Pro" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registered Company Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbv-w2-lt9">
-                                                <rect key="frame" x="30" y="190" width="215.5" height="20.5"/>
+                                                <rect key="frame" x="30" y="186" width="215.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xepos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGH-fD-IdG">
-                                                <rect key="frame" x="30" y="240.5" width="62" height="26"/>
+                                                <rect key="frame" x="30" y="236.5" width="60.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="HouschkaPro-Bold" family="Houschka Pro" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-3g-lQr">
-                                                <rect key="frame" x="30" y="281.5" width="260" height="215"/>
+                                                <rect key="frame" x="30" y="273.5" width="260" height="215"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ2-M7-WKF">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="72"/>
@@ -3392,13 +3392,13 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gs-NB-Baq">
-                                                <rect key="frame" x="30" y="516.5" width="68.5" height="26"/>
+                                                <rect key="frame" x="30" y="508.5" width="67.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="HouschkaPro-Bold" family="Houschka Pro" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-cz-x1R">
-                                                <rect key="frame" x="30" y="562.5" width="260" height="100"/>
+                                                <rect key="frame" x="30" y="550.5" width="260" height="100"/>
                                                 <subviews>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-yc-cfF">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="100"/>
@@ -3414,13 +3414,13 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                                     <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Farat Kausar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLI-G5-bZR">
-                                                                            <rect key="frame" x="10" y="16" width="86" height="15.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farat Kausar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLI-G5-bZR">
+                                                                            <rect key="frame" x="10" y="16" width="84.5" height="15.5"/>
                                                                             <fontDescription key="fontDescription" name="HouschkaPro-Bold" family="Houschka Pro" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="Person of Significant Control &amp; Director" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ku-1R-WWz">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Person of Significant Control &amp; Director" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ku-1R-WWz">
                                                                             <rect key="frame" x="10" y="33.5" width="240" height="13.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3449,19 +3449,19 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aT-Ki-H3q">
-                                                <rect key="frame" x="10" y="672.5" width="300" height="41.5"/>
+                                                <rect key="frame" x="10" y="660.5" width="300" height="54.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-Nu-i6k">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-Nu-i6k">
                                                         <rect key="frame" x="10" y="5" width="18" height="18"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I certify that I am a Person of Significant Control of the company listed above (the “Company”)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmj-BX-fbp">
-                                                        <rect key="frame" x="38" y="5" width="252" height="26.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I certify that I am a Person of Significant Control of the company listed above (the “Company”)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmj-BX-fbp">
+                                                        <rect key="frame" x="38" y="5" width="252" height="39.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6Z-zM-CC8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="41.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="54.5"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3479,20 +3479,20 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqI-Kt-hef">
-                                                <rect key="frame" x="10" y="714" width="300" height="56"/>
+                                                <rect key="frame" x="10" y="715" width="300" height="55"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="FgT-hw-X2Z">
                                                         <rect key="frame" x="10" y="5" width="18" height="18"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA0-q8-zrB">
-                                                        <rect key="frame" x="38" y="5" width="252" height="41"/>
+                                                        <rect key="frame" x="38" y="5" width="252" height="40"/>
                                                         <string key="text">Where I am also a Director of the Company: I have been authorised by the Company, as a Director, to open and operate a business account for the Company with Xonder Bank Limited</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8B-6i-IXr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="56"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="55"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
