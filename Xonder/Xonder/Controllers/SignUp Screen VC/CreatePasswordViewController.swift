@@ -48,7 +48,9 @@ class CreatePasswordViewController: UIViewController {
         guard let city = SoleTraderBusiness.shared.city    else {return}
         guard let pAdd = SoleTraderBusiness.shared.personalAdd    else {return}
         guard let businessName = SoleTraderBusiness.shared.businessName    else {return}
+        guard let wb = SoleTraderBusiness.shared.web else {return}
          let companyDate = "2020-05-10T22:01:52.5183184+01:00"
+        guard let titl = SoleTraderBusiness.shared.title else {return}
         guard let pw = passwordTxtField.text else {return}
         
 //        APIService.signup(userObj: ["firstName" : fName,  "lastName": Lname ,"email": email, "password": pw, "password_confirmation": pw, "device_name": "iOS", "dateOfBirth": dob, "have_you_lived_here_for_more_then_six_month": true, "terms_and_condition": true,  "business_name": businessName, "contactPhone":phone, "industryCode": "AccommodationAndFoodServices", "type": "LimitedCompany","incorporationDate": companyDate, "companyRegistrationNumber":cNum, "isRegulated": false, "tradingAddressLine1": add, "tradingAddressCountryCode": "GB", "tradingAddressPostCode": postal, "tradingAddressCity": city, "registeredAddressLine1":pAdd, "registeredAddressCountryCode": "GB"    ]) { (response) in
@@ -66,18 +68,22 @@ class CreatePasswordViewController: UIViewController {
         
         let urlString = "http://198.244.142.151/api/user/sign-up"
 
-        Alamofire.request(urlString, method: .post, parameters: ["firstName" : fName,  "lastName": Lname ,"email": email, "password": pw, "password_confirmation": pw, "device_name": "iOS", "dateOfBirth": dob, "have_you_lived_here_for_more_then_six_month": true, "terms_and_condition": true,  "business_name": businessName, "contactPhone":phone, "industryCode": "AccommodationAndFoodServices", "type": "LimitedCompany","incorporationDate": companyDate, "companyRegistrationNumber":cNum, "isRegulated": false, "tradingAddressLine1": add, "tradingAddressCountryCode": "GB", "tradingAddressPostCode": postal, "tradingAddressCity": city, "registeredAddressLine1":pAdd, "registeredAddressCountryCode": "GB", "registeredAddressPostCode": "B90 2EL", "registeredAddressCity": "London"],encoding: JSONEncoding.default, headers: ["Content-Type": "application/json", "Accept":"application/json" ]).responseJSON {
+        Alamofire.request(urlString, method: .post, parameters: ["firstName" : fName,  "lastName": Lname ,"email": email, "password": pw, "title": titl, "password_confirmation": pw, "device_name": "iOS", "dateOfBirth": dob, "have_you_lived_here_for_more_then_six_month": true, "terms_and_condition": true,  "business_name": businessName, "contactPhone":phone, "industryCode": "AccommodationAndFoodServices", "type": "SoleTrader","incorporationDate": companyDate, "companyRegistrationNumber":cNum, "isRegulated": false, "tradingAddressLine1": add, "tradingAddressCountryCode": "GB", "tradingAddressPostCode": postal, "tradingAddressCity": city, "registeredAddressLine1":pAdd, "middleName": "", "purpose_of_account": "Pay to Friend", "registeredAddressCountryCode": "GB", "web_url": wb, "documentType": "", "file": "", "personalUserAddressLine1": "12 purple place", "personalUserAddressCountryCode": "GB", "personalUserAddressPostCode": "SW34 5TJ", "personalUserAddressCity": "London",  "registeredAddressPostCode": "B90 2EL", "registeredAddressCity": "London"],encoding: JSONEncoding.default, headers: ["Content-Type": "application/json", "Accept":"application/json" ]).responseJSON {
         response in
           switch response.result {
                         case .success:
+                            if response.response?.statusCode == 200{
                             print(response)
                             let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
                                 let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
                                 self.navigationController?.pushViewController(destinationVC, animated: true)
+                            }else{
+                                
+                            }
 
                             break
                         case .failure(let error):
-
+                            Alert.show(message: error.localizedDescription)
                             print(error)
                         }
         }

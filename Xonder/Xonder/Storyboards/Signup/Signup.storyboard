@@ -3321,7 +3321,7 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="63.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="company" translatesAutoresizingMaskIntoConstraints="NO" id="1FK-UG-mWZ">
-                                                                <rect key="frame" x="5" y="24" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="24.5" width="15" height="15"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company No: 512345432" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGn-7A-oSN">
                                                                 <rect key="frame" x="40" y="5" width="205" height="16"/>

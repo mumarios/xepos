@@ -14,7 +14,7 @@ class Alert{
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         let attributedText = NSMutableAttributedString(string: message, attributes: [
-            NSAttributedString.Key.font: UIFont(name: "SourceSansPro-SemiBold", size: 15.0)!,
+            NSAttributedString.Key.font: UIFont(name: "System", size: 15.0)!,
             NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         alertController.setValue(attributedText, forKey: "attributedMessage")
         

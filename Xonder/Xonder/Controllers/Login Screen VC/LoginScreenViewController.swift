@@ -54,11 +54,48 @@ class LoginScreenViewController: UIViewController {
         //    performSegue(withIdentifier: "toOtpScreen", sender: self)
             
         }
+        login()
         
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "OtpScreenViewController") as! OtpScreenViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+//        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+//            let destinationVC = storyboard.instantiateViewController(withIdentifier: "OtpScreenViewController") as! OtpScreenViewController
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
 
+    }
+    
+    func login(){
+        let urlString = "http://198.244.142.151/api/sanctum/token"
+
+        Alamofire.request(urlString, method: .post, parameters: ["email": emailTxtField.text ?? "", "password": passwordTxtField.text ?? "", "device_name": "iOS"],encoding: JSONEncoding.default, headers: ["Content-Type": "application/json", "Accept":"application/json" ]).responseJSON {
+        response in
+          switch response.result {
+                        case .success:
+                            if response.response?.statusCode == 200{
+                            print(response)
+                            let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                                let destinationVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
+                                self.navigationController?.pushViewController(destinationVC, animated: true)
+                            } else {
+                                let alertPopup = UIAlertController(title: "Invalid Credintials", message: "Please enter registered email and password", preferredStyle: .alert)
+                                alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+                                    self.dismiss(animated: true)
+                                }))
+                                self.present(alertPopup, animated: true, completion: nil)
+                            }
+
+                            break
+                        case .failure(let error):
+                            let alertPopup = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+                                self.dismiss(animated: true)
+                            }))
+                            self.present(alertPopup, animated: true, completion: nil)
+                            print(error)
+                        }
+        }
+        
+        
+    //}
+    
     }
     
 //    @IBAction func btnSignupPressed(_ sender: Any) {

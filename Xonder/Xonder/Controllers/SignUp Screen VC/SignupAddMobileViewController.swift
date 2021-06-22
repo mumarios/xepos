@@ -17,7 +17,7 @@ class SignupAddMobileViewController: UIViewController {
     }
     
     func sendOtpProcess() {
-        APIService.sendOtp(userObj: ["contactPhone":"+92\(self.numberField.text!)"]){
+        APIService.sendOtp(userObj: ["contactPhone":"+44\(self.numberField.text!)"]){
             (success) in
             
             let storyboard = UIStoryboard(name: "Signup", bundle: nil)
