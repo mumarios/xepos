@@ -7,22 +7,23 @@
 
 import UIKit
 import SVPinView
-
+import Foundation
 
 class SignupVerifyNumberViewController: UIViewController {
     
     
     @IBOutlet weak var verifyBtn: UIButton!
+    @IBOutlet weak var wrongCodee: UIButton!
     @IBOutlet weak var hintField: UILabel!
     @IBOutlet weak var pinCodeView: SVPinView!
     var mobileNumber  =  String()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.verifyBtn.isEnabled = false
-        self.hintField.text = "Please enter the 4 digit code sent to +44\(mobileNumber) through SMS"
-        pinCodeView.pinLength = 4
+        self.hintField.text = "Please enter the 6 digit code sent to +44\(mobileNumber) through SMS"
+        pinCodeView.pinLength = 6
         pinCodeView.secureCharacter = "\u{25CF}"
-        pinCodeView.interSpace = 4
+        pinCodeView.interSpace = 3
         pinCodeView.textColor = UIColor.black
         pinCodeView.shouldSecureText = true
         pinCodeView.style = .box
@@ -46,8 +47,24 @@ class SignupVerifyNumberViewController: UIViewController {
     }
     
     func verifyOtpProcess() {
+        APIService.verifOtp(userObj: ["verification_code":"\(self.pinCodeView.getPin())", "contactPhone": "+92\(self.mobileNumber)"]){
+            result in
+            
+            switch result{
+            case .success(let msg):
+                print(msg)
+            case .failure(let msg):
+                print(msg)
+                
+                self.wrongCodee.isHidden = false
+            }
+            
+        }
         
+     
     }
+    
+    
     
     func isValid(Pin:  String) -> Bool{
         if Pin == "1111"{
@@ -57,17 +74,22 @@ class SignupVerifyNumberViewController: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        verifyOtpProcess()
 //        performSegue(withIdentifier: "toSignupBussinesTypeScreen", sender: self)
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupBussinessSelectViewController") as! SignupBussinessSelectViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
         
+        
+//        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+//            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupBussinessSelectViewController") as! SignupBussinessSelectViewController
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
+//
 
     }
 
     @IBAction func resendCodeAction(_ sender: Any) {
+        self.wrongCodee.isHidden = true
     }
     @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 

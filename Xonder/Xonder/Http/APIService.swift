@@ -75,12 +75,13 @@ class APIService{
 
     }
     
-    class func sendOtp(userObj:[String:Any],completion:@escaping (APIResult<String>)->Void ) {
+    class func sendOtp(userObj:[String:Any],completion:@escaping (APIResult<String>)->Void) {
         Provider.services.request(.sendOtp(obj: userObj)) { (result) in
             switch result{
             case .success(let _):
                 do{
-                    var sendOtp:String = try result.decoded(keypath: "")
+                  //  completion(.success("Succes"))
+                    var sendOtp:String = try result.decoded(keypath: "message")
                     completion(.success(sendOtp))
                 }catch _{
                     print("Decode error")
@@ -94,17 +95,18 @@ class APIService{
     }
     
     class func verifOtp(userObj:[String:Any],completion:@escaping (APIResult<String>)->Void ) {
-        Provider.services.request(.sendOtp(obj: userObj)) { (result) in
+        Provider.services.request(.verifyOtp(obj: userObj)) { (result) in
             switch result{
             case .success(let _):
                 do{
-                    var verifyOtp:String = try result.decoded(keypath: "")
+                    let verifyOtp:String = try result.decoded(keypath: "message")
                     completion(.success(verifyOtp))
                 }catch _{
                     print("Decode error")
                 }
                 break
             case .failure(let err):
+                completion(.failure("Fail"))
                 print(err.localizedDescription)
             break
             }

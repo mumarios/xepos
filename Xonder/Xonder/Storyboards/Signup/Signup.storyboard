@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jzv-Fp-Meq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jzv-Fp-Meq">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -649,15 +649,15 @@
                                     <action selector="loginBtnPressed:" destination="JE7-gd-QGI" eventType="touchUpInside" id="UaV-qJ-q6i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTH-LM-tNx">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTH-LM-tNx">
                                 <rect key="frame" x="48" y="353.5" width="224" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="thI-gc-ZHp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Wrong Number">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Wrong Code">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -710,6 +710,7 @@
                         <outlet property="hintField" destination="T5Z-dL-gwR" id="vcQ-wF-rC3"/>
                         <outlet property="pinCodeView" destination="HjT-Hn-mY3" id="51G-Bc-dS4"/>
                         <outlet property="verifyBtn" destination="eNC-FB-1TJ" id="dQD-FW-aTw"/>
+                        <outlet property="wrongCodee" destination="FTH-LM-tNx" id="Eqq-Ol-NmN"/>
                         <segue destination="pyn-yN-axG" kind="show" identifier="toSignupBussinesTypeScreen" id="YFi-WM-gTB"/>
                     </connections>
                 </viewController>
@@ -771,7 +772,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="jMy-h1-Dty" customClass="YourCustomerScreenTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="260" height="40"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="260" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jMy-h1-Dty" id="Wa1-9h-Ocf">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
@@ -898,7 +899,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="Z2v-Zi-Pca" customClass="YourCustomerScreenTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="260" height="40"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="260" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z2v-Zi-Pca" id="e7b-GR-r56">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
@@ -1025,7 +1026,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="Yvm-Fo-rP1" customClass="YourCustomerScreenTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="260" height="40"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="260" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yvm-Fo-rP1" id="jw3-YU-V1a">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
@@ -2785,7 +2786,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-G8-DE2">
-                                <rect key="frame" x="16" y="271.5" width="288" height="56"/>
+                                <rect key="frame" x="16" y="271.5" width="288" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Manually" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3p-Ra-prD">
@@ -2818,7 +2819,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B52-s7-aHt">
-                                <rect key="frame" x="16" y="271.5" width="288" height="56"/>
+                                <rect key="frame" x="16" y="271.5" width="288" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -3011,15 +3012,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="P2Q-Sz-dgX">
-                                <rect key="frame" x="10" y="30" width="300" height="56"/>
+                                <rect key="frame" x="10" y="30" width="300" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-cy-Cai">
-                                <rect key="frame" x="32" y="114" width="256" height="444"/>
+                                <rect key="frame" x="32" y="109" width="256" height="449"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="UwC-3v-rDC" customClass="CountryListTableViewCell" customModule="Xonder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="256" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="256" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UwC-3v-rDC" id="rEE-5s-Z4y">
                                             <rect key="frame" x="0.0" y="0.0" width="256" height="43.5"/>
@@ -3190,7 +3191,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dEl-f4-7az">
-                                                <rect key="frame" x="0.0" y="28" width="240" height="80"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="240" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dEl-f4-7az" id="puv-xG-t5f">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
@@ -3314,13 +3315,13 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-3g-lQr">
-                                                <rect key="frame" x="30" y="273.5" width="260" height="215"/>
+                                                <rect key="frame" x="30" y="273.5" width="260" height="189"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ2-M7-WKF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="72"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="63.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="company" translatesAutoresizingMaskIntoConstraints="NO" id="1FK-UG-mWZ">
-                                                                <rect key="frame" x="5" y="28.5" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="24" width="15" height="15"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company No: 512345432" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGn-7A-oSN">
                                                                 <rect key="frame" x="40" y="5" width="205" height="16"/>
@@ -3340,10 +3341,10 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-rS-VgP">
-                                                        <rect key="frame" x="0.0" y="72" width="260" height="71"/>
+                                                        <rect key="frame" x="0.0" y="63.5" width="260" height="62"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="JeL-Pd-6Xz">
-                                                                <rect key="frame" x="5" y="28" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="23.5" width="15" height="15"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorporated on 4 February 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA8-Mf-diC">
                                                                 <rect key="frame" x="40" y="5" width="205" height="16"/>
@@ -3363,17 +3364,17 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvV-YQ-f1G">
-                                                        <rect key="frame" x="0.0" y="143" width="260" height="72"/>
+                                                        <rect key="frame" x="0.0" y="125.5" width="260" height="63.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-Oy-SWN">
-                                                                <rect key="frame" x="5" y="28.5" width="15" height="15"/>
+                                                                <rect key="frame" x="5" y="24.5" width="15" height="15"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="15" id="suq-ye-3Pg"/>
                                                                     <constraint firstAttribute="width" constant="15" id="xfF-Yc-YE5"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxg-JK-MA0">
-                                                                <rect key="frame" x="40" y="5" width="205" height="47"/>
+                                                                <rect key="frame" x="40" y="5" width="205" height="53.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -3392,13 +3393,13 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gs-NB-Baq">
-                                                <rect key="frame" x="30" y="508.5" width="67.5" height="22"/>
+                                                <rect key="frame" x="30" y="482.5" width="67.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="HouschkaPro-Bold" family="Houschka Pro" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-cz-x1R">
-                                                <rect key="frame" x="30" y="550.5" width="260" height="100"/>
+                                                <rect key="frame" x="30" y="524.5" width="260" height="100"/>
                                                 <subviews>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-yc-cfF">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="100"/>
@@ -3408,7 +3409,7 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                         </constraints>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZRc-tq-hQz">
-                                                                <rect key="frame" x="0.0" y="28" width="260" height="50"/>
+                                                                <rect key="frame" x="0.0" y="24.5" width="260" height="50"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZRc-tq-hQz" id="77Q-A8-8El">
                                                                     <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
@@ -3449,7 +3450,7 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aT-Ki-H3q">
-                                                <rect key="frame" x="10" y="660.5" width="300" height="54.5"/>
+                                                <rect key="frame" x="10" y="634.5" width="300" height="54.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-Nu-i6k">
                                                         <rect key="frame" x="10" y="5" width="18" height="18"/>
@@ -3479,20 +3480,20 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqI-Kt-hef">
-                                                <rect key="frame" x="10" y="715" width="300" height="55"/>
+                                                <rect key="frame" x="10" y="689" width="300" height="81"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="FgT-hw-X2Z">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="checkboxBlank" translatesAutoresizingMaskIntoConstraints="NO" id="FgT-hw-X2Z">
                                                         <rect key="frame" x="10" y="5" width="18" height="18"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA0-q8-zrB">
-                                                        <rect key="frame" x="38" y="5" width="252" height="40"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA0-q8-zrB">
+                                                        <rect key="frame" x="38" y="5" width="252" height="66"/>
                                                         <string key="text">Where I am also a Director of the Company: I have been authorised by the Company, as a Director, to open and operate a business account for the Company with Xonder Bank Limited</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8B-6i-IXr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="81"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -4064,6 +4065,9 @@ The Exchange, 26  Haslucks Green Road, Shirley, Solihull, England, B90 2EL</stri
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -17,8 +17,13 @@ class SignupAddMobileViewController: UIViewController {
     }
     
     func sendOtpProcess() {
-        APIService.sendOtp(userObj: ["contactPhone":self.numberField.text!]){
+        APIService.sendOtp(userObj: ["contactPhone":"+92\(self.numberField.text!)"]){
             (success) in
+            
+            let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+                let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
+            destinationVC.mobileNumber = self.numberField.text ?? ""
+                self.navigationController?.pushViewController(destinationVC, animated: true)
             
         }
     }
@@ -33,10 +38,8 @@ class SignupAddMobileViewController: UIViewController {
             self.present(alertPopup, animated: true, completion: nil)
             return
         }
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
-        destinationVC.mobileNumber = self.numberField.text ?? ""
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+        sendOtpProcess()
+  
         
         
 //        performSegue(withIdentifier: "toSignupVerifyScreen", sender: self)
