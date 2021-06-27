@@ -64,7 +64,7 @@
                                                 <rect key="frame" x="165.5" y="0.0" width="83" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkT-ca-qkF">
-                                                        <rect key="frame" x="6.5" y="12.5" width="70" height="45"/>
+                                                        <rect key="frame" x="34.5" y="24" width="14.5" height="22"/>
                                                         <state key="normal" image="home"/>
                                                         <connections>
                                                             <action selector="homeAct:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nVG-Qf-xCV"/>
@@ -191,7 +191,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£5.49" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPj-mW-Xpg">
                                                             <rect key="frame" x="316.5" y="66" width="47.5" height="18"/>
                                                             <fontDescription key="fontDescription" name="HouschkaPro-DemiBold" family="Houschka Pro" pointSize="18"/>
-                                                            <color key="textColor" red="0.1764705882" green="0.79607843140000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.36862745099999999" green="0.38823529410000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzb-Ff-xde">
@@ -285,7 +285,7 @@
                                                             <rect key="frame" x="30" y="20" width="6" height="10"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.1764705882" green="0.79607843140000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.36862745099999999" green="0.38823529410000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="lFm-jZ-c7t" secondAttribute="trailing" constant="30" id="QJG-yi-glt"/>
                                                         <constraint firstItem="zY6-AU-m0r" firstAttribute="centerY" secondItem="vy2-3u-4wS" secondAttribute="centerY" id="QN2-uc-43F"/>
@@ -423,7 +423,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDn-1Z-XD0">
                                         <rect key="frame" x="117" y="114" width="100" height="35"/>
-                                        <color key="backgroundColor" red="0.1764705882" green="0.79607843140000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.38823529410000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="2Eb-GL-Ews"/>
                                             <constraint firstAttribute="width" constant="100" id="Flv-xF-z3O"/>
@@ -450,7 +450,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contactless" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBS-3T-NCL">
                                         <rect key="frame" x="139" y="196" width="56" height="11"/>
                                         <fontDescription key="fontDescription" name="HouschkaPro-DemiBold" family="Houschka Pro" pointSize="11"/>
-                                        <color key="textColor" red="0.1764705882" green="0.79607843140000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.38823529410000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£5.49" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqz-CY-EWu">
@@ -462,7 +462,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 May" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsK-Jw-eGP">
                                         <rect key="frame" x="149" y="249" width="36.5" height="11"/>
                                         <fontDescription key="fontDescription" name="HouschkaPro-DemiBold" family="Houschka Pro" pointSize="11"/>
-                                        <color key="textColor" red="0.1764705882" green="0.79607843140000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.38823529410000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -570,7 +570,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£5.49" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qug-Sr-LhS">
                                         <rect key="frame" x="142" y="120" width="50" height="19"/>
                                         <fontDescription key="fontDescription" name="HouschkaPro-DemiBold" family="Houschka Pro" pointSize="19"/>
-                                        <color key="textColor" red="0.1764705882" green="0.79607843140000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.38823529410000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 Transactions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-RM-4tt">
@@ -656,7 +656,7 @@
         <image name="backBtn" width="10" height="17"/>
         <image name="card" width="70" height="39.5"/>
         <image name="companyIcon" width="162.5" height="130"/>
-        <image name="home" width="70" height="45"/>
+        <image name="home" width="14.5" height="14.5"/>
         <image name="left-arrow" width="6" height="10"/>
         <image name="property" width="70" height="43.5"/>
         <image name="rightArrow" width="6" height="10"/>
