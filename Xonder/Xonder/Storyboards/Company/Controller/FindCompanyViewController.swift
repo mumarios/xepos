@@ -10,6 +10,8 @@ import UIKit
 class FindCompanyViewController: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var searchField: UITextField!
+    
+    var companies = [companyData]()
     private var textFieldValue = "" {
         didSet {
             debouncer.call()
@@ -35,32 +37,39 @@ class FindCompanyViewController: UIViewController {
     
     private func debouncerApiCall() {
         print("debouncer api call")
+        APIService.searchCompanies(name: searchField.text!) { (models, error) in
+            if error == nil,models != nil,let companiesList = models{
+                self.companies = companiesList
+                self.tblView.reloadData()
+            }
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
 
 extension FindCompanyViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return companies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyDetailTableViewCell", for: indexPath) as? CompanyDetailTableViewCell{
+            let data = companies[indexPath.row]
+            cell.titleLbl.text = data.title
+            
             return cell
         }
+        
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = companies[indexPath.row]
+        let vc = UIStoryboard(name: "Comapny", bundle: nil).instantiateViewController(withIdentifier: "CompanyDetailViewController") as? ComapanyDetailViewController
+        
+    }
     
 }
 

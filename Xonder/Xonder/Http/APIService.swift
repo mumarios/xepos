@@ -33,10 +33,10 @@ class APIService{
 
     }
     
-    class func searchCompanies(name: String, completion:@escaping([CompanyModel]?,String?)->Void){
-        Provider.services.request(.searchCompanies(obj: name)) { (result) in
+    class func searchCompanies(name: String, completion:@escaping([companyData]?,String?)->Void){
+        Provider.services.request(.searchCompanies(name: name)) { (result) in
             do{
-                let earnings: [CompanyModel] = try result.decoded(keypath: "data")
+                let earnings: [companyData] = try result.decoded(keypath: "data")
                 completion(earnings,nil)
             }catch {
                 if (error.localizedDescription == "Response status code was unacceptable: 401.") {
@@ -184,6 +184,26 @@ class APIService{
             }
         }
     }
+    class func getCompanies(name:String,completion:@escaping([CompanyModel]?,String?)->Void) {
+            Provider.services.request(.searchCompanies(name: name)) { (result) in
+                do{
+                    let earnings: [CompanyModel] = try result.decoded(keypath: "data")
+                    completion(earnings,nil)
+                }catch {
+                    if (error.localizedDescription == "Response status code was unacceptable: 401.") {
+                        if UIApplication.topViewController() != nil{
+                            
+                        }
+    //                    Alert.show(message: error.customDescription, actionTitle: "Ok") {
+    //                        APIService.logout()
+    //                    }
+                    }
+                    else {
+                        completion(nil,error.localizedDescription)
+                    }
+                }
+            }
+        }
 }
 
 

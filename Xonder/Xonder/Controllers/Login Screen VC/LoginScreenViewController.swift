@@ -14,6 +14,7 @@ class LoginScreenViewController: UIViewController {
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
     
+//    var company : companyData?
     var userModel = [User]()
     
     override func viewDidLoad() {

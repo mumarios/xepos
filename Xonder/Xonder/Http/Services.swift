@@ -15,7 +15,7 @@ enum Services {
     case signup(obj:[String:Any])
     case getCountries
     case login(obj:[String:Any])
-    case searchCompanies(obj: String)
+    case searchCompanies(name: String)
     case sendOtp(obj:[String:Any])
     case verifyOtp(obj:[String:Any])
     case getCategories
@@ -41,8 +41,8 @@ extension Services:TargetType,AccessTokenAuthorizable{
             return "get-all-countries"
         case .login:
             return "sanctum/token"
-        case .searchCompanies(let obj):
-            return "filters/search-companies?q=\(obj)"
+        case .searchCompanies:
+            return "filters/search-companies"
         case .sendOtp:
             return "sent-otp-to-number"
         case .verifyOtp:
@@ -78,8 +78,8 @@ extension Services:TargetType,AccessTokenAuthorizable{
         case .getCountries:
             return .requestPlain
             
-        case .searchCompanies:
-            return .requestPlain
+        case .searchCompanies(let name):
+            return .requestParameters(parameters: ["q" : name], encoding: URLEncoding.queryString)
             
         case .getCategories:
             return .requestPlain
