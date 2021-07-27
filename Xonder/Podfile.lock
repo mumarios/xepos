@@ -1,6 +1,12 @@
 PODS:
   - Alamofire (4.9.1)
   - DropDown (2.3.13)
+  - GoogleMaps (5.0.0):
+    - GoogleMaps/Maps (= 5.0.0)
+  - GoogleMaps/Base (5.0.0)
+  - GoogleMaps/Maps (5.0.0):
+    - GoogleMaps/Base
+  - GooglePlaces (5.0.0)
   - IQKeyboardManagerSwift (6.5.6)
   - JGProgressHUD (2.2)
   - Moya (13.0.1):
@@ -14,6 +20,8 @@ PODS:
 
 DEPENDENCIES:
   - DropDown
+  - GoogleMaps
+  - GooglePlaces
   - IQKeyboardManagerSwift
   - JGProgressHUD
   - Moya (~> 13.0)
@@ -24,6 +32,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - DropDown
+    - GoogleMaps
+    - GooglePlaces
     - IQKeyboardManagerSwift
     - JGProgressHUD
     - Moya
@@ -34,6 +44,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GoogleMaps: 600e5e69bdf7f4ed7cac4d6aa96c7ec08a5aa254
+  GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
@@ -41,6 +53,6 @@ SPEC CHECKSUMS:
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
 
-PODFILE CHECKSUM: dba9cc4941c52e0ab91cefd9091240aa54eabd52
+PODFILE CHECKSUM: f1cefc5b8d048fc4d0ec097f549b04ab7bfccd1e
 
 COCOAPODS: 1.10.1

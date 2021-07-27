@@ -18,6 +18,8 @@ enum Services {
     case searchCompanies(obj: String)
     case sendOtp(obj:[String:Any])
     case verifyOtp(obj:[String:Any])
+    case getCategories
+    case getTypes
 }
 
 extension Services:TargetType,AccessTokenAuthorizable{
@@ -45,6 +47,10 @@ extension Services:TargetType,AccessTokenAuthorizable{
             return "sent-otp-to-number"
         case .verifyOtp:
             return "verify-otp-to-number"
+        case .getCategories:
+            return "filters/get-business-industry-code"
+        case .getTypes:
+            return "filters/get-business-industry-type"
 
         }
     }
@@ -75,6 +81,11 @@ extension Services:TargetType,AccessTokenAuthorizable{
         case .searchCompanies:
             return .requestPlain
             
+        case .getCategories:
+            return .requestPlain
+        case .getTypes:
+            return .requestPlain
+            
         case .sendOtp(let obj):
             return .requestParameters(parameters: obj, encoding: JSONEncoding.default)
         case .verifyOtp(let obj):
@@ -91,7 +102,7 @@ extension Services:TargetType,AccessTokenAuthorizable{
     
     var authorizationType: AuthorizationType {
         switch self{
-        case .signup,.login,.searchCompanies,.sendOtp,.verifyOtp:
+        case .signup,.login,.searchCompanies,.sendOtp,.verifyOtp, .getCategories, .getTypes:
             return .none
         default:
             return .bearer

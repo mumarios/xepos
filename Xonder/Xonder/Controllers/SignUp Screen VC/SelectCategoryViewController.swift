@@ -14,27 +14,47 @@ class SelectCategoryViewController: UIViewController {
     @IBOutlet weak var dropDownView: UIView!
     
     let dropDown = DropDown()
-    let dropDownValues = ["Marketing", "Finance", "IT"]
+    var dropDownValues = ["Marketing", "Finance", "IT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getData()
         // Do any additional setup after loading the view.
         titleLabel.text = "Marketing"
-        dropDown.anchorView = dropDownView
-        dropDown.dataSource = dropDownValues
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-          print("Selected item: \(item) at index: \(index)")
-            self.titleLabel.text = dropDownValues[index]
-        }
+     
 
     }
+    @IBAction func backActt(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
+    func getData(){
+        APIService.getCategories(){ (cat,err) in
+            if err == nil{
+                guard let categories = cat else {return}
+                self.dropDownValues.removeAll()
+                for value in categories{
+                    self.dropDownValues.append(value.label ?? "")
+                }
+                self.titleLabel.text = self.dropDownValues.first
+                SoleTraderBusiness.shared.category =  self.titleLabel.text?.replacingOccurrences(of: " ", with: "") //self.titleLabel.text
+                self.dropDown.anchorView = self.dropDownView
+                self.dropDown.dataSource = self.dropDownValues
+                self.dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+                  print("Selected item: \(item) at index: \(index)")
+                    self.titleLabel.text = self.dropDownValues[index]
+                    SoleTraderBusiness.shared.category = self.titleLabel.text?.replacingOccurrences(of: " ", with: "")
+                }
+                self.dropDown.reloadAllComponents()
+            } else {
+                print("fail to load values")
+            }
+        }
+    }
 
     @IBAction func continueBtnDidPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "AddAddressManuallyViewController") as! AddAddressManuallyViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+        let vc = UIStoryboard.init(name: "SignupUmar", bundle: Bundle.main).instantiateViewController(withIdentifier: "SoleTraderBusinessViewController") as? SoleTraderBusinessViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
         
         //performSegue(withIdentifier: "toSelectSubcategoryVC", sender: self)
     }

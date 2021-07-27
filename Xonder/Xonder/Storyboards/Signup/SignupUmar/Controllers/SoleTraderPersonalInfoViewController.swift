@@ -62,8 +62,8 @@ class SoleTraderPersonalInfoViewController: UIViewController {
         SoleTraderBusiness.shared.lastName = lastNameField.text
         SoleTraderBusiness.shared.dob = dobField.text
         
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "EmailAddressViewController") as! EmailAddressViewController
+        let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderHomeAddViewController") as! SoleTraderHomeAddViewController
             self.navigationController?.pushViewController(destinationVC, animated: true)
         
         

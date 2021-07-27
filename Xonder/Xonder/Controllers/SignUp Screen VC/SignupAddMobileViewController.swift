@@ -17,13 +17,31 @@ class SignupAddMobileViewController: UIViewController {
     }
     
     func sendOtpProcess() {
-        APIService.sendOtp(userObj: ["contactPhone":"+44\(self.numberField.text!)"]){
-            (success) in
+        APIService.sendOtp(userObj: ["phone":"+44\(self.numberField.text!)"]){
+            (result) in
+            switch result{
+            case .success(let msg):
+                print(msg)
+                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
+                destinationVC.mobileNumber = self.numberField.text ?? ""
+                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                break
+            case .failure(let msg):
+                let alertPopup = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+                alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+                    self.dismiss(animated: true)
+                }))
+                self.present(alertPopup, animated: true, completion: nil)
+//                remove code
+//                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+//                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
+//                destinationVC.mobileNumber = self.numberField.text ?? ""
+//                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                break
+            }
             
-            let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-                let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
-            destinationVC.mobileNumber = self.numberField.text ?? ""
-                self.navigationController?.pushViewController(destinationVC, animated: true)
+
             
         }
     }

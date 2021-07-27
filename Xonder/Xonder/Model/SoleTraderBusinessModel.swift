@@ -26,5 +26,13 @@ class SoleTraderBusiness{
     var dob: String?
     var personalEmail: String?
     var  companyNumber: String?
+    var category: String?
     var companyDate: String?
+    var personalNum: String?
+    var personalAdd2: String?
+    var personalPost: String?
+    var docType : String?
+    var personalCity: String?
+    
+    
 }

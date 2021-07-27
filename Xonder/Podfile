@@ -13,6 +13,7 @@ target 'Xonder' do
     pod 'JGProgressHUD'
     pod 'SVPinView', '~> 1.0'
     pod 'DropDown'
-
+    pod 'GooglePlaces'
+    pod 'GoogleMaps'
 
 end

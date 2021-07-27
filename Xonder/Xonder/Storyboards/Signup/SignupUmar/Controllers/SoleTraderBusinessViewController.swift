@@ -12,16 +12,35 @@ class SoleTraderBusinessViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var accountLbl: UILabel!
     var accType = "Pay Wages"
+    var array = [String]()
+    var lblArray = [String]()
     
     @IBOutlet weak var businessField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getData()
         // Do any additional setup after loading the view.
     }
     
+    func getData(){
+        APIService.getPurposes(){ (cat,err) in
+            if err == nil{
+                guard let categories = cat else {return}
+                self.array.removeAll()
+                for value in categories{
+                    self.array.append(value.label ?? "")
+                    self.lblArray.append(value.key ?? "")
+                }
+                self.accountLbl.text = self.array.first
+      
+            } else {
+                print("fail to load values")
+            }
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        self.accountLbl.text  = accType
+        //self.accountLbl.text  = accType
     }
     
     @IBAction func showDropDown(_ sender: Any) {
@@ -31,6 +50,7 @@ class SoleTraderBusinessViewController: UIViewController {
         SVC.modalPresentationStyle = .overCurrentContext
         SVC.modalTransitionStyle = .crossDissolve
         SVC.parentVC = self
+        SVC.array = array
        self.present(SVC, animated: true, completion: nil)
         
     }
@@ -65,7 +85,7 @@ class SoleTraderBusinessViewController: UIViewController {
         }
         SoleTraderBusiness.shared.businessName = businessField.text
         SoleTraderBusiness.shared.email = emailField.text
-        SoleTraderBusiness.shared.purpose  = accountLbl.text
+        SoleTraderBusiness.shared.purpose  = accountLbl.text?.replacingOccurrences(of: " ", with: "")
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
             let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderBusinessEmailViewController") as! SoleTraderBusinessEmailViewController
             self.navigationController?.pushViewController(destinationVC, animated: true)

@@ -26,6 +26,8 @@ class SoleTraderBusinessConformationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     @IBAction func checkBtnAct(_ sender: Any) {
         checkout = !checkout
         
@@ -42,8 +44,8 @@ class SoleTraderBusinessConformationViewController: UIViewController {
     
     @IBAction func contAct(_ sender: Any) {
         if checkout{
-            let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-                let destinationVC = storyboard.instantiateViewController(withIdentifier: "SelectCategoryViewController") as! SelectCategoryViewController
+            let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
+                let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderPersonalInfoViewController") as! SoleTraderPersonalInfoViewController
                 self.navigationController?.pushViewController(destinationVC, animated: true)
             
         } else {

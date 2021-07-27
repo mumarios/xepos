@@ -47,7 +47,7 @@ class SignupVerifyNumberViewController: UIViewController {
     }
     
     func verifyOtpProcess() {
-        APIService.verifOtp(userObj: ["verification_code":"\(self.pinCodeView.getPin())", "contactPhone": "+44\(self.mobileNumber)"]){
+        APIService.verifOtp(userObj: ["verification_code":"\(self.pinCodeView.getPin())", "phone": "+44\(self.mobileNumber)"]){
             result in
             
             switch result{
@@ -58,6 +58,11 @@ class SignupVerifyNumberViewController: UIViewController {
                         self.navigationController?.pushViewController(destinationVC, animated: true)
             case .failure(let msg):
                 print(msg)
+                //remove code
+//                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+//                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupBussinessSelectViewController") as! SignupBussinessSelectViewController
+//                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                
                 
                 self.wrongCodee.isHidden = false
             }
@@ -97,7 +102,7 @@ class SignupVerifyNumberViewController: UIViewController {
     }
     
     func sendOtpProcess() {
-        APIService.sendOtp(userObj: ["contactPhone":"+44\(self.mobileNumber)"]){
+        APIService.sendOtp(userObj: ["phone":"+44\(self.mobileNumber)"]){
             (success) in
             
  

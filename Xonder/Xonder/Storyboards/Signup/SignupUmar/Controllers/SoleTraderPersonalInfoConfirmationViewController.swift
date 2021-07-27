@@ -17,13 +17,16 @@ class SoleTraderPersonalInfoConfirmationViewController: UIViewController {
     
     let imgArr  = ["bag", "email", "calendar", "phone", "location"]
     
-    let titleArr = ["Company Number: ", "Email Address: ", "DOB: ", "Telephone: ", "Personal Address: "]
+    let titleArr = ["Company Name: ", "Email Address: ", "DOB: ", "Telephone: ", "Personal Address: "]
     
     var valueArray: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchCompany()
+    ///    searchCompany()
+       // if let cNum = SoleTraderBusiness.shared.companyNumber{
+        self.valueArray = [SoleTraderBusiness.shared.businessName  ?? "", SoleTraderBusiness.shared.email  ?? "", SoleTraderBusiness.shared.dob ?? "", SoleTraderBusiness.shared.num ?? "", SoleTraderBusiness.shared.personalAdd ?? "" ]
+  //      }
         if let tittle = SoleTraderBusiness.shared.title, let fName = SoleTraderBusiness.shared.FirstName, let LName = SoleTraderBusiness.shared.lastName{
         self.nameLbl.text = "\(tittle) \(fName) \(LName)"
         }
@@ -58,9 +61,12 @@ class SoleTraderPersonalInfoConfirmationViewController: UIViewController {
             SoleTraderBusiness.shared.companyDate  = blogPost.data?.first?.incorporation_date
             
             if let cNum = SoleTraderBusiness.shared.companyNumber{
-                self.valueArray = [cNum, SoleTraderBusiness.shared.personalEmail  ?? "", SoleTraderBusiness.shared.dob ?? "", SoleTraderBusiness.shared.num ?? "", SoleTraderBusiness.shared.personalAdd ?? "" ]
+                self.valueArray = [cNum, SoleTraderBusiness.shared.email  ?? "", SoleTraderBusiness.shared.dob ?? "", SoleTraderBusiness.shared.num ?? "", SoleTraderBusiness.shared.personalAdd ?? "" ]
             }
-            self.tblView.reloadData()
+            DispatchQueue.main.async {
+                self.tblView.reloadData()
+            }
+         
             
           semaphore.signal()
         }
@@ -88,8 +94,8 @@ class SoleTraderPersonalInfoConfirmationViewController: UIViewController {
     
     @IBAction func contAct(_ sender: Any) {
         if checkout{
-            let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-                let destinationVC = storyboard.instantiateViewController(withIdentifier: "CreatePasswordViewController") as! CreatePasswordViewController
+            let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
+                let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderDocPreViewController") as! SoleTraderDocPreViewController
                 self.navigationController?.pushViewController(destinationVC, animated: true)
             
         } else {

@@ -37,6 +37,10 @@ class SelectSubcategoryViewController: UIViewController {
         dropDown.show()
     }
     
+    @IBAction func backAct(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

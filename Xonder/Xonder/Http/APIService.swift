@@ -81,14 +81,21 @@ class APIService{
             case .success(let _):
                 do{
                   //  completion(.success("Succes"))
-                    var sendOtp:String = try result.decoded(keypath: "message")
+                    let sendOtp:String = try result.decoded(keypath: "message")
                     completion(.success(sendOtp))
                 }catch _{
                     print("Decode error")
                 }
                 break
-            case .failure(let err):
-                print(err.localizedDescription)
+            case .failure(let _):
+                do{
+                let sendOtp:String = try result.decoded(keypath: "message")
+                completion(.failure(sendOtp))
+               
+                } catch _{
+                    completion(.failure("Number is already registered"))
+                    print("rttt")
+                }
             break
             }
         }
@@ -109,6 +116,50 @@ class APIService{
                 completion(.failure("Fail"))
                 print(err.localizedDescription)
             break
+            }
+        }
+    }
+    
+    class func getCategories(compleion: @escaping ([CategoryData]?, String?)-> Void){
+        Provider.services.request(.getCategories) { (result) in
+            
+            do{
+                let caegories: [CategoryData] = try result.decoded(keypath: "data")
+                compleion(caegories, nil)
+            } catch {
+                if (error.localizedDescription == "Response status code was unacceptable: 400."){
+                    if UIApplication.topViewController() != nil{
+                        
+                    }
+//                    Alert.show(message: error.customDescription, actionTitle: "Ok") {
+//                        APIService.logout()
+//                    }
+                }
+                else {
+                    compleion(nil,error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    class func getPurposes(compleion: @escaping ([CategoryData]?, String?)-> Void){
+        Provider.services.request(.getTypes) { (result) in
+            
+            do{
+                let caegories: [CategoryData] = try result.decoded(keypath: "data")
+                compleion(caegories, nil)
+            } catch {
+                if (error.localizedDescription == "Response status code was unacceptable: 400."){
+                    if UIApplication.topViewController() != nil{
+                        
+                    }
+//                    Alert.show(message: error.customDescription, actionTitle: "Ok") {
+//                        APIService.logout()
+//                    }
+                }
+                else {
+                    compleion(nil,error.localizedDescription)
+                }
             }
         }
     }

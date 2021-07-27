@@ -24,8 +24,10 @@ class SignupBussinessSelectViewController: UIViewController {
     @IBAction func freelanceBtnDidPressed(_ sender: Any) {
       //  performSegue(withIdentifier: "toCountryPicker", sender: self)
         
-                let vc = UIStoryboard.init(name: "SignupUmar", bundle: Bundle.main).instantiateViewController(withIdentifier: "SoleTraderBusinessViewController") as? SoleTraderBusinessViewController
-                self.navigationController?.pushViewController(vc!, animated: true)
+        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "SelectCategoryViewController") as? SelectCategoryViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+            
     }
     @IBAction func noBusinessBtnDidPressed(_ sender: Any) {
        // performSegue(withIdentifier: "toCountryPicker", sender: self)

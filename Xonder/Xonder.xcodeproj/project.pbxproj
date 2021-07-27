@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
+		3B0CBF7726940A1D00CA64F8 /* img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3B0CBF7626940A1D00CA64F8 /* img.jpeg */; };
 		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
 		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
 		3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */; };
+		3B61D176269F522800629666 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61D175269F522800629666 /* ResultViewController.swift */; };
+		3B61D178269F620500629666 /* GooglePlaceManageer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61D177269F620500629666 /* GooglePlaceManageer.swift */; };
 		3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B205264AC38600E9A994 /* MasterViewController.swift */; };
 		3B63B20A264BCCD500E9A994 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B209264BCCD500E9A994 /* ShadowView.swift */; };
 		3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B63B212264BCF7B00E9A994 /* HouschkaPro-Thin.ttf */; };
@@ -25,9 +28,21 @@
 		3B7E5A7D266A8EC700201301 /* SoleTraderPersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E5A7C266A8EC700201301 /* SoleTraderPersonalInfoViewController.swift */; };
 		3B7E5A7F266A929000201301 /* SoleTraderPersonalInfoConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E5A7E266A929000201301 /* SoleTraderPersonalInfoConfirmationViewController.swift */; };
 		3B7E5A83266A968600201301 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E5A81266A968500201301 /* CompanyModel.swift */; };
+		3B8E8C6C269C1E5A005FE352 /* DocumentReadmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E8C6B269C1E5A005FE352 /* DocumentReadmeViewController.swift */; };
+		3B8E8C6E269C25DE005FE352 /* VideoTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E8C6D269C25DE005FE352 /* VideoTermsViewController.swift */; };
 		3B91AB24264BFF4000B0C0EF /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */; };
 		3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */; };
 		3BA6378A2656CE9A00C504FF /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */; };
+		3BB478362694A3D10014903A /* Northeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB4782D2694A3D00014903A /* Northeast.swift */; };
+		3BB478372694A3D10014903A /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB4782E2694A3D10014903A /* Results.swift */; };
+		3BB478382694A3D10014903A /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB4782F2694A3D10014903A /* Viewport.swift */; };
+		3BB478392694A3D10014903A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB478302694A3D10014903A /* Location.swift */; };
+		3BB4783A2694A3D10014903A /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB478312694A3D10014903A /* Geometry.swift */; };
+		3BB4783B2694A3D10014903A /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB478322694A3D10014903A /* Bounds.swift */; };
+		3BB4783C2694A3D10014903A /* GoogleAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB478332694A3D10014903A /* GoogleAddModel.swift */; };
+		3BB4783D2694A3D10014903A /* Address_components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB478342694A3D10014903A /* Address_components.swift */; };
+		3BB4783E2694A3D10014903A /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB478352694A3D10014903A /* Southwest.swift */; };
+		3BB478402694A4520014903A /* GoogleAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB4783F2694A4520014903A /* GoogleAddViewController.swift */; };
 		3BB771BC266771A700566337 /* BusinessFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB771BB266771A700566337 /* BusinessFinderViewController.swift */; };
 		3BB771CF2669218B00566337 /* SignupUmar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB771CE2669218B00566337 /* SignupUmar.storyboard */; };
 		3BBE6C3F266A390300B4DEEB /* SoleTraderBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE6C3E266A390300B4DEEB /* SoleTraderBusinessViewController.swift */; };
@@ -38,6 +53,16 @@
 		3BBE6C4A266A5D2D00B4DEEB /* SoleTraderBusinessConformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE6C49266A5D2D00B4DEEB /* SoleTraderBusinessConformationViewController.swift */; };
 		3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2400C26554DE600C0DF03 /* Transaction.storyboard */; };
 		3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */; };
+		3BE2B482268C5F4100210F64 /* SoleTraderHomeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B481268C5F4100210F64 /* SoleTraderHomeAddViewController.swift */; };
+		3BE2B484268C5FDF00210F64 /* SoleTraderCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B483268C5FDF00210F64 /* SoleTraderCardViewController.swift */; };
+		3BE2B487268C6A2C00210F64 /* CategoryBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B485268C6A2C00210F64 /* CategoryBase.swift */; };
+		3BE2B488268C6A2C00210F64 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B486268C6A2C00210F64 /* CategoryData.swift */; };
+		3BE2B48A268C8A0400210F64 /* SoleTraderDocPreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B489268C8A0400210F64 /* SoleTraderDocPreViewController.swift */; };
+		3BE2B48C268C9B6600210F64 /* SoleTraderDocumenttSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B48B268C9B6600210F64 /* SoleTraderDocumenttSelectionViewController.swift */; };
+		3BE2B48E268CA98800210F64 /* DocumentScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2B48D268CA98800210F64 /* DocumentScanViewController.swift */; };
+		3BF6AFD726B0087B0069634F /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6AFD626B0087B0069634F /* Company.storyboard */; };
+		3BF6AFD926B008990069634F /* FindCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6AFD826B008990069634F /* FindCompanyViewController.swift */; };
+		3BF6AFDC26B00D940069634F /* CompanyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6AFDB26B00D940069634F /* CompanyDetailTableViewCell.swift */; };
 		3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */; };
 		3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */; };
 		3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */; };
@@ -99,9 +124,12 @@
 
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3B0CBF7626940A1D00CA64F8 /* img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpeg; sourceTree = "<group>"; };
 		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
 		3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCustomersScreenViewController.swift; sourceTree = "<group>"; };
+		3B61D175269F522800629666 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		3B61D177269F620500629666 /* GooglePlaceManageer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceManageer.swift; sourceTree = "<group>"; };
 		3B63B205264AC38600E9A994 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		3B63B209264BCCD500E9A994 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		3B63B20D264BCF4300E9A994 /* HouschkaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HouschkaPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -115,9 +143,21 @@
 		3B7E5A7C266A8EC700201301 /* SoleTraderPersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderPersonalInfoViewController.swift; sourceTree = "<group>"; };
 		3B7E5A7E266A929000201301 /* SoleTraderPersonalInfoConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderPersonalInfoConfirmationViewController.swift; sourceTree = "<group>"; };
 		3B7E5A81266A968500201301 /* CompanyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		3B8E8C6B269C1E5A005FE352 /* DocumentReadmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentReadmeViewController.swift; sourceTree = "<group>"; };
+		3B8E8C6D269C25DE005FE352 /* VideoTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTermsViewController.swift; sourceTree = "<group>"; };
 		3B91AB23264BFF4000B0C0EF /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		3B91AB27264BFF7100B0C0EF /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		3BB4782D2694A3D00014903A /* Northeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Northeast.swift; sourceTree = "<group>"; };
+		3BB4782E2694A3D10014903A /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		3BB4782F2694A3D10014903A /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
+		3BB478302694A3D10014903A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3BB478312694A3D10014903A /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		3BB478322694A3D10014903A /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		3BB478332694A3D10014903A /* GoogleAddModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAddModel.swift; sourceTree = "<group>"; };
+		3BB478342694A3D10014903A /* Address_components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address_components.swift; sourceTree = "<group>"; };
+		3BB478352694A3D10014903A /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
+		3BB4783F2694A4520014903A /* GoogleAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAddViewController.swift; sourceTree = "<group>"; };
 		3BB771BB266771A700566337 /* BusinessFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessFinderViewController.swift; sourceTree = "<group>"; };
 		3BB771CE2669218B00566337 /* SignupUmar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignupUmar.storyboard; sourceTree = "<group>"; };
 		3BBE6C3E266A390300B4DEEB /* SoleTraderBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderBusinessViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +168,16 @@
 		3BBE6C49266A5D2D00B4DEEB /* SoleTraderBusinessConformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderBusinessConformationViewController.swift; sourceTree = "<group>"; };
 		3BC2400C26554DE600C0DF03 /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		3BC2400F265550C700C0DF03 /* TabTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTransactionViewController.swift; sourceTree = "<group>"; };
+		3BE2B481268C5F4100210F64 /* SoleTraderHomeAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderHomeAddViewController.swift; sourceTree = "<group>"; };
+		3BE2B483268C5FDF00210F64 /* SoleTraderCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderCardViewController.swift; sourceTree = "<group>"; };
+		3BE2B485268C6A2C00210F64 /* CategoryBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBase.swift; sourceTree = "<group>"; };
+		3BE2B486268C6A2C00210F64 /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		3BE2B489268C8A0400210F64 /* SoleTraderDocPreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderDocPreViewController.swift; sourceTree = "<group>"; };
+		3BE2B48B268C9B6600210F64 /* SoleTraderDocumenttSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleTraderDocumenttSelectionViewController.swift; sourceTree = "<group>"; };
+		3BE2B48D268CA98800210F64 /* DocumentScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScanViewController.swift; sourceTree = "<group>"; };
+		3BF6AFD626B0087B0069634F /* Company.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Company.storyboard; sourceTree = "<group>"; };
+		3BF6AFD826B008990069634F /* FindCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCompanyViewController.swift; sourceTree = "<group>"; };
+		3BF6AFDB26B00D940069634F /* CompanyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3BFD804826528BB600ABE8E3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
 		3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerTableViewCell.swift; sourceTree = "<group>"; };
@@ -273,6 +323,22 @@
 			path = Transaction;
 			sourceTree = "<group>";
 		};
+		3BB4782C2694A3C70014903A /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				3BB478342694A3D10014903A /* Address_components.swift */,
+				3BB478322694A3D10014903A /* Bounds.swift */,
+				3BB478312694A3D10014903A /* Geometry.swift */,
+				3BB478332694A3D10014903A /* GoogleAddModel.swift */,
+				3BB478302694A3D10014903A /* Location.swift */,
+				3BB4782D2694A3D00014903A /* Northeast.swift */,
+				3BB4782E2694A3D10014903A /* Results.swift */,
+				3BB478352694A3D10014903A /* Southwest.swift */,
+				3BB4782F2694A3D10014903A /* Viewport.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
 		3BB771CD2669217400566337 /* SignupUmar */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +360,13 @@
 				3B7E5A78266A646700201301 /* SoleTraderAddressTableViewCell.swift */,
 				3B7E5A7C266A8EC700201301 /* SoleTraderPersonalInfoViewController.swift */,
 				3B7E5A7E266A929000201301 /* SoleTraderPersonalInfoConfirmationViewController.swift */,
+				3BE2B481268C5F4100210F64 /* SoleTraderHomeAddViewController.swift */,
+				3BE2B483268C5FDF00210F64 /* SoleTraderCardViewController.swift */,
+				3BE2B489268C8A0400210F64 /* SoleTraderDocPreViewController.swift */,
+				3BE2B48B268C9B6600210F64 /* SoleTraderDocumenttSelectionViewController.swift */,
+				3BE2B48D268CA98800210F64 /* DocumentScanViewController.swift */,
+				3B8E8C6B269C1E5A005FE352 /* DocumentReadmeViewController.swift */,
+				3B8E8C6D269C25DE005FE352 /* VideoTermsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +386,40 @@
 				3BA637892656CE9A00C504FF /* TransactionDetailViewController.swift */,
 			);
 			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3BF6AFD326B0085B0069634F /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6AFDA26B00D710069634F /* Cell */,
+				3BF6AFD526B0086B0069634F /* View */,
+				3BF6AFD426B008610069634F /* Controller */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		3BF6AFD426B008610069634F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6AFD826B008990069634F /* FindCompanyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3BF6AFD526B0086B0069634F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6AFD626B0087B0069634F /* Company.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF6AFDA26B00D710069634F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6AFDB26B00D940069634F /* CompanyDetailTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3BFD804726528B8900ABE8E3 /* TransactionTableViewCell */ = {
@@ -378,6 +485,8 @@
 				707868E6265B8111008EF9B8 /* AddAddressManuallyViewController.swift */,
 				707868F0265B8924008EF9B8 /* SignupBussinessSelectViewController.swift */,
 				3BB771BB266771A700566337 /* BusinessFinderViewController.swift */,
+				3B61D175269F522800629666 /* ResultViewController.swift */,
+				3BB4783F2694A4520014903A /* GoogleAddViewController.swift */,
 			);
 			path = "SignUp Screen VC";
 			sourceTree = "<group>";
@@ -444,6 +553,7 @@
 		7060360126432A560062039F /* Xonder */ = {
 			isa = PBXGroup;
 			children = (
+				3B0CBF7626940A1D00CA64F8 /* img.jpeg */,
 				3B63B20C264BCF2700E9A994 /* Fonts */,
 				706E3BE0264518A000486D02 /* Helper */,
 				706E3BDF2645185A00486D02 /* Extensions */,
@@ -482,6 +592,7 @@
 		706E3BDA2645178C00486D02 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3BF6AFD326B0085B0069634F /* Company */,
 				3BC2400B26554DD300C0DF03 /* Transaction */,
 				3B008D73264A6ACD00BE9E13 /* Dashboard */,
 				704F32112648C0E10027397B /* Signup */,
@@ -507,6 +618,9 @@
 		706E3BDE2645183600486D02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3BB4782C2694A3C70014903A /* Google */,
+				3BE2B485268C6A2C00210F64 /* CategoryBase.swift */,
+				3BE2B486268C6A2C00210F64 /* CategoryData.swift */,
 				3B7E5A81266A968500201301 /* CompanyModel.swift */,
 				C83FB72726433B5500A87093 /* UserModel.swift */,
 				C8727088264341CC005EFDEA /* CountryModel.swift */,
@@ -536,6 +650,7 @@
 				704FCAF0264521C60025F546 /* Card View */,
 				C872708E264343E0005EFDEA /* Alert.swift */,
 				C83FB72D26433C6D00A87093 /* Plugins.swift */,
+				3B61D177269F620500629666 /* GooglePlaceManageer.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -561,6 +676,7 @@
 				706035FC26432A560062039F /* Frameworks */,
 				706035FD26432A560062039F /* Resources */,
 				7BEA9A0E4477978A64735F4F /* [CP] Embed Pods Frameworks */,
+				C37915DD05469FFBFFDF4431 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -608,6 +724,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF6AFD726B0087B0069634F /* Company.storyboard in Resources */,
 				3B63B213264BCFD100E9A994 /* HouschkaPro-Thin.ttf in Resources */,
 				3B63B214264BCFD100E9A994 /* HouschkaPro-Medium.ttf in Resources */,
 				3B63B215264BCFD100E9A994 /* HouschkaPro-ExtraBold.ttf in Resources */,
@@ -620,6 +737,7 @@
 				704F32132648C13A0027397B /* Signup.storyboard in Resources */,
 				7060360A26432A560062039F /* Main.storyboard in Resources */,
 				3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */,
+				3B0CBF7726940A1D00CA64F8 /* img.jpeg in Resources */,
 				3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */,
 				3BB771CF2669218B00566337 /* SignupUmar.storyboard in Resources */,
 			);
@@ -685,6 +803,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C37915DD05469FFBFFDF4431 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xonder/Pods-Xonder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -694,14 +829,22 @@
 			files = (
 				3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */,
 				3B7E5A7F266A929000201301 /* SoleTraderPersonalInfoConfirmationViewController.swift in Sources */,
+				3B8E8C6C269C1E5A005FE352 /* DocumentReadmeViewController.swift in Sources */,
+				3BE2B48C268C9B6600210F64 /* SoleTraderDocumenttSelectionViewController.swift in Sources */,
 				707583202657E8A40055DF8A /* PasswordScreenViewController.swift in Sources */,
 				707868E7265B8111008EF9B8 /* AddAddressManuallyViewController.swift in Sources */,
 				3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */,
 				3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */,
+				3BB4783C2694A3D10014903A /* GoogleAddModel.swift in Sources */,
+				3BE2B487268C6A2C00210F64 /* CategoryBase.swift in Sources */,
+				3BB4783B2694A3D10014903A /* Bounds.swift in Sources */,
 				7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */,
+				3BE2B488268C6A2C00210F64 /* CategoryData.swift in Sources */,
 				707583082657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift in Sources */,
 				3BBE6C46266A45C800B4DEEB /* SoleTraderBusinessEmailViewController.swift in Sources */,
+				3BE2B48E268CA98800210F64 /* DocumentScanViewController.swift in Sources */,
 				704F322C2648C9CA0027397B /* LoginScreenViewController.swift in Sources */,
+				3BE2B482268C5F4100210F64 /* SoleTraderHomeAddViewController.swift in Sources */,
 				707583022657E3AD0055DF8A /* CountrySelectViewController.swift in Sources */,
 				707583232657E92A0055DF8A /* EmailAddressViewController.swift in Sources */,
 				3B91AB28264BFF7100B0C0EF /* DashboardViewController.swift in Sources */,
@@ -711,19 +854,29 @@
 				707583112657E5E70055DF8A /* YourProductViewController.swift in Sources */,
 				C83FB73D26433EAD00A87093 /* APIResult.swift in Sources */,
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
+				3BE2B48A268C8A0400210F64 /* SoleTraderDocPreViewController.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
+				3BE2B484268C5FDF00210F64 /* SoleTraderCardViewController.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
 				3BBE6C42266A414200B4DEEB /* AccountTypePopViewController.swift in Sources */,
 				3B7E5A79266A646700201301 /* SoleTraderAddressTableViewCell.swift in Sources */,
 				3BBE6C3F266A390300B4DEEB /* SoleTraderBusinessViewController.swift in Sources */,
 				707583172657E7F00055DF8A /* SelectSubcategoryViewController.swift in Sources */,
 				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
+				3BB4783A2694A3D10014903A /* Geometry.swift in Sources */,
+				3BB478392694A3D10014903A /* Location.swift in Sources */,
+				3BB4783D2694A3D10014903A /* Address_components.swift in Sources */,
+				3BB478362694A3D10014903A /* Northeast.swift in Sources */,
+				3BB478382694A3D10014903A /* Viewport.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
 				7075831A2657E8640055DF8A /* DigitCodeViewController.swift in Sources */,
+				3BB478372694A3D10014903A /* Results.swift in Sources */,
 				7075830B2657E4FA0055DF8A /* SelectMoneyViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,
+				3BF6AFDC26B00D940069634F /* CompanyDetailTableViewCell.swift in Sources */,
+				3BB4783E2694A3D10014903A /* Southwest.swift in Sources */,
 				707583142657E7DA0055DF8A /* SelectCategoryViewController.swift in Sources */,
 				7075830E2657E5180055DF8A /* SocialLinkScreenViewController.swift in Sources */,
 				707868ED265B86F5008EF9B8 /* SignupAddMobileViewController.swift in Sources */,
@@ -734,6 +887,7 @@
 				C8727083264340E0005EFDEA /* Extension+Result.swift in Sources */,
 				C89B5B18264336F300263F14 /* Services.swift in Sources */,
 				7075831D2657E8860055DF8A /* PrimaryReasonViewController.swift in Sources */,
+				3B61D176269F522800629666 /* ResultViewController.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
 				3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */,
 				705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */,
@@ -754,6 +908,8 @@
 				3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
 				707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */,
+				3B61D178269F620500629666 /* GooglePlaceManageer.swift in Sources */,
+				3BF6AFD926B008990069634F /* FindCompanyViewController.swift in Sources */,
 				707868E4265B80E4008EF9B8 /* SelectHomeAddressViewController.swift in Sources */,
 				C83FB72B26433BF300A87093 /* Provider.swift in Sources */,
 				3BBE6C48266A4B9400B4DEEB /* SoleTraderBusinessAddressViewController.swift in Sources */,
@@ -765,6 +921,8 @@
 				707583052657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift in Sources */,
 				3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */,
 				7085FA68266E50CC006A17A5 /* Extension+UITextField.swift in Sources */,
+				3B8E8C6E269C25DE005FE352 /* VideoTermsViewController.swift in Sources */,
+				3BB478402694A4520014903A /* GoogleAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,13 +1072,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6QQQF6X4SC;
 				INFOPLIST_FILE = Xonder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Xepos.XonderMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.xonder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -936,13 +1096,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6QQQF6X4SC;
 				INFOPLIST_FILE = Xonder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Xepos.XonderMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.xonder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
