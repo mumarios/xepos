@@ -12,38 +12,23 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-class CompanyModel : Codable {
-	let data : [companyData]?
-
+struct Officers_list : Codable {
+	let name : String?
+	let officer_role : String?
+	let address : Address?
 
 	enum CodingKeys: String, CodingKey {
 
-		case data = "data"
-
+		case name = "name"
+		case officer_role = "officer_role"
+		case address = "address"
 	}
 
-
-
-}
-
-class companyData: Codable{
-    let title : String?
-    let address_snippet : String?
-    let incorporation_date : String?
-    let company_number : String?
-
-    enum CodingKeys: String, CodingKey {
-
-        case title = "title"
-        case address_snippet = "address_snippet"
-        case incorporation_date = "incorporation_date"
-        case company_number = "company_number"
-    }
-
-
+	init(from decoder: Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+		name = try values.decodeIfPresent(String.self, forKey: .name)
+		officer_role = try values.decodeIfPresent(String.self, forKey: .officer_role)
+		address = try values.decodeIfPresent(Address.self, forKey: .address)
+	}
 
 }
-
-
-
-

@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
-		3B0CBF7726940A1D00CA64F8 /* img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3B0CBF7626940A1D00CA64F8 /* img.jpeg */; };
+		3B14DD9026B1A7E900A348A0 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B14DD8F26B1A7E900A348A0 /* PeopleViewController.swift */; };
+		3B33CDDF26B17DDD00FB17A5 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDDE26B17DDD00FB17A5 /* PeopleTableViewCell.swift */; };
+		3B33CDE526B185C800FB17A5 /* Registered_office_address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE026B185C800FB17A5 /* Registered_office_address.swift */; };
+		3B33CDE626B185C800FB17A5 /* CompanyDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */; };
+		3B33CDE726B185C800FB17A5 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE226B185C800FB17A5 /* Address.swift */; };
+		3B33CDE826B185C800FB17A5 /* CompanyDetailsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */; };
+		3B33CDE926B185C800FB17A5 /* Officers_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE426B185C800FB17A5 /* Officers_list.swift */; };
 		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
 		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
 		3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */; };
@@ -80,7 +86,6 @@
 		705AB1702664A81D000928D3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AB16F2664A81D000928D3 /* CheckBox.swift */; };
 		705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C02BB265A951E005638DC /* CountryPickedViewController.swift */; };
 		705DACDB26B0A5330065874D /* ComapanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */; };
-		705DACDE26B0CA470065874D /* CompanyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DACDD26B0CA470065874D /* CompanyDetailTableViewCell.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
 		7060360A26432A560062039F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7060360826432A560062039F /* Main.storyboard */; };
@@ -126,7 +131,13 @@
 
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
-		3B0CBF7626940A1D00CA64F8 /* img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpeg; sourceTree = "<group>"; };
+		3B14DD8F26B1A7E900A348A0 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		3B33CDDE26B17DDD00FB17A5 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		3B33CDE026B185C800FB17A5 /* Registered_office_address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registered_office_address.swift; sourceTree = "<group>"; };
+		3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsData.swift; sourceTree = "<group>"; };
+		3B33CDE226B185C800FB17A5 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsBase.swift; sourceTree = "<group>"; };
+		3B33CDE426B185C800FB17A5 /* Officers_list.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Officers_list.swift; sourceTree = "<group>"; };
 		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
 		3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCustomersScreenViewController.swift; sourceTree = "<group>"; };
@@ -198,7 +209,6 @@
 		705AB16F2664A81D000928D3 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		705C02BB265A951E005638DC /* CountryPickedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickedViewController.swift; sourceTree = "<group>"; };
 		705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComapanyDetailViewController.swift; sourceTree = "<group>"; };
-		705DACDD26B0CA470065874D /* CompanyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailTableViewCell.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7060360626432A560062039F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -406,8 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				3BF6AFD826B008990069634F /* FindCompanyViewController.swift */,
+				3B14DD8F26B1A7E900A348A0 /* PeopleViewController.swift */,
 				705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */,
-				705DACDD26B0CA470065874D /* CompanyDetailTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF6AFDB26B00D940069634F /* CompanyDetailTableViewCell.swift */,
+				3B33CDDE26B17DDD00FB17A5 /* PeopleTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -559,7 +570,6 @@
 		7060360126432A560062039F /* Xonder */ = {
 			isa = PBXGroup;
 			children = (
-				3B0CBF7626940A1D00CA64F8 /* img.jpeg */,
 				3B63B20C264BCF2700E9A994 /* Fonts */,
 				706E3BE0264518A000486D02 /* Helper */,
 				706E3BDF2645185A00486D02 /* Extensions */,
@@ -624,6 +634,11 @@
 		706E3BDE2645183600486D02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B33CDE226B185C800FB17A5 /* Address.swift */,
+				3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */,
+				3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */,
+				3B33CDE426B185C800FB17A5 /* Officers_list.swift */,
+				3B33CDE026B185C800FB17A5 /* Registered_office_address.swift */,
 				3BB4782C2694A3C70014903A /* Google */,
 				3BE2B485268C6A2C00210F64 /* CategoryBase.swift */,
 				3BE2B486268C6A2C00210F64 /* CategoryData.swift */,
@@ -743,7 +758,6 @@
 				704F32132648C13A0027397B /* Signup.storyboard in Resources */,
 				7060360A26432A560062039F /* Main.storyboard in Resources */,
 				3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */,
-				3B0CBF7726940A1D00CA64F8 /* img.jpeg in Resources */,
 				3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */,
 				3BB771CF2669218B00566337 /* SignupUmar.storyboard in Resources */,
 			);
@@ -845,6 +859,7 @@
 				3BE2B487268C6A2C00210F64 /* CategoryBase.swift in Sources */,
 				3BB4783B2694A3D10014903A /* Bounds.swift in Sources */,
 				7062CABA265781DD00D4214F /* YourCustomerScreenTableViewCell.swift in Sources */,
+				3B33CDE926B185C800FB17A5 /* Officers_list.swift in Sources */,
 				3BE2B488268C6A2C00210F64 /* CategoryData.swift in Sources */,
 				707583082657E4BF0055DF8A /* SelectPaymentPerMonthViewController.swift in Sources */,
 				3BBE6C46266A45C800B4DEEB /* SoleTraderBusinessEmailViewController.swift in Sources */,
@@ -866,8 +881,12 @@
 				3BE2B484268C5FDF00210F64 /* SoleTraderCardViewController.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
 				3BBE6C42266A414200B4DEEB /* AccountTypePopViewController.swift in Sources */,
+				3B33CDE826B185C800FB17A5 /* CompanyDetailsBase.swift in Sources */,
+				3B33CDE726B185C800FB17A5 /* Address.swift in Sources */,
 				3B7E5A79266A646700201301 /* SoleTraderAddressTableViewCell.swift in Sources */,
+				3B33CDDF26B17DDD00FB17A5 /* PeopleTableViewCell.swift in Sources */,
 				3BBE6C3F266A390300B4DEEB /* SoleTraderBusinessViewController.swift in Sources */,
+				3B33CDE526B185C800FB17A5 /* Registered_office_address.swift in Sources */,
 				707583172657E7F00055DF8A /* SelectSubcategoryViewController.swift in Sources */,
 				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
 				3BB4783A2694A3D10014903A /* Geometry.swift in Sources */,
@@ -875,7 +894,6 @@
 				3BB4783D2694A3D10014903A /* Address_components.swift in Sources */,
 				3BB478362694A3D10014903A /* Northeast.swift in Sources */,
 				3BB478382694A3D10014903A /* Viewport.swift in Sources */,
-				705DACDE26B0CA470065874D /* CompanyDetailTableViewCell.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
 				7075831A2657E8640055DF8A /* DigitCodeViewController.swift in Sources */,
@@ -914,6 +932,7 @@
 				3B7E5A7D266A8EC700201301 /* SoleTraderPersonalInfoViewController.swift in Sources */,
 				707583262657E9430055DF8A /* MobileNumberViewController.swift in Sources */,
 				3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */,
+				3B33CDE626B185C800FB17A5 /* CompanyDetailsData.swift in Sources */,
 				704F32372648D5B10027397B /* CountryListTableViewCell.swift in Sources */,
 				707868EA265B8215008EF9B8 /* ResidenceCountryPickerViewController.swift in Sources */,
 				3B61D178269F620500629666 /* GooglePlaceManageer.swift in Sources */,
@@ -925,6 +944,7 @@
 				704FCAF42645223E0025F546 /* CardView.swift in Sources */,
 				707D115A2657B5C5001CFBE3 /* SignupGetStartedScreenViewController.swift in Sources */,
 				704FCAFE264522820025F546 /* UIView.swift in Sources */,
+				3B14DD9026B1A7E900A348A0 /* PeopleViewController.swift in Sources */,
 				C83FB7252643388E00A87093 /* Constants.swift in Sources */,
 				707583052657E4280055DF8A /* SelectNumberOfPaymentsViewController.swift in Sources */,
 				3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */,

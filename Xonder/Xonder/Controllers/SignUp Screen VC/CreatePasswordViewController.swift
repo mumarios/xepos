@@ -42,33 +42,27 @@ class CreatePasswordViewController: UIViewController {
     func register(){
         
         
-        guard let fName = SoleTraderBusiness.shared.FirstName else {return}
-        guard let Lname = SoleTraderBusiness.shared.lastName else {return}
-        guard let email = SoleTraderBusiness.shared.email else {return}
-        guard let phone = SoleTraderBusiness.shared.num else {return}
-      //  guard let cNum = SoleTraderBusiness.shared.companyNumber else {return}
-        guard let postal = SoleTraderBusiness.shared.postal else {return}
-        guard let dob = SoleTraderBusiness.shared.dob    else {return}
-        guard let add = SoleTraderBusiness.shared.address    else {return}
-        guard let city = SoleTraderBusiness.shared.city    else {return}
-        guard let pAdd = SoleTraderBusiness.shared.personalAdd    else {return}
-        guard let purpose = SoleTraderBusiness.shared.category else {return}
-        guard let personalAdd1 = SoleTraderBusiness.shared.personalAdd else {
-            return
-        }
-        guard let docType = SoleTraderBusiness.shared.docType else {return}
-        guard let personalpostCode = SoleTraderBusiness.shared.personalPost else {
-            return
-        }
+         let fName = SoleTraderBusiness.shared.FirstName  ?? ""
+         let Lname = SoleTraderBusiness.shared.lastName ?? ""
+         let email = SoleTraderBusiness.shared.email ?? ""
+         let phone = SoleTraderBusiness.shared.num ?? ""
+ 
+         let postal = SoleTraderBusiness.shared.postal ?? ""
+         let dob = SoleTraderBusiness.shared.dob    ?? ""
+         let add = SoleTraderBusiness.shared.address    ?? ""
+         let city = SoleTraderBusiness.shared.city    ?? ""
+         let pAdd = SoleTraderBusiness.shared.personalAdd    ?? ""
+         let purpose = SoleTraderBusiness.shared.category ?? ""
+         let personalAdd1 = SoleTraderBusiness.shared.personalAdd ?? ""
+         let docType = SoleTraderBusiness.shared.docType ?? ""
+         let personalpostCode = SoleTraderBusiness.shared.personalPost ?? ""
         
-        guard let personalCity = SoleTraderBusiness.shared.personalCity else {
-            return
-        }
-        guard let businessName = SoleTraderBusiness.shared.businessName    else {return}
-        guard let wb = SoleTraderBusiness.shared.web else {return}
-         let companyDate = "2020-05-10T22:01:52.5183184+01:00"
-        guard let titl = SoleTraderBusiness.shared.title else {return}
-        guard let pw = passwordTxtField.text else {return}
+         let personalCity = SoleTraderBusiness.shared.personalCity ?? ""
+         let businessName = SoleTraderBusiness.shared.businessName    ?? ""
+         let wb = SoleTraderBusiness.shared.web ?? ""
+       //  let companyDate = "2020-05-10T22:01:52.5183184+01:00"
+         let titl = SoleTraderBusiness.shared.title ?? ""
+         let pw = passwordTxtField.text ?? ""
         
         let uuid = UUID().uuidString
         
@@ -119,157 +113,345 @@ class CreatePasswordViewController: UIViewController {
         }
         var semaphore = DispatchSemaphore (value: 0)
 
-        let parameters = [
-          [
-            "key": "business_name",
-            "value": businessName,
-            "type": "text"
-          ],
-          [
-            "key": "email",
-            "value": email,
-            "type": "text"
-          ],
-          [
-            "key": "web_url",
-            "value": wb,
-            "type": "text"
-          ],
-          [
-            "key": "phone",
-            "value": phone,
-            "type": "text"
-          ],
-          [
-            "key": "trading_address_line1",
-            "value": add,
-            "type": "text"
-          ],
-          [
-            "key": "trading_address_country_code",
-            "value": "GB",
-            "type": "text"
-          ],
-          [
-            "key": "trading_address_post_code",
-            "value": postal,
-            "type": "text"
-          ],
-          [
-            "key": "trading_address_city",
-            "value": city,
-            "type": "text"
-          ],
-          [
-            "key": "industry_code",
-            "value": purpose,
-            "type": "text"
-          ],
-          [
-            "key": "personal_user_address_line1",
-            "value": personalAdd1,
-            "type": "text"
-          ],
-          [
-            "key": "personal_user_address_country_code",
-            "value": "GB",
-            "type": "text"
-          ],
-          [
-            "key": "personal_user_address_post_code",
-            "value": personalpostCode,
-            "type": "text"
-          ],
-          [
-            "key": "personal_user_address_city",
-            "value": personalCity,
-            "type": "text"
-          ],
-          [
-            "key": "title",
-            "value": titl,
-            "type": "text"
-          ],
-          [
-            "key": "first_name",
-            "value": fName,
-            "type": "text"
-          ],
-          [
-            "key": "last_name",
-            "value": Lname,
-            "type": "text"
-          ],
-          [
-            "key": "middle_name",
-            "value": "",
-            "type": "text"
-          ],
-          [
-            "key": "date_of_birth",
-            "value": dob,
-            "type": "text"
-          ],
-          [
-            "key": "password",
-            "value": pw,
-            "type": "text"
-          ],
-          [
-            "key": "password_confirmation",
-            "value": pw,
-            "type": "text"
-          ],
-          [
-            "key": "device_name",
-            "value": "iPhone",
-            "type": "text"
-          ],
-          [
-            "key": "type",
-            "value": "SoleTrader",
-            "type": "text"
-          ],
-          [
-            "key": "incorporation_date",
-            "value": companyDate,
-            "type": "text"
-          ],
-          [
-            "key": "is_regulated",
-            "value": "false",
-            "type": "text"
-          ],
-          [
-            "key": "front_image",
-            "src": path,
-            "type": "file"
-          ],
-          [
-            "key": "back_image",
-            "src": path,
-            "type": "file"
-          ],
-          [
-            "key": "video_attachment",
-            "src": vdoPath,
-            "type": "file"
-          ],
-          [
-            "key": "documentType",
-            "value": "passport",
-            "type": "text"
-          ],
-          [
-            "key": "unique_device_id",
-            "value": uuid,
-            "type": "text"
-          ],
-          [
-            "key": "user_login_pin",
-            "value": "13213123",
-            "type": "text"
-          ]] as [[String : Any]]
+        var parameters =  [[String : Any]]()
+        
+        if SoleTraderBusiness.shared.isBusiness{
+             let cNum = SoleTraderBusiness.shared.companyNumber ?? ""
+             let cDate = SoleTraderBusiness.shared.companyDate ?? ""
+            let tradingadd1 = SoleTraderBusiness.shared.tradingAdd ?? ""
+            let traddingadd2 = SoleTraderBusiness.shared.tradingAdd2 ?? ""
+            let tradingpostal = SoleTraderBusiness.shared.postal ?? ""
+            let tradingCity = SoleTraderBusiness.shared.loc ?? ""
+            parameters  = [
+                [
+                  "key": "tradingAddressLine1",
+                  "value": tradingadd1,
+                  "type": "text"
+                ],
+                [
+                  "key": "tradingAddressCountryCode",
+                  "value": "GB",
+                  "type": "text"
+                ],
+                [
+                  "key": "tradingAddressPostCode",
+                  "value": tradingpostal,
+                  "type": "text"
+                ],
+                [
+                  "key": "tradingAddressCity",
+                  "value": tradingCity,
+                  "type": "text"
+                ],
+                [
+                  "key": "companyRegistrationNumber",
+                  "value": cNum,
+                  "type": "text"
+                ],
+                [
+                  "key": "incorporationDate",
+                  "value": cDate,
+                  "type": "text"
+                ],
+                [
+                  "key": "business_name",
+                  "value": businessName,
+                  "type": "text"
+                ],
+                [
+                  "key": "email",
+                  "value": email,
+                  "type": "text"
+                ],
+                [
+                  "key": "web_url",
+                  "value": wb,
+                  "type": "text"
+                ],
+                [
+                  "key": "phone",
+                  "value": phone,
+                  "type": "text"
+                ],
+                [
+                  "key": "trading_address_line1",
+                  "value": add,
+                  "type": "text"
+                ],
+                [
+                  "key": "trading_address_country_code",
+                  "value": "GB",
+                  "type": "text"
+                ],
+                [
+                  "key": "trading_address_post_code",
+                  "value": postal,
+                  "type": "text"
+                ],
+                [
+                  "key": "trading_address_city",
+                  "value": city,
+                  "type": "text"
+                ],
+                [
+                  "key": "industry_code",
+                  "value": purpose,
+                  "type": "text"
+                ],
+                [
+                  "key": "personal_user_address_line1",
+                  "value": personalAdd1,
+                  "type": "text"
+                ],
+                [
+                  "key": "personal_user_address_country_code",
+                  "value": "GB",
+                  "type": "text"
+                ],
+                [
+                  "key": "personal_user_address_post_code",
+                  "value": personalpostCode,
+                  "type": "text"
+                ],
+                [
+                  "key": "personal_user_address_city",
+                  "value": personalCity,
+                  "type": "text"
+                ],
+                [
+                  "key": "title",
+                  "value": titl,
+                  "type": "text"
+                ],
+                [
+                  "key": "first_name",
+                  "value": fName,
+                  "type": "text"
+                ],
+                [
+                  "key": "last_name",
+                  "value": Lname,
+                  "type": "text"
+                ],
+                [
+                  "key": "middle_name",
+                  "value": "",
+                  "type": "text"
+                ],
+                [
+                  "key": "date_of_birth",
+                  "value": dob,
+                  "type": "text"
+                ],
+                [
+                  "key": "password",
+                  "value": pw,
+                  "type": "text"
+                ],
+                [
+                  "key": "password_confirmation",
+                  "value": pw,
+                  "type": "text"
+                ],
+                [
+                  "key": "device_name",
+                  "value": "iPhone",
+                  "type": "text"
+                ],
+                [
+                  "key": "type",
+                  "value": "SoleTrader",
+                  "type": "text"
+                ],
+               
+                [
+                  "key": "is_regulated",
+                  "value": "false",
+                  "type": "text"
+                ],
+                [
+                  "key": "front_image",
+                  "src": path,
+                  "type": "file"
+                ],
+                [
+                  "key": "back_image",
+                  "src": path,
+                  "type": "file"
+                ],
+                [
+                  "key": "video_attachment",
+                  "src": vdoPath,
+                  "type": "file"
+                ],
+                [
+                  "key": "documentType",
+                  "value": "passport",
+                  "type": "text"
+                ],
+                [
+                  "key": "unique_device_id",
+                  "value": uuid,
+                  "type": "text"
+                ],
+                [
+                  "key": "user_login_pin",
+                  "value": "13213123",
+                  "type": "text"
+                ]]
+        } else {
+            [
+              [
+                "key": "business_name",
+                "value": businessName,
+                "type": "text"
+              ],
+              [
+                "key": "email",
+                "value": email,
+                "type": "text"
+              ],
+              [
+                "key": "web_url",
+                "value": wb,
+                "type": "text"
+              ],
+              [
+                "key": "phone",
+                "value": phone,
+                "type": "text"
+              ],
+              [
+                "key": "trading_address_line1",
+                "value": add,
+                "type": "text"
+              ],
+              [
+                "key": "trading_address_country_code",
+                "value": "GB",
+                "type": "text"
+              ],
+              [
+                "key": "trading_address_post_code",
+                "value": postal,
+                "type": "text"
+              ],
+              [
+                "key": "trading_address_city",
+                "value": city,
+                "type": "text"
+              ],
+              [
+                "key": "industry_code",
+                "value": purpose,
+                "type": "text"
+              ],
+              [
+                "key": "personal_user_address_line1",
+                "value": personalAdd1,
+                "type": "text"
+              ],
+              [
+                "key": "personal_user_address_country_code",
+                "value": "GB",
+                "type": "text"
+              ],
+              [
+                "key": "personal_user_address_post_code",
+                "value": personalpostCode,
+                "type": "text"
+              ],
+              [
+                "key": "personal_user_address_city",
+                "value": personalCity,
+                "type": "text"
+              ],
+              [
+                "key": "title",
+                "value": titl,
+                "type": "text"
+              ],
+              [
+                "key": "first_name",
+                "value": fName,
+                "type": "text"
+              ],
+              [
+                "key": "last_name",
+                "value": Lname,
+                "type": "text"
+              ],
+              [
+                "key": "middle_name",
+                "value": "",
+                "type": "text"
+              ],
+              [
+                "key": "date_of_birth",
+                "value": dob,
+                "type": "text"
+              ],
+              [
+                "key": "password",
+                "value": pw,
+                "type": "text"
+              ],
+              [
+                "key": "password_confirmation",
+                "value": pw,
+                "type": "text"
+              ],
+              [
+                "key": "device_name",
+                "value": "iPhone",
+                "type": "text"
+              ],
+              [
+                "key": "type",
+                "value": "SoleTrader",
+                "type": "text"
+              ],
+//              [
+//                "key": "incorporation_date",
+//                "value": companyDate,
+//                "type": "text"
+//              ],
+              [
+                "key": "is_regulated",
+                "value": "false",
+                "type": "text"
+              ],
+              [
+                "key": "front_image",
+                "src": path,
+                "type": "file"
+              ],
+              [
+                "key": "back_image",
+                "src": path,
+                "type": "file"
+              ],
+              [
+                "key": "video_attachment",
+                "src": vdoPath,
+                "type": "file"
+              ],
+              [
+                "key": "documentType",
+                "value": "passport",
+                "type": "text"
+              ],
+              [
+                "key": "unique_device_id",
+                "value": uuid,
+                "type": "text"
+              ],
+              [
+                "key": "user_login_pin",
+                "value": "13213123",
+                "type": "text"
+              ]]
+        }
 
         let boundary = "Boundary-\(UUID().uuidString)"
         var body = ""
@@ -291,7 +473,7 @@ class CreatePasswordViewController: UIViewController {
                 do{
              // let fileData = try NSData(contentsOfFile:paramSrc, options:[]) as Data
                     let img = UIImage(named: "img.jpeg")
-                    guard let fileData = img?.jpegData(compressionQuality: 0.7) else { return  }
+                  guard  let fileData = img?.jpegData(compressionQuality: 0.7) else { return  }
                     let fileContent = fileData.base64EncodedString(options: .lineLength64Characters)
                     let str = fileContent.base64Decoded()
                    // let fileContent = String(decoding: fileData, as: UTF8.self)
@@ -342,7 +524,7 @@ class CreatePasswordViewController: UIViewController {
         
         
 //        let urlPath = "http://198.244.142.151/api/user/sign-up"
-//            guard let endpoint = URL(string: urlPath) else {
+//             let endpoint = URL(string: urlPath) else {
 //                    print("Error creating endpoint")
 //                    return
 //            }
@@ -360,7 +542,7 @@ class CreatePasswordViewController: UIViewController {
 //            body.append(Data("\(value)\r\n".utf8))
 //        }
 //
-//        guard let imageData = image?.jpegData(compressionQuality: 1.0) else {return}
+//         let imageData = image?.jpegData(compressionQuality: 1.0) ?? ""
 //        let filename = "image1"
 //
 //        body.append(Data(boundaryPrefix.utf8))
@@ -373,7 +555,7 @@ class CreatePasswordViewController: UIViewController {
 //
 //        URLSession.shared.dataTask(with: request) { (data, res, err) in
 //
-//            guard let data = data else {
+//             let data = data else {
 //                  return
 //            }
 //
@@ -545,7 +727,7 @@ class CreatePasswordViewController: UIViewController {
 //              body += "\r\n\r\n\(paramValue)\r\n"
 //            } else {
 //              let paramSrc = param["src"] as! String
-//                guard let fileData = image!.jpegData(compressionQuality: 1) else{
+//                 let fileData = image!.jpegData(compressionQuality: 1) else{
 //                         return
 //                     }
 //                let fileData = try NSData(contentsOf: image)
@@ -567,7 +749,7 @@ class CreatePasswordViewController: UIViewController {
 //        request.httpBody = postData
 //
 //        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//          guard let data = data else {
+//           let data = data else {
 //            print(String(describing: error))
 //            semaphore.signal()
 //            return
@@ -601,7 +783,7 @@ class CreatePasswordViewController: UIViewController {
 //
 //        let parameters = ["first_name" : fName,  "last_name": Lname , "middle_name": "", "email": email, "password": pw, "title": titl, "password_confirmation": pw, "device_name": "iOS", "date_of_birth": dob, "have_you_lived_here_for_more_then_six_month": true, "terms_and_condition": true,  "business_name": businessName, "phone":"+44\(phone)", "industry_code": purpose, "type": "SoleTrader","incorporation_date": companyDate, "companyRegistrationNumber":cNum, "is_regulated": false, "trading_address_line1": add, "trading_address_country_code": "GB", "trading_address_post_code": postal, "trading_address_city": city, "registeredAddressLine1":pAdd, "web_url": wb, "documentType": docType, "unique_device_id": uuid,  "personal_user_address_line1": personalAdd1, "personal_user_address_country_code": "GB", "personal_user_address_post_code": personalpostCode, "personal_user_address_city": personalCity,  "user_login_pin": "112233"] as [String : String]
 //
-//        guard let imgData = image!.jpegData(compressionQuality: 1) else{
+//         let imgData = image!.jpegData(compressionQuality: 1) else{
 //            return
 //        }
 //
@@ -676,7 +858,7 @@ class CreatePasswordViewController: UIViewController {
 
 extension String{
     func base64Decoded() -> String? {
-          guard let data = Data(base64Encoded: self) else { return nil }
+         guard  let data = Data(base64Encoded: self) else { return nil }
           return String(data: data, encoding: .utf8)
       }
 }

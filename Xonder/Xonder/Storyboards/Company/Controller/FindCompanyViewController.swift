@@ -10,6 +10,7 @@ import UIKit
 class FindCompanyViewController: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var tblHeight: NSLayoutConstraint!
     
     var companies = [companyData]()
     private var textFieldValue = "" {
@@ -21,11 +22,21 @@ class FindCompanyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        debouncer = Debouncer.init(delay: 3, callback: debouncerApiCall)
+//        var height: CGFloat = 0
+//        for cell in self.tblView.visibleCells {
+//            height += cell.bounds.height
+//        }
+        
+        SoleTraderBusiness.shared.isBusiness = true
+        
+        self.tblHeight.constant = 10
+        self.view.layoutIfNeeded()
+        debouncer = Debouncer.init(delay: 1.5, callback: debouncerApiCall)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func backAct(_ sender: Any) {
+        
     }
     @IBAction func doneAct(_ sender: Any) {
     }
@@ -41,7 +52,11 @@ class FindCompanyViewController: UIViewController {
             if error == nil,models != nil,let companiesList = models{
                 self.companies = companiesList
                 self.tblView.reloadData()
+                
+          
             }
+            
+            
         }
     }
     
@@ -59,6 +74,16 @@ extension FindCompanyViewController: UITableViewDelegate, UITableViewDataSource{
             let data = companies[indexPath.row]
             cell.titleLbl.text = data.title
             
+            if indexPath.row ==  companies.count - 1{
+                var height: CGFloat = 0
+                for cell in self.tblView.visibleCells {
+                    height += cell.bounds.height
+                }
+                
+                self.tblHeight.constant = height
+                self.view.layoutIfNeeded()
+            }
+            
             return cell
         }
         
@@ -67,8 +92,18 @@ extension FindCompanyViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = companies[indexPath.row]
-        let vc = UIStoryboard(name: "Comapny", bundle: nil).instantiateViewController(withIdentifier: "CompanyDetailViewController") as? ComapanyDetailViewController
         
+        
+        
+        let vc = UIStoryboard.init(name: "Company", bundle: Bundle.main).instantiateViewController(withIdentifier: "ComapanyDetailViewController") as? ComapanyDetailViewController
+        vc?.companyNum = data.company_number ?? ""
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
 }

@@ -1,14 +1,16 @@
 //
-//  CompanyDetailTableViewCell.swift
+//  PeopleTableViewCell.swift
 //  Xonder
 //
-//  Created by Daniyal Waseem on 7/28/21.
+//  Created by Muhammad Umar on 28/07/2021.
 //
 
 import UIKit
 
-class CompanyDetailTableViewCell: UITableViewCell {
+class PeopleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var proffession: UILabel!
+    @IBOutlet weak var nname: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

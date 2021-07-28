@@ -12,38 +12,29 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-class CompanyModel : Codable {
-	let data : [companyData]?
-
+struct Registered_office_address : Codable {
+	let address_line_2 : String?
+	let locality : String?
+	let country : String?
+	let address_line_1 : String?
+	let postal_code : String?
 
 	enum CodingKeys: String, CodingKey {
 
-		case data = "data"
-
+		case address_line_2 = "address_line_2"
+		case locality = "locality"
+		case country = "country"
+		case address_line_1 = "address_line_1"
+		case postal_code = "postal_code"
 	}
 
-
-
-}
-
-class companyData: Codable{
-    let title : String?
-    let address_snippet : String?
-    let incorporation_date : String?
-    let company_number : String?
-
-    enum CodingKeys: String, CodingKey {
-
-        case title = "title"
-        case address_snippet = "address_snippet"
-        case incorporation_date = "incorporation_date"
-        case company_number = "company_number"
-    }
-
-
+	init(from decoder: Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+		address_line_2 = try values.decodeIfPresent(String.self, forKey: .address_line_2)
+		locality = try values.decodeIfPresent(String.self, forKey: .locality)
+		country = try values.decodeIfPresent(String.self, forKey: .country)
+		address_line_1 = try values.decodeIfPresent(String.self, forKey: .address_line_1)
+		postal_code = try values.decodeIfPresent(String.self, forKey: .postal_code)
+	}
 
 }
-
-
-
-

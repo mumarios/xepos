@@ -19,6 +19,7 @@ class SoleTraderBusiness{
     var  postal: String?
     var country: String?
     var city: String?
+    var loc : String?
     var personalAdd: String?
     var FirstName: String?
     var lastName: String?
@@ -33,6 +34,9 @@ class SoleTraderBusiness{
     var personalPost: String?
     var docType : String?
     var personalCity: String?
+    var tradingAdd: String?
+    var tradingAdd2: String?
+    var isBusiness = false
     
     
 }

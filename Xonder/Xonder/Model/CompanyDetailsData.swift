@@ -12,38 +12,29 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-class CompanyModel : Codable {
-	let data : [companyData]?
-
+struct CompanyDetailsData : Codable {
+	let registered_office_address : Registered_office_address?
+	let company_name : String?
+	let incorporation_date : String?
+	let company_number : String?
+	let officers_list : [Officers_list]?
 
 	enum CodingKeys: String, CodingKey {
 
-		case data = "data"
-
+		case registered_office_address = "registered_office_address"
+		case company_name = "company_name"
+		case incorporation_date = "incorporation_date"
+		case company_number = "company_number"
+		case officers_list = "officers_list"
 	}
 
-
-
-}
-
-class companyData: Codable{
-    let title : String?
-    let address_snippet : String?
-    let incorporation_date : String?
-    let company_number : String?
-
-    enum CodingKeys: String, CodingKey {
-
-        case title = "title"
-        case address_snippet = "address_snippet"
-        case incorporation_date = "incorporation_date"
-        case company_number = "company_number"
-    }
-
-
+	init(from decoder: Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+		registered_office_address = try values.decodeIfPresent(Registered_office_address.self, forKey: .registered_office_address)
+		company_name = try values.decodeIfPresent(String.self, forKey: .company_name)
+		incorporation_date = try values.decodeIfPresent(String.self, forKey: .incorporation_date)
+		company_number = try values.decodeIfPresent(String.self, forKey: .company_number)
+		officers_list = try values.decodeIfPresent([Officers_list].self, forKey: .officers_list)
+	}
 
 }
-
-
-
-

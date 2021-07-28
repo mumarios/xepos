@@ -12,38 +12,17 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-class CompanyModel : Codable {
-	let data : [companyData]?
-
+struct CompanyDetailsBase : Codable {
+	let data : CompanyDetailsData?
 
 	enum CodingKeys: String, CodingKey {
 
 		case data = "data"
-
 	}
 
-
-
-}
-
-class companyData: Codable{
-    let title : String?
-    let address_snippet : String?
-    let incorporation_date : String?
-    let company_number : String?
-
-    enum CodingKeys: String, CodingKey {
-
-        case title = "title"
-        case address_snippet = "address_snippet"
-        case incorporation_date = "incorporation_date"
-        case company_number = "company_number"
-    }
-
-
+	init(from decoder: Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+		data = try values.decodeIfPresent(CompanyDetailsData.self, forKey: .data)
+	}
 
 }
-
-
-
-
