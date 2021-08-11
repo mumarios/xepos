@@ -37,6 +37,23 @@ class SoleTraderBusiness{
     var tradingAdd: String?
     var tradingAdd2: String?
     var isBusiness = false
+    var isSole = true
+    var numberofUsers = 1
+    var pw : String?
     
+    
+    var firstUserFirstName : String?
+    var firstUserLastName : String?
+    var firstUserdob : String?
+    var firstUserShares : String?
+    var firstUserEmail : String?
+    var firstUsertitle : String?
+    
+    var secondUserFirstName : String?
+    var secondUserLastName : String?
+    var secondUserdob : String?
+    var secondUserShares: String?
+    var secondUserEmail : String?
+    var secondUsertitle : String?
     
 }

@@ -53,8 +53,13 @@ class SelectCategoryViewController: UIViewController {
     }
 
     @IBAction func continueBtnDidPressed(_ sender: Any) {
+        if SoleTraderBusiness.shared.isSole{
         let vc = UIStoryboard.init(name: "SignupUmar", bundle: Bundle.main).instantiateViewController(withIdentifier: "SoleTraderBusinessViewController") as? SoleTraderBusinessViewController
         self.navigationController?.pushViewController(vc!, animated: true)
+        } else {
+            let vc = UIStoryboard.init(name: "Company", bundle: Bundle.main).instantiateViewController(withIdentifier: "FindCompanyViewController") as? FindCompanyViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
         
         //performSegue(withIdentifier: "toSelectSubcategoryVC", sender: self)
     }

@@ -17,7 +17,9 @@ class SignupAddMobileViewController: UIViewController {
     }
     
     func sendOtpProcess() {
+        SoleTraderBusiness.shared.num = "+44\(self.numberField.text!)"
         APIService.sendOtp(userObj: ["phone":"+44\(self.numberField.text!)"]){
+
             (result) in
             switch result{
             case .success(let msg):
@@ -38,7 +40,7 @@ class SignupAddMobileViewController: UIViewController {
 //                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
 //                destinationVC.mobileNumber = self.numberField.text ?? ""
 //                    self.navigationController?.pushViewController(destinationVC, animated: true)
-                break
+//                break
             }
             
 

@@ -11,6 +11,7 @@ class FindCompanyViewController: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var tblHeight: NSLayoutConstraint!
+    var showError = false
     
     var companies = [companyData]()
     private var textFieldValue = "" {
@@ -35,8 +36,18 @@ class FindCompanyViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if showError{
+        let alertPopup = UIAlertController(title: "Selected Company has more than 2 officers", message: "", preferredStyle: .alert)
+        alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+            self.dismiss(animated: true)
+        }))
+        self.navigationController?.present(alertPopup, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func backAct(_ sender: Any) {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func doneAct(_ sender: Any) {
     }
@@ -73,6 +84,11 @@ extension FindCompanyViewController: UITableViewDelegate, UITableViewDataSource{
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyDetailTableViewCell", for: indexPath) as? CompanyDetailTableViewCell{
             let data = companies[indexPath.row]
             cell.titleLbl.text = data.title
+            if let companyNum = data.company_number, let date = data.incorporation_date, let add1 = data.address_snippet{
+                
+                let string = "\(companyNum) - Incorporated on \(date) \(add1)"
+                cell.descLbl.text = string
+            }
             
             if indexPath.row ==  companies.count - 1{
                 var height: CGFloat = 0
@@ -97,6 +113,10 @@ extension FindCompanyViewController: UITableViewDelegate, UITableViewDataSource{
         
         let vc = UIStoryboard.init(name: "Company", bundle: Bundle.main).instantiateViewController(withIdentifier: "ComapanyDetailViewController") as? ComapanyDetailViewController
         vc?.companyNum = data.company_number ?? ""
+        vc?.vc = self
+        SoleTraderBusiness.shared.tradingAdd =  data.address_snippet
+        SoleTraderBusiness.shared.companyDate = data.incorporation_date
+        
         self.navigationController?.pushViewController(vc!, animated: true)
         
         

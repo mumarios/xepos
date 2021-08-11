@@ -16,7 +16,8 @@ class SignupBussinessSelectViewController: UIViewController {
     }
     
     @IBAction func companyBtnDidPressed(_ sender: Any) {
-        let vc = UIStoryboard.init(name: "Company", bundle: Bundle.main).instantiateViewController(withIdentifier: "FindCompanyViewController") as? FindCompanyViewController
+        let vc = UIStoryboard.init(name: "Company", bundle: Bundle.main).instantiateViewController(withIdentifier: "SelectCategoryViewController") as? SelectCategoryViewController
+        SoleTraderBusiness.shared.isSole = false
         self.navigationController?.pushViewController(vc!, animated: true)
        // performSegue(withIdentifier: "toCountryPicker", sender: self)
     }

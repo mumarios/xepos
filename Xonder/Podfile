@@ -15,5 +15,6 @@ target 'Xonder' do
     pod 'DropDown'
     pod 'GooglePlaces'
     pod 'GoogleMaps'
+    pod 'KAPinField'
 
 end

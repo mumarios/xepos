@@ -30,13 +30,18 @@ class PeopleViewController: UIViewController {
         self.firstTabView.backgroundColor = UIColor(red: 0.37, green: 0.39, blue: 0.57, alpha: 1.00)
         self.firstTabLbl.textColor = .white
         self.firstTabLbl.text = peopleArray?.first?.name ??  ""
-        
+        if peopleArray?.count ?? 0  >  1{
+            SoleTraderBusiness.shared.numberofUsers = 2
         self.ssecondTabLbl.text = peopleArray?[1].name ?? ""
-        
+        } else {
+            SoleTraderBusiness.shared.numberofUsers = 1
+            self.ssecondTabLbl.isHidden = true
+        }
         self.addLbl.text = peopleArray?.first?.address?.address_line_1 ?? ""
         self.roleLbl.text = peopleArray?.first?.officer_role ?? ""
         self.postalLbl.text = peopleArray?.first?.address?.postal_code ?? ""
         self.countryLbl.text = peopleArray?.first?.address?.country ?? ""
+        
         
     }
     
@@ -57,7 +62,7 @@ class PeopleViewController: UIViewController {
     }
     
     @IBAction func secondAct(_ sender: Any) {
-        
+        if peopleArray?.count ?? 0  >  1{
         self.firstTabView.backgroundColor = .white
         self.firstTabLbl.textColor = .black
         self.secondTabView.backgroundColor = UIColor(red: 0.37, green: 0.39, blue: 0.57, alpha: 1.00)
@@ -66,9 +71,10 @@ class PeopleViewController: UIViewController {
         self.roleLbl.text = peopleArray?[1].officer_role ?? ""
         self.postalLbl.text = peopleArray?[1].address?.postal_code ?? ""
         self.countryLbl.text = peopleArray?[1].address?.country ?? ""
+        }
     }
     @IBAction func doneAct(_ sender: Any) {
-        let vc = UIStoryboard.init(name: "SignupUmar", bundle: Bundle.main).instantiateViewController(withIdentifier: "SoleTraderPersonalInfoViewController") as? SoleTraderPersonalInfoViewController
+        let vc = UIStoryboard.init(name: "Company", bundle: Bundle.main).instantiateViewController(withIdentifier: "FirstUsereViewController") as? FirstUsereViewController
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

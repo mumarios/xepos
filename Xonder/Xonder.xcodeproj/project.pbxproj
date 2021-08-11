@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		17BEB897F109CACDA653F0DC /* Pods_Xonder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EF80C05B016B2C2E39C37D /* Pods_Xonder.framework */; };
 		3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */; };
+		3B072B8826BD6E85009DAE41 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B072B8726BD6E85009DAE41 /* PinViewController.swift */; };
 		3B14DD9026B1A7E900A348A0 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B14DD8F26B1A7E900A348A0 /* PeopleViewController.swift */; };
+		3B16051B26BD53FF0009DFDA /* FirstUsereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16051A26BD53FF0009DFDA /* FirstUsereViewController.swift */; };
 		3B33CDDF26B17DDD00FB17A5 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDDE26B17DDD00FB17A5 /* PeopleTableViewCell.swift */; };
 		3B33CDE526B185C800FB17A5 /* Registered_office_address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE026B185C800FB17A5 /* Registered_office_address.swift */; };
 		3B33CDE626B185C800FB17A5 /* CompanyDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */; };
@@ -131,7 +133,9 @@
 
 /* Begin PBXFileReference section */
 		3B008D74264A6AE500BE9E13 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3B072B8726BD6E85009DAE41 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
 		3B14DD8F26B1A7E900A348A0 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		3B16051A26BD53FF0009DFDA /* FirstUsereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUsereViewController.swift; sourceTree = "<group>"; };
 		3B33CDDE26B17DDD00FB17A5 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		3B33CDE026B185C800FB17A5 /* Registered_office_address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registered_office_address.swift; sourceTree = "<group>"; };
 		3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsData.swift; sourceTree = "<group>"; };
@@ -418,6 +422,8 @@
 				3BF6AFD826B008990069634F /* FindCompanyViewController.swift */,
 				3B14DD8F26B1A7E900A348A0 /* PeopleViewController.swift */,
 				705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */,
+				3B16051A26BD53FF0009DFDA /* FirstUsereViewController.swift */,
+				3B072B8726BD6E85009DAE41 /* PinViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -877,6 +883,7 @@
 				C83FB72E26433C6D00A87093 /* Plugins.swift in Sources */,
 				3BE2B48A268C8A0400210F64 /* SoleTraderDocPreViewController.swift in Sources */,
 				C8727089264341CC005EFDEA /* CountryModel.swift in Sources */,
+				3B16051B26BD53FF0009DFDA /* FirstUsereViewController.swift in Sources */,
 				C872708F264343E0005EFDEA /* Alert.swift in Sources */,
 				3BE2B484268C5FDF00210F64 /* SoleTraderCardViewController.swift in Sources */,
 				704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */,
@@ -916,6 +923,7 @@
 				705DACDB26B0A5330065874D /* ComapanyDetailViewController.swift in Sources */,
 				704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */,
 				3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */,
+				3B072B8826BD6E85009DAE41 /* PinViewController.swift in Sources */,
 				705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */,
 				707868F1265B8924008EF9B8 /* SignupBussinessSelectViewController.swift in Sources */,
 				3BC24010265550C700C0DF03 /* TabTransactionViewController.swift in Sources */,

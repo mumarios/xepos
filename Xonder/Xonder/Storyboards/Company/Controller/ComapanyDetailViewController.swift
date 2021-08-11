@@ -14,7 +14,7 @@ class ComapanyDetailViewController: UIViewController {
     @IBOutlet weak var addresslbl: UILabel!
     @IBOutlet weak var nameLbl: UILabel!
     var isCheck = false
-    
+    var vc = FindCompanyViewController()
     var companies: CompanyDetailsData?
     var companyNum = ""
     
@@ -35,7 +35,7 @@ class ComapanyDetailViewController: UIViewController {
                     let loc  = add.locality ?? ""
                     let postal = add.postal_code ?? ""
                     let country = add.country ?? ""
-                    
+                    SoleTraderBusiness.shared.city =  add.locality
                     SoleTraderBusiness.shared.tradingAdd = line1
                     SoleTraderBusiness.shared.tradingAdd2 = line2
                     SoleTraderBusiness.shared.loc = loc
@@ -51,12 +51,16 @@ class ComapanyDetailViewController: UIViewController {
                 self.tblView.reloadData()
                 
           
+            } else {
+                self.vc.showError = true
+                self.navigationController?.popViewController(animated: true)
             }
             
             
         }
     }
     @IBAction func backAct(_ sender: Any) {
+        vc.showError = false
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func contAct(_ sender: Any) {

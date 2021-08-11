@@ -9,6 +9,7 @@ PODS:
   - GooglePlaces (5.0.0)
   - IQKeyboardManagerSwift (6.5.6)
   - JGProgressHUD (2.2)
+  - KAPinField (5.0.1)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - GooglePlaces
   - IQKeyboardManagerSwift
   - JGProgressHUD
+  - KAPinField
   - Moya (~> 13.0)
   - PKHUD (~> 5.0)
   - SVPinView (~> 1.0)
@@ -36,6 +38,7 @@ SPEC REPOS:
     - GooglePlaces
     - IQKeyboardManagerSwift
     - JGProgressHUD
+    - KAPinField
     - Moya
     - PKHUD
     - Result
@@ -48,11 +51,12 @@ SPEC CHECKSUMS:
   GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  KAPinField: 24d85205115c1bb6aef8ff809944f41ac8c2785f
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
 
-PODFILE CHECKSUM: f1cefc5b8d048fc4d0ec097f549b04ab7bfccd1e
+PODFILE CHECKSUM: 604f259c883709f5376318eda6f577b6cf3dc5eb
 
 COCOAPODS: 1.10.1
