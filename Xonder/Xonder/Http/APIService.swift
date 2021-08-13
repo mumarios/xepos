@@ -53,25 +53,6 @@ class APIService{
        
     }
     
-    class func getCompaniesDetails(name: String, completion:@escaping(CompanyDetailsData?,String?)->Void){
-        Provider.services.request(.getCompanyDetails(number: name)) { (result) in
-            do{
-                let earnings: CompanyDetailsData = try result.decoded(keypath: "data")
-                completion(earnings,nil)
-            }catch {
-                if (error.localizedDescription == "Response status code was unacceptable: 401.") {
-                    if UIApplication.topViewController() != nil{
-                        
-                    }
-
-                }
-                else {
-                    completion(nil,error.localizedDescription)
-                }
-            }
-        }
-       
-    }
     
     class func login(userObj:[String:Any],
                       completion:@escaping (APIResult<String>)->Void){
@@ -224,6 +205,44 @@ class APIService{
                 }
             }
         }
+    
+    class func getCompaniesDetails(name: String, completion:@escaping(CompanyDetailsData?,String?)->Void){
+        Provider.services.request(.getCompanyDetails(number: name)) { (result) in
+            do{
+                let earnings: CompanyDetailsData = try result.decoded(keypath: "data")
+                completion(earnings,nil)
+            }catch {
+                if (error.localizedDescription == "Response status code was unacceptable: 401.") {
+                    if UIApplication.topViewController() != nil{
+                        
+                    }
+
+                }
+                else {
+                    completion(nil,error.localizedDescription)
+                }
+            }
+        }
+       
+    }
+    
+    class func getPostalCodeAddress(search:String,completion:@escaping(PostalCodeAddressModel?,String?)->Void) {
+        Provider.services.request(.getPostalCodeAddress(searchText: search)) { (result) in
+            do{
+                let earnings: PostalCodeAddressModel = try result.decoded(keypath: "data")
+                completion(earnings,nil)
+            }catch{
+                if (error.localizedDescription == "Response Status code was unacceptable: 401."){
+                    if UIApplication.topViewController() != nil{
+                        
+                    }
+                }
+                else{
+                    completion(nil,error.localizedDescription)
+                }
+            }
+        }
+    }
 }
 
 

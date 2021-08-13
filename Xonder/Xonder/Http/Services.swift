@@ -21,6 +21,7 @@ enum Services {
     case verifyOtp(obj:[String:Any])
     case getCategories
     case getTypes
+    case getPostalCodeAddress(searchText:String)
 }
 
 extension Services:TargetType,AccessTokenAuthorizable{
@@ -54,6 +55,8 @@ extension Services:TargetType,AccessTokenAuthorizable{
             return "filters/get-business-industry-code"
         case .getTypes:
             return "filters/get-business-industry-type"
+        case .getPostalCodeAddress:
+            return "filters/search-by-postal-code"
 
         }
     }
@@ -96,6 +99,8 @@ extension Services:TargetType,AccessTokenAuthorizable{
             return .requestParameters(parameters: obj, encoding: JSONEncoding.default)
         case .verifyOtp(let obj):
             return .requestParameters(parameters: obj, encoding: JSONEncoding.default)
+        case .getPostalCodeAddress(let search):
+            return .requestParameters(parameters: ["q" : search], encoding: URLEncoding.queryString)
     }
     }
     
@@ -108,7 +113,7 @@ extension Services:TargetType,AccessTokenAuthorizable{
     
     var authorizationType: AuthorizationType {
         switch self{
-        case .signup,.login,.searchCompanies,.sendOtp,.verifyOtp, .getCategories, .getTypes, .getCompanyDetails:
+        case .signup,.login,.searchCompanies,.sendOtp,.verifyOtp, .getCategories, .getTypes, .getCompanyDetails,.getPostalCodeAddress:
             return .none
         default:
             return .bearer

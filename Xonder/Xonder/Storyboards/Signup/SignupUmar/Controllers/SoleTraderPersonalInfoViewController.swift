@@ -26,45 +26,49 @@ class SoleTraderPersonalInfoViewController: UIViewController {
 
 
     @IBAction func contAct(_ sender: Any) {
-        
-        if titleField.text?.count == 0 {
-            let alertPopup = UIAlertController(title: "Please Enter Title", message: "", preferredStyle: .alert)
-            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
-                self.dismiss(animated: true)
-            }))
-            self.navigationController?.present(alertPopup, animated: true, completion: nil)
-            return
-        } else if firstNameField.text?.count == 0 {
-            let alertPopup = UIAlertController(title: "Please Enter First Name", message: "", preferredStyle: .alert)
-            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
-                self.dismiss(animated: true)
-            }))
-            self.navigationController?.present(alertPopup, animated: true, completion: nil)
-            return
-        } else if lastNameField.text?.count == 0 {
-            let alertPopup = UIAlertController(title: "Please Enter Last Name", message: "", preferredStyle: .alert)
-            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
-                self.dismiss(animated: true)
-            }))
-            self.navigationController?.present(alertPopup, animated: true, completion: nil)
-            return
-        } else if dobField.text?.count == 0 {
-            let alertPopup = UIAlertController(title: "Please Enter Date of birth", message: "", preferredStyle: .alert)
-            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
-                self.dismiss(animated: true)
-            }))
-            self.navigationController?.present(alertPopup, animated: true, completion: nil)
-            return
-        }
+//
+//        if titleField.text?.count == 0 {
+//            let alertPopup = UIAlertController(title: "Please Enter Title", message: "", preferredStyle: .alert)
+//            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+//                self.dismiss(animated: true)
+//            }))
+//            self.navigationController?.present(alertPopup, animated: true, completion: nil)
+//            return
+//        } else if firstNameField.text?.count == 0 {
+//            let alertPopup = UIAlertController(title: "Please Enter First Name", message: "", preferredStyle: .alert)
+//            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+//                self.dismiss(animated: true)
+//            }))
+//            self.navigationController?.present(alertPopup, animated: true, completion: nil)
+//            return
+//        } else if lastNameField.text?.count == 0 {
+//            let alertPopup = UIAlertController(title: "Please Enter Last Name", message: "", preferredStyle: .alert)
+//            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+//                self.dismiss(animated: true)
+//            }))
+//            self.navigationController?.present(alertPopup, animated: true, completion: nil)
+//            return
+//        } else if dobField.text?.count == 0 {
+//            let alertPopup = UIAlertController(title: "Please Enter Date of birth", message: "", preferredStyle: .alert)
+//            alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+//                self.dismiss(animated: true)
+//            }))
+//            self.navigationController?.present(alertPopup, animated: true, completion: nil)
+//            return
+//        }
         
         SoleTraderBusiness.shared.FirstName = firstNameField.text
         SoleTraderBusiness.shared.title = titleField.text
         SoleTraderBusiness.shared.lastName = lastNameField.text
         SoleTraderBusiness.shared.dob = dobField.text
-        
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderHomeAddViewController") as! SoleTraderHomeAddViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderBusinessAddressViewController") as! SoleTraderBusinessAddressViewController
+        destinationVC.screenMode = .SoleHomeAddress
+        self.present(destinationVC, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(destinationVC, animated: true)
+//        let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
+//            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderHomeAddViewController") as! SoleTraderHomeAddViewController
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
         
         
         

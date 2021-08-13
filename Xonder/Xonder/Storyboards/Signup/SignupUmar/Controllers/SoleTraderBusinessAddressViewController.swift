@@ -9,25 +9,55 @@ import UIKit
 import GooglePlaces
 import Alamofire
 
-class SoleTraderBusinessAddressViewController: UIViewController {
+class SoleTraderBusinessAddressViewController: UIViewController, GoogleAddViewControllerDelegate {
+    
     @IBOutlet weak var postalField: UITextField!
     @IBOutlet weak var contBttn: UIButton!
-    
+    @IBOutlet weak var headerTitle:UILabel!
+    @IBOutlet weak var headerLabel:UILabel!
+    var myAddress:Addresses?{
+        didSet{
+            self.setupUI()
+        }
+    }
+    var screenMode:ScreenMode = .ComapnyHomeAddress
+
+    @IBOutlet weak var countryField: UILabel!
     @IBOutlet weak var cityField: UITextField!
     @IBOutlet weak var addressField: UITextField!
     var placeID = ""
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        switch self.screenMode{
+        case .ComapnyHomeAddress:
+            self.setupHeaderTexts(headerTitle: "Home Address", desc: "Your current address where you live")
+            
+        case .SoleBusiness:
+            self.setupHeaderTexts(headerTitle: "Business Address", desc: "Confirm your Business address")
+            
+        case .SoleHomeAddress: self.setupHeaderTexts(headerTitle: "Confirm Address", desc: "Confirm your Home Address")
+        }
+    }
+    
+    func setupHeaderTexts(headerTitle:String,desc:String){
+        self.headerTitle.text = headerTitle
+        self.headerLabel.text = desc
+        
     }
     
     @IBAction func openPlaces(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
             let destinationVC = storyboard.instantiateViewController(withIdentifier: "GoogleAddViewController") as! GoogleAddViewController
+        destinationVC.delegate = self
         destinationVC.parentVC = self
-            self.navigationController?.pushViewController(destinationVC, animated: true)
-        
+        destinationVC.screenMode = screenMode
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
+        self.present(destinationVC, animated: true, completion: nil)
 //        let autocompleteController = GMSAutocompleteViewController()
 //           autocompleteController.delegate = self
 //        // Specify the place data types to return.
@@ -46,6 +76,20 @@ class SoleTraderBusinessAddressViewController: UIViewController {
 //           present(autocompleteController, animated: true, completion: nil)
     }
     
+    func setupUI(){
+        if let data = self.myAddress{
+            self.addressField.text = data.line_1 ?? ""
+            self.cityField.text = data.town_or_city ?? ""
+            self.countryField.text = data.country ?? ""
+            self.postalField.text = data.postalCode ?? ""
+        }
+    }
+    
+    func getaddress(data: Addresses?) {
+        if let _data = data{
+        self.myAddress = _data
+        }
+    }
 
      
 
