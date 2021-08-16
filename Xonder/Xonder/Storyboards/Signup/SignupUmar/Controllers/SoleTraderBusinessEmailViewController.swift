@@ -51,8 +51,11 @@ class SoleTraderBusinessEmailViewController: UIViewController {
         SoleTraderBusiness.shared.num = numberField.text
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
             let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderBusinessAddressViewController") as! SoleTraderBusinessAddressViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+        destinationVC.screenMode = .SoleBusiness
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
+        self.present(destinationVC, animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 

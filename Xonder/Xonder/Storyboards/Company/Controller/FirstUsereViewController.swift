@@ -78,8 +78,12 @@ class FirstUsereViewController: UIViewController {
         SoleTraderBusiness.shared.firstUserEmail = emailAdd.text ?? ""
         
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderHomeAddViewController") as! SoleTraderHomeAddViewController
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderBusinessAddressViewController") as! SoleTraderBusinessAddressViewController
+        destinationVC.screenMode = .ComapnyHomeAddress
+//            self.navigationController?.pushViewController(destinationVC, animated: true)
+        self.present(destinationVC, animated: true, completion: nil)
+
+
         
         
         
