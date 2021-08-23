@@ -123,7 +123,7 @@ class SoleTraderBusinessAddressViewController: UIViewController, GoogleAddViewCo
             return
         }
         SoleTraderBusiness.shared.city = cityField.text
-        SoleTraderBusiness.shared.country = "United Kingdom"
+        SoleTraderBusiness.shared.country = countryField.text
         SoleTraderBusiness.shared.address  = postalField.text
         SoleTraderBusiness.shared.postal  = addressField.text
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
