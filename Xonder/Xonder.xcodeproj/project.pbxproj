@@ -18,6 +18,7 @@
 		3B33CDE726B185C800FB17A5 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE226B185C800FB17A5 /* Address.swift */; };
 		3B33CDE826B185C800FB17A5 /* CompanyDetailsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */; };
 		3B33CDE926B185C800FB17A5 /* Officers_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33CDE426B185C800FB17A5 /* Officers_list.swift */; };
+		3B46F3CF26D50FC800BB4B04 /* PostalCodeAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46F3CE26D50FC800BB4B04 /* PostalCodeAddressModel.swift */; };
 		3B5D33B72654C8E6002F0BA3 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */; };
 		3B5D33BA26550E6D002F0BA3 /* DashboardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */; };
 		3B600C0C2664DF200076BC92 /* YourCustomersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */; };
@@ -88,7 +89,6 @@
 		705AB1702664A81D000928D3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AB16F2664A81D000928D3 /* CheckBox.swift */; };
 		705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C02BB265A951E005638DC /* CountryPickedViewController.swift */; };
 		705C1D1326C6CD2D000544A7 /* Addresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C1D1126C6CD2C000544A7 /* Addresses.swift */; };
-		705C1D1426C6CD2D000544A7 /* PostalCodeAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C1D1226C6CD2D000544A7 /* PostalCodeAddressModel.swift */; };
 		705DACDB26B0A5330065874D /* ComapanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
@@ -144,6 +144,7 @@
 		3B33CDE226B185C800FB17A5 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsBase.swift; sourceTree = "<group>"; };
 		3B33CDE426B185C800FB17A5 /* Officers_list.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Officers_list.swift; sourceTree = "<group>"; };
+		3B46F3CE26D50FC800BB4B04 /* PostalCodeAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeAddressModel.swift; sourceTree = "<group>"; };
 		3B5D33B62654C8E6002F0BA3 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B5D33B926550E6D002F0BA3 /* DashboardSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionViewController.swift; sourceTree = "<group>"; };
 		3B600C0B2664DF200076BC92 /* YourCustomersScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCustomersScreenViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +216,6 @@
 		705AB16F2664A81D000928D3 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		705C02BB265A951E005638DC /* CountryPickedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickedViewController.swift; sourceTree = "<group>"; };
 		705C1D1126C6CD2C000544A7 /* Addresses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addresses.swift; sourceTree = "<group>"; };
-		705C1D1226C6CD2D000544A7 /* PostalCodeAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostalCodeAddressModel.swift; path = ../../../../../../Downloads/codegen_6116953a8c948/PostalCodeAddressModel.swift; sourceTree = "<group>"; };
 		705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComapanyDetailViewController.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -646,9 +646,9 @@
 			children = (
 				3B33CDE226B185C800FB17A5 /* Address.swift */,
 				705C1D1126C6CD2C000544A7 /* Addresses.swift */,
-				705C1D1226C6CD2D000544A7 /* PostalCodeAddressModel.swift */,
 				3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */,
 				3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */,
+				3B46F3CE26D50FC800BB4B04 /* PostalCodeAddressModel.swift */,
 				3B33CDE426B185C800FB17A5 /* Officers_list.swift */,
 				3B33CDE026B185C800FB17A5 /* Registered_office_address.swift */,
 				3BB4782C2694A3C70014903A /* Google */,
@@ -905,13 +905,13 @@
 				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
 				3BB4783A2694A3D10014903A /* Geometry.swift in Sources */,
 				3BB478392694A3D10014903A /* Location.swift in Sources */,
-				705C1D1426C6CD2D000544A7 /* PostalCodeAddressModel.swift in Sources */,
 				3BB4783D2694A3D10014903A /* Address_components.swift in Sources */,
 				3BB478362694A3D10014903A /* Northeast.swift in Sources */,
 				3BB478382694A3D10014903A /* Viewport.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
 				7075831A2657E8640055DF8A /* DigitCodeViewController.swift in Sources */,
+				3B46F3CF26D50FC800BB4B04 /* PostalCodeAddressModel.swift in Sources */,
 				3BB478372694A3D10014903A /* Results.swift in Sources */,
 				7075830B2657E4FA0055DF8A /* SelectMoneyViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,

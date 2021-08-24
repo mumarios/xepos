@@ -34,13 +34,13 @@ class SignupAddMobileViewController: UIViewController {
                 alertPopup.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
                     self.dismiss(animated: true)
                 }))
-                self.present(alertPopup, animated: true, completion: nil)
+//                self.present(alertPopup, animated: true, completion: nil)
 //                remove code
-//                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-//                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
-//                destinationVC.mobileNumber = self.numberField.text ?? ""
-//                    self.navigationController?.pushViewController(destinationVC, animated: true)
-//                break
+                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupVerifyNumberViewController") as! SignupVerifyNumberViewController
+                destinationVC.mobileNumber = self.numberField.text ?? ""
+                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                break
             }
             
 

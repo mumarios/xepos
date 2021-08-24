@@ -59,9 +59,9 @@ class SignupVerifyNumberViewController: UIViewController {
             case .failure(let msg):
                 print(msg)
                 //remove code
-//                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-//                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupBussinessSelectViewController") as! SignupBussinessSelectViewController
-//                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SignupBussinessSelectViewController") as! SignupBussinessSelectViewController
+                    self.navigationController?.pushViewController(destinationVC, animated: true)
                 
                 
                 self.wrongCodee.isHidden = false
