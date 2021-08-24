@@ -135,6 +135,8 @@ class GoogleAddViewController: UIViewController, UISearchResultsUpdating,MKMapVi
     
 
     @IBAction func backAct(_ sender: Any) {
+//        self.dismiss(animated: true, completion: nil)
+
         
         self.navigationController?.popViewController(animated: true)
     }
@@ -144,7 +146,8 @@ class GoogleAddViewController: UIViewController, UISearchResultsUpdating,MKMapVi
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func noBtnAct(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
 
@@ -157,7 +160,7 @@ extension GoogleAddViewController : UITextFieldDelegate{
         
         SVC.modalPresentationStyle = .fullScreen
         SVC.parentVC = self
-        SVC.modalPresentationStyle = .overCurrentContext
+//        SVC.modalPresentationStyle = .overCurrentContext
         SVC.modalTransitionStyle = .crossDissolve
        self.present(SVC, animated: true, completion: nil)
     }
