@@ -75,6 +75,8 @@
 		3BFD804B26528BC800ABE8E3 /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804A26528BC800ABE8E3 /* BalanceTableViewCell.swift */; };
 		3BFD804D26528BD600ABE8E3 /* MonthPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */; };
 		3BFD804F26528BE600ABE8E3 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */; };
+		70395DB826D50F72006607AC /* PostalCodeAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70395DB726D50F72006607AC /* PostalCodeAddressModel.swift */; };
+		70395DBC26D5113C006607AC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70395DBB26D5113C006607AC /* Home.storyboard */; };
 		704F32132648C13A0027397B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704F32122648C13A0027397B /* Signup.storyboard */; };
 		704F32162648C18D0027397B /* OtpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32152648C18D0027397B /* OtpScreenViewController.swift */; };
 		704F32262648C9030027397B /* GetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F32252648C9030027397B /* GetStartedScreenViewController.swift */; };
@@ -88,7 +90,6 @@
 		705AB1702664A81D000928D3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AB16F2664A81D000928D3 /* CheckBox.swift */; };
 		705C02BC265A951E005638DC /* CountryPickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C02BB265A951E005638DC /* CountryPickedViewController.swift */; };
 		705C1D1326C6CD2D000544A7 /* Addresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C1D1126C6CD2C000544A7 /* Addresses.swift */; };
-		705C1D1426C6CD2D000544A7 /* PostalCodeAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C1D1226C6CD2D000544A7 /* PostalCodeAddressModel.swift */; };
 		705DACDB26B0A5330065874D /* ComapanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */; };
 		7060360326432A560062039F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360226432A560062039F /* AppDelegate.swift */; };
 		7060360726432A560062039F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060360626432A560062039F /* ViewController.swift */; };
@@ -202,6 +203,8 @@
 		3BFD804C26528BD600ABE8E3 /* MonthPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerTableViewCell.swift; sourceTree = "<group>"; };
 		3BFD804E26528BE600ABE8E3 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		5B66287BAB70301295639823 /* Pods-Xonder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xonder.debug.xcconfig"; path = "Target Support Files/Pods-Xonder/Pods-Xonder.debug.xcconfig"; sourceTree = "<group>"; };
+		70395DB726D50F72006607AC /* PostalCodeAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeAddressModel.swift; sourceTree = "<group>"; };
+		70395DBB26D5113C006607AC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		704F32122648C13A0027397B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		704F32152648C18D0027397B /* OtpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpScreenViewController.swift; sourceTree = "<group>"; };
 		704F32252648C9030027397B /* GetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedScreenViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +218,6 @@
 		705AB16F2664A81D000928D3 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		705C02BB265A951E005638DC /* CountryPickedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickedViewController.swift; sourceTree = "<group>"; };
 		705C1D1126C6CD2C000544A7 /* Addresses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addresses.swift; sourceTree = "<group>"; };
-		705C1D1226C6CD2D000544A7 /* PostalCodeAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostalCodeAddressModel.swift; path = ../../../../../../Downloads/codegen_6116953a8c948/PostalCodeAddressModel.swift; sourceTree = "<group>"; };
 		705DACDA26B0A5330065874D /* ComapanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComapanyDetailViewController.swift; sourceTree = "<group>"; };
 		706035FF26432A560062039F /* Xonder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xonder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7060360226432A560062039F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -460,6 +462,14 @@
 			path = TransactionTableViewCell;
 			sourceTree = "<group>";
 		};
+		70395DBA26D51122006607AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				70395DBB26D5113C006607AC /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		704F32112648C0E10027397B /* Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +628,7 @@
 		706E3BDA2645178C00486D02 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				70395DBA26D51122006607AC /* Home */,
 				3BF6AFD326B0085B0069634F /* Company */,
 				3BC2400B26554DD300C0DF03 /* Transaction */,
 				3B008D73264A6ACD00BE9E13 /* Dashboard */,
@@ -646,7 +657,7 @@
 			children = (
 				3B33CDE226B185C800FB17A5 /* Address.swift */,
 				705C1D1126C6CD2C000544A7 /* Addresses.swift */,
-				705C1D1226C6CD2D000544A7 /* PostalCodeAddressModel.swift */,
+				70395DB726D50F72006607AC /* PostalCodeAddressModel.swift */,
 				3B33CDE326B185C800FB17A5 /* CompanyDetailsBase.swift */,
 				3B33CDE126B185C800FB17A5 /* CompanyDetailsData.swift */,
 				3B33CDE426B185C800FB17A5 /* Officers_list.swift */,
@@ -772,6 +783,7 @@
 				3B008D75264A6AE500BE9E13 /* Dashboard.storyboard in Resources */,
 				3BC2400D26554DE600C0DF03 /* Transaction.storyboard in Resources */,
 				3BB771CF2669218B00566337 /* SignupUmar.storyboard in Resources */,
+				70395DBC26D5113C006607AC /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,13 +917,13 @@
 				3BFD804926528BB600ABE8E3 /* SearchTableViewCell.swift in Sources */,
 				3BB4783A2694A3D10014903A /* Geometry.swift in Sources */,
 				3BB478392694A3D10014903A /* Location.swift in Sources */,
-				705C1D1426C6CD2D000544A7 /* PostalCodeAddressModel.swift in Sources */,
 				3BB4783D2694A3D10014903A /* Address_components.swift in Sources */,
 				3BB478362694A3D10014903A /* Northeast.swift in Sources */,
 				3BB478382694A3D10014903A /* Viewport.swift in Sources */,
 				C8727086264340F7005EFDEA /* Extension+Error.swift in Sources */,
 				3B63B206264AC38600E9A994 /* MasterViewController.swift in Sources */,
 				7075831A2657E8640055DF8A /* DigitCodeViewController.swift in Sources */,
+				70395DB826D50F72006607AC /* PostalCodeAddressModel.swift in Sources */,
 				3BB478372694A3D10014903A /* Results.swift in Sources */,
 				7075830B2657E4FA0055DF8A /* SelectMoneyViewController.swift in Sources */,
 				7060360726432A560062039F /* ViewController.swift in Sources */,

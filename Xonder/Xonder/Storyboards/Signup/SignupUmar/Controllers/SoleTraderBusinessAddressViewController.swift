@@ -52,10 +52,11 @@ class SoleTraderBusinessAddressViewController: UIViewController, GoogleAddViewCo
     
     @IBAction func openPlaces(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "GoogleAddViewController") as! GoogleAddViewController
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "GoogleAddViewController") as! GoogleAddViewController
         destinationVC.delegate = self
         destinationVC.parentVC = self
         destinationVC.screenMode = screenMode
+        destinationVC.modalPresentationStyle = .fullScreen
 //            self.navigationController?.pushViewController(destinationVC, animated: true)
         self.present(destinationVC, animated: true, completion: nil)
 //        let autocompleteController = GMSAutocompleteViewController()
