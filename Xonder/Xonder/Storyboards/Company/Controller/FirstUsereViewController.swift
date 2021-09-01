@@ -80,8 +80,8 @@ class FirstUsereViewController: UIViewController {
         let storyboard = UIStoryboard(name: "SignupUmar", bundle: nil)
             let destinationVC = storyboard.instantiateViewController(withIdentifier: "SoleTraderBusinessAddressViewController") as! SoleTraderBusinessAddressViewController
         destinationVC.screenMode = .ComapnyHomeAddress
-//            self.navigationController?.pushViewController(destinationVC, animated: true)
-        self.present(destinationVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+//        self.present(destinationVC, animated: true, completion: nil)
 
 
         
